@@ -11,5 +11,7 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 * Maximum number of cracked accounts registered for one IP account.
 * Redirection players to the limbo server when one of Spigot servers goes down.
 * Hashing password with salted SHA-256.
+* Captcha map.
+* Custom aliases for player commands.
 * Custom boss bar, tab header and footer.
 * Staff commands.
