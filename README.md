@@ -7,6 +7,8 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 * Automatically register and login premium players.
 * Sessions for cracked players.
 * Fixning unique ids.
-* Staff commands.
+* Support changing a premium player's nickname.
+* Support all cases with changing premium nicknames - there is no way to bug or steal other player accounts.
 * Maximum number of cracked accounts registered for one IP account.
 * Redirection players to the limbo server when one of Spigot servers goes down.
+* Staff commands.
