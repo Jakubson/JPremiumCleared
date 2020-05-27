@@ -25,3 +25,5 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image4.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image5.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image6.png)
+![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image7.png)
+![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image8.png)
