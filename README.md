@@ -6,7 +6,9 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 ## Features
 * JPremium logins automatically premium players. They also can disable that feature and login with a password. Automatic registration is dependent on your JPremium configuration. You can set automatic registration premium players, but then cracked players with premium nicknames cannot join to the server.
 * JPremium has fully supported changing premium nicknames. Premium players who change their nickname will not lose any data and will not be able to steal any cracked accounts. Please remember that feature works only when you have enabled `fixedUniqueIds` in your JPremium configuration. If you have not enabled that option, premium players will not be able to join the server after changing their nickname.
-* JPremium has a session feature for cracked players. When cracked players have a session, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
+* JPremium has sessions for cracked players. When cracked players have a session, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
+* JPremium has protection against bots. The first protection is forbidding joining if JPremium detects too many joining requests. Even if bots join the server, bots cannot register because JPremium requires entering captcha codes from maps. You can change an icon on the captcha maps.
+* JPremium connects all not logged players with the limbo server. They have to login or register there and then they will be connected with the main server or their last server on which they were before quitting from the server. When one of the servers is shut down, all players from that server will be redirected to the limbo server. And when that server comebacks, all redirected players will be connected to that server again.
 
 ## Images
 
