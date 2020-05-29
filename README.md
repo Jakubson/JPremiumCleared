@@ -13,10 +13,9 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 * JPremium uses salted SHA-256 to hash cracked player passwords. The plugin alos requires entering strong passwords by cracked players.
 
 ## Requirements
-* JPremium requires the following stuff to work: BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
+JPremium requires the following stuff to work: BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
 
 ## Images
-
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image1.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image2.png)
@@ -26,3 +25,6 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image6.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image7.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image8.png)
+
+## Terms
+* 
