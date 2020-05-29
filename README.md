@@ -12,6 +12,9 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 * JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but please remember that any plugins do not warrant full protection, I recommend having a firewall!
 * JPremium uses salted SHA-256 to hash cracked player passwords. The plugin alos requires entering strong passwords by cracked players.
 
+## Requirements
+* JPremium requires the following stuff to work: BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
+
 ## Images
 
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
