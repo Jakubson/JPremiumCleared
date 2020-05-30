@@ -10,10 +10,10 @@ JPremium requires the following stuff to work: Java 8+, BungeeCord server, at le
 * JPremium has fully **supported changing premium nicknames**. Premium players who change their nickname will not lose any data and will not be able to steal any cracked accounts. Please remember that feature works only when you have enabled `fixedUniqueIds` in your JPremium configuration. If you have not enabled that option, premium players will not be able to join the server after changing their nickname.
 * JPremium has **sessions for cracked players**. When cracked players have a session, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
 * JPremium has **protection against bots**. The first protection is forbidding joining if JPremium detects too many joining requests. Even if bots join the server, bots cannot register because JPremium requires entering **captcha codes from maps**. You can change the icon on the captcha maps.
-* JPremium connects all not logged players with the limbo server. They have to login or register there and then they will be connected with the main server or their last server on which they were before quitting from the server. When one of the servers is shut down, all players from that server will be redirected to the limbo server. And when that server comebacks, all redirected players will be connected to that server again.
+* JPremium connects all not logged players with the **limbo server**. They have to login or register there and then they will be connected with the main server or their last server on which they were before quitting from the server. When one of the servers is shut down, all players from that server will be redirected to the limbo server. And when that server comebacks, all redirected players will be connected to that server again.
 * JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but please remember that any plugins do not warrant full protection, I recommend having a firewall!
-* JPremium uses salted SHA-256 to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players.
-* JPremium is fully configurable, so you can change almost all features and messages.
+* JPremium uses **salted SHA-256** to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players.
+* JPremium is **fully configurable**so you can change almost all features and messages.
 
 ## Images
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
