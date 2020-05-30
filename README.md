@@ -27,4 +27,11 @@ JPremium requires the following stuff to work: BungeeCord server, at least two S
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image8.png)
 
 ## Terms
-* 
+Terms of use
+* The buyer can use the product only on their own server.
+* The buyer cannot edit the source code of the product without the author agreement.
+* The buyer cannot distribute the product or the source code of the product without the author agreement.
+* The author does not have to refund the buyer's money for their request.
+* The author does not warrant the product is not lacking errors and is not liable for damages caused by using the product.
+* The author makes an effort to repair or improve the product, but does not warrant updating the product or repairing all issues.
+
