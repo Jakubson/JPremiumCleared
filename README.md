@@ -5,6 +5,9 @@ JPremium is an authorization BungeeCord plugin. JPremium is different from other
 
 JPremium requires the following stuff to work: Java 8+, BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
 
+## New JPremium?
+JPremium Cleared is not a regular update. It is a new JPremium version at all which was written from scratch.
+
 ## Features
 * JPremium logins **automatically premium players**. They also can disable that feature and login with a password. Automatic registration is dependent on your JPremium configuration. You can set automatic registration premium players, but then cracked players with premium nicknames cannot join to the server.
 * JPremium has fully **supported changing premium nicknames**. Premium players who change their nickname will not lose any data and will not be able to steal any cracked accounts. Please remember that feature works only when you have enabled `fixedUniqueIds` in your JPremium configuration. If you have not enabled that option, premium players will not be able to join the server after changing their nickname.
@@ -14,7 +17,7 @@ JPremium requires the following stuff to work: Java 8+, BungeeCord server, at le
 * JPremium connects all not logged players with the **limbo server**. They have to login or register there and then they will be connected with the main server or their last server on which they were before quitting from the server. When one of the servers is shut down, all players from that server will be redirected to the limbo server. And when that server comebacks, all redirected players will be connected to that server again.
 * JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but please remember that any plugins do not warrant full protection, I recommend having a firewall!
 * JPremium uses **salted SHA-256** to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players.
-* JPremium is **fully configurable**so you can change almost all features and messages.
+* JPremium is **fully configurable**, so you can change almost all features and messages.
 
 ## Images
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
