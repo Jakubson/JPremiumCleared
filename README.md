@@ -3,10 +3,9 @@
 ## Introduce
 JPremium is an authorization BungeeCord plugin. JPremium is different from other popular authorization plugins. The plugin has a very necessary feature, which many servers need, automatically login premium players. The plugin works based on a limbo server structure. That means you have to have a separate Spigot server which is the limbo server. On the below image, you can see the limbo server is an authorization server, where players login or register. 
 
-JPremium requires the following stuff to work: Java 8+, BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
+JPremium Cleared is not a regular update. It is a new JPremium version at all which was written from scratch. There are fixed issues, improved performance and added new features. The old version of JPremium is still supported, but all new features will be added to JPremium Cleared.
 
-## New JPremium?
-JPremium Cleared is not a regular update. It is a new JPremium version at all which was written from scratch.
+JPremium requires the following stuff to work: Java 8+, BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
 
 ## Features
 * JPremium logins **automatically premium players**. They also can disable that feature and login with a password. Automatic registration is dependent on your JPremium configuration. You can set automatic registration premium players, but then cracked players with premium nicknames cannot join to the server.
