@@ -7,7 +7,7 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 
 ## Features
 * JPremium logins **automatically premium players**. They also can disable that feature and login with a password. Automatic registration is dependent on your JPremium configuration. You can set automatic registration premium players, but then cracked players with premium nicknames cannot join to the server.
-* JPremium has fully **supported changing premium nicknames**. Premium players who change their nickname will not lose any data and will not be able to steal any cracked accounts. Please remember that feature works only when you have enabled `fixedUniqueIds` in your JPremium configuration. If you have not enabled that option, premium players will not be able to join the server after changing their nickname.
+* JPremium has fully **supported changing premium nicknames**. Premium players who change their nickname will not lose any data and will not be able to steal any cracked accounts because the plugin uses **fixed unqiue ids**. Please remember that feature works only when you have enabled `fixedUniqueIds` in your JPremium configuration. If you have not enabled that option, premium players will not be able to join the server after changing their nickname.
 * JPremium has **sessions for cracked players**. When cracked players have a session, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
 * JPremium has **mail integration** for cracked players, so they can add mail. When they lose their password, they can recovery the password by mails.
 * JPremium has **protection against bots**. The first protection is forbidding joining if JPremium detects too many joining requests. Even if bots join the server, bots cannot register because JPremium requires entering **captcha codes from maps**. You can change the icon on the captcha maps (please see images section).
@@ -17,6 +17,9 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 * JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but please remember that any plugins do not warrant full protection, I recommend having a firewall!
 * JPremium uses **salted SHA-256** to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players. You can also limit registration from one IP address.
 * JPremium is **fully configurable**, so you can change almost all features and messages.
+
+## Requirements
+
 
 ## Images
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
