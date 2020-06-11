@@ -1,7 +1,7 @@
 ![Theme](https://raw.githubusercontent.com/Jakubson/JPremium/master/images/916fd6ff9b545ba89a7f395da3d113e34b1c6233.png)
 
 ## Introduce
-These days the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorization plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I  want you to present JPremium.
+Nowadays the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorization plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I  want you to present JPremium.
 
 JPremium is an advanced BungeeCord authorisation plugin. JPremium is different from other popular authorization plugins. The plugin has very necessary features, which many servers need, automatically login premium players and sessions for cracked players. List of all features with description you can find below.
 
