@@ -1,11 +1,9 @@
 ![Theme](https://raw.githubusercontent.com/Jakubson/JPremium/master/images/916fd6ff9b545ba89a7f395da3d113e34b1c6233.png)
 
 ## Introduce
-JPremium is an authorization BungeeCord plugin. JPremium is different from other popular authorization plugins. The plugin has a very necessary feature, which many servers need, automatically login premium players. The plugin works based on a limbo server structure. That means you have to have a separate Spigot server which is the limbo server. On the below image, you can see the limbo server is an authorization server, where players login or register. 
+These days the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorization plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I  want you to present JPremium.
 
-JPremium Cleared is not a regular update. It is a new JPremium version at all which was written from scratch. There are fixed issues, improved performance and added new features. The old version of JPremium is still supported, but all new features will be added to JPremium Cleared.
-
-JPremium requires the following stuff to work: Java 8+, BungeeCord server, at least two Spigot servers, MySQL database and the Internet connection.
+JPremium is an advanced BungeeCord authorisation plugin. JPremium is different from other popular authorization plugins. The plugin has very necessary features, which many servers need, automatically login premium players and sessions for cracked players. List of all features with description you can find below.
 
 ## Features
 * JPremium logins **automatically premium players**. They also can disable that feature and login with a password. Automatic registration is dependent on your JPremium configuration. You can set automatic registration premium players, but then cracked players with premium nicknames cannot join to the server.
