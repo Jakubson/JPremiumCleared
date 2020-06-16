@@ -7,7 +7,7 @@ Nowadays the majority of servers transform into networks with many backend serve
 
 JPremium is an advanced BungeeCord authorisation plugin. JPremium is different from other popular authorisation plugins. The plugin has very necessary features, which many servers need, automatic login premium players and sessions for cracked players. List of all features with description you can find below.
 
-All resources of the plugin you can find on [this site](). The plugin wiki page be located [here (https://github.com/Jakubson/JPremiumCleared/wiki).
+[Configuration]() | [Messages]() | [Wiki](https://github.com/Jakubson/JPremiumCleared/wiki) | [Terms]()
 
 ## Features
 * JPremium has the automatic login premium players feature. They also can disable that feature and login with passwords. Automatic registration is dependent on your JPremium configuration. You can set automatic registration premium players, but then cracked players with premium nicknames cannot join to the server.
