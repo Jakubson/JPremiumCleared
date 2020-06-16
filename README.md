@@ -12,7 +12,7 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 
 * JPremium supports changing premium nicknames. Premium players who change their nicknames will not lose any data and will not be able to steal any cracked accounts because the plugin uses fixed unique ids. That feature works only when you enable the `fixedUniqueIds` option in your JPremium configuration. If you do not enable it, premium players will not be able to join the server after changing their nicknames.
 
-* JPremium has the session feature. When cracked players have sessions, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
+* JPremium has the session feature for cracked players. When they have sessions, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
 
 * JPremium has mail integration. Cracked players can add their mails. When they lose their passwords, they can recover passwords by mails.
 
