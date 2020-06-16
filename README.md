@@ -1,7 +1,9 @@
 ![Theme](https://raw.githubusercontent.com/Jakubson/JPremium/master/images/916fd6ff9b545ba89a7f395da3d113e34b1c6233.png)
 
 ## Introduce
-Nowadays the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorization plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I  want you to present JPremium.
+**Before purchasing, please read the whole description and remember JPremium requires a BungeeCord server, at least two Spigot servers, Internet connection and Java 8+! Please also check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
+
+Nowadays the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorization plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I want you to present JPremium.
 
 JPremium is an advanced BungeeCord authorisation plugin. JPremium is different from other popular authorization plugins. The plugin has very necessary features, which many servers need, automatically login premium players and sessions for cracked players. List of all features with description you can find below.
 
@@ -17,9 +19,6 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 * JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but please remember that any plugins do not warrant full protection, I recommend having a firewall!
 * JPremium uses **salted SHA-256** to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players. You can also limit registration from one IP address.
 * JPremium is **fully configurable**, so you can change almost all features and messages.
-
-## Requirements
-
 
 ## Images
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
