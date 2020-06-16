@@ -30,7 +30,7 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 
 * JPremium is fully configurable, so you can change almost all features and messages. For example: you can even change all command aliases in your JPremium configuration file.
 
-* JPremium support 1.8 - 1.15.2 version of Minecraft.
+* JPremium supports 1.8 - 1.15.2 version of Minecraft.
 
 ## Images
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
