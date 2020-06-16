@@ -33,8 +33,8 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 * JPremium supports 1.8 - 1.15.2 version of Minecraft.
 
 ## Images
-![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/twoServers.png) The limbo and the main server as the other servers.
-![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/oneServer.png) The limbo and the main server as the same server.
+![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/twoServers.png)
+![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/oneServer.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image1.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image2.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image3.png)
