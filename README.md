@@ -1,7 +1,7 @@
 ![Theme](https://raw.githubusercontent.com/Jakubson/JPremium/master/images/916fd6ff9b545ba89a7f395da3d113e34b1c6233.png)
 
 ## Gneral
-**Before purchase, please read the whole description and remember JPremium requires one BungeeCord server, at least two Spigot servers, a MySQL database, Internet connection and Java 8+! Please also check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
+**Before purchase, please read the whole description and remember JPremium requires one BungeeCord server, at least two Spigot servers, a MySQL database, Internet connection and Java 8+! Please check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
 
 Nowadays the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorisation plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I want you to present JPremium.
 
@@ -45,12 +45,3 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image6.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image7.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image8.png)
-
-## Terms
-* The buyer can use the product only on their own server.
-* The buyer cannot edit the source code of the product without the author agreement.
-* The buyer cannot distribute the product or the source code of the product without the author agreement.
-* The author does not have to refund the buyer's money for their request.
-* The author does not warrant the product is not lacking errors and is not liable for damages caused by using the product.
-* The author makes an effort to repair or improve the product, but does not warrant updating the product or repairing all issues.
-
