@@ -1,7 +1,7 @@
 ![Theme](https://raw.githubusercontent.com/Jakubson/JPremium/master/images/916fd6ff9b545ba89a7f395da3d113e34b1c6233.png)
 
 ## Introduce
-**Before purchasing, please read the whole description and remember JPremium requires a BungeeCord server, at least two Spigot servers, Internet connection and Java 8+! Please also check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
+> **Before purchasing, please read the whole description and remember JPremium requires a BungeeCord server, at least two Spigot servers, Internet connection and Java 8+! Please also check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
 
 Nowadays the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorization plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I want you to present JPremium.
 
