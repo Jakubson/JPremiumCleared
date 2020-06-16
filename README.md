@@ -22,12 +22,13 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 
 * JPremium connects all not logged players with the limbo server. They have to login or register there and then they will be connected with the main server or their last servers on which they were before quit from the server. Logged and premium players are directly connected with the main server or their last servers. The limbo server and the main server can be the same server.
 
+* JPremium has the redirection feature. When one of the servers is shutting down, all players from that server will be redirected to the limbo server. And when that server comebacks, all redirected players will be connected to that server again.
 
-## To-do
-* JPremium has a **redirection feature**. When one of the servers is shut down, all players from that server will be redirected to the limbo server. And when that server comebacks, all redirected players will be connected to that server again.
-* JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but please remember that any plugins do not warrant full protection, I recommend having a firewall!
-* JPremium uses **salted SHA-256** to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players. You can also limit registration from one IP address.
-* JPremium is **fully configurable**, so you can change almost all features and messages.
+* JPremium forbids joining directly with Spigot servers without your BungeeCord server. The plugin uses access tokens to validate connections. It is a very good means of protection, but remember any plugins do not warrant full protection, I recommend having a firewall!
+
+* JPremium uses salted SHA-256 to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players. You can also limit registration from one IP address.
+
+* JPremium is fully configurable, so you can change almost all features and messages.
 
 ## Images
 ![Network Structure](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/NetworkStructure.png)
