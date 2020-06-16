@@ -28,7 +28,7 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 
 * JPremium uses salted SHA-256 to hash cracked player passwords. The plugin also requires entering strong passwords by cracked players. You can also limit registration from one IP address.
 
-* JPremium is fully configurable, so you can change almost all features and messages.
+* JPremium is fully configurable, so you can change almost all features and messages. For example: you can even change all command aliases in your JPremium configuration file.
 
 * JPremium support 1.8 - 1.15.2 version of Minecraft.
 
