@@ -1,7 +1,7 @@
 ![Theme](https://raw.githubusercontent.com/Jakubson/JPremium/master/images/916fd6ff9b545ba89a7f395da3d113e34b1c6233.png)
 
 ## Introduce
-**Before purchase, please read the whole description and remember JPremium requires a BungeeCord server, at least two Spigot servers, a MySQL database, Internet connection and Java 8+! Please also check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
+**Before purchase, please read the whole description and remember JPremium requires one BungeeCord server, at least two Spigot servers, a MySQL database, Internet connection and Java 8+! Please also check working principle of [fixing unique ids](https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids)!**
 
 Nowadays the majority of servers transform into networks with many backend servers connected with one proxy server, therefore standard authorisation plugins do not perform their function today. The plugins became obsolete, they do not catch up with the server progress, they do not use fully the latest Minecraft features. So, I want you to present JPremium.
 
@@ -33,8 +33,8 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 * JPremium supports 1.8 - 1.15.2 version of Minecraft.
 
 ## Images
-![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/twoServers.png)
-![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/oneServer.png)
+![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/twoServers.png) The limbo and the main server as the other servers.
+![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/oneServer.png) The limbo and the main server as the same server.
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image1.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image2.png)
 ![](https://raw.githubusercontent.com/Jakubson/JPremiumCleared/master/images/image3.png)
