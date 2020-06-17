@@ -16,7 +16,7 @@ JPremium is an advanced BungeeCord authorisation plugin. JPremium is different f
 
 * JPremium has the session feature for cracked players. When they have sessions, they do not have to login every joining. You can set automatic starting sessions for specified time after registration and login.
 
-* JPremium has mail integration. Cracked players can add their mails. When they lose their passwords, they can recover passwords by mails. You can also blacklist or whitelist some domains and limit usuing one mail for one account.
+* JPremium has mail integration. Cracked players can add their mails. When they lose their passwords, they can recover passwords by mails.
 
 * JPremium has protection against bots. The first protection is forbidding joining when JPremium detects too many joining requests. Even if bots join the server, bots cannot register because JPremium requires entering captcha codes from maps. You can change the icon on the captcha maps (please see the second image in the images section).
 
