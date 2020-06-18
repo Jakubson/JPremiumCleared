@@ -1,0 +1,27 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                        C O N F I G U R A T I O N                                     |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+version: '1.0.0'
+
+# The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
+# Please enter fully random unique value! Not: 'your-server-name-jpremium'!
+# The same token you have to enter on your BungeeCord server.
+accessToken: ''
+
+# The hotbar slot number (0-9) where unregistered cracked players are given captcha maps.
+# If it has -1 value, players will not receive captcha maps.
+# One of your all Spigot servers has to have this value greater than -1.
+captchaMapSlot: -1
+
+# Players which do not send the valid access token will be disconnected with this reason.
+kickMessage: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
+
+# The text on captcha maps.
+# You can also change the image on captcha maps by replacing 'image.png' file.
+captchaMessage: 'Your captcha is %captcha%'

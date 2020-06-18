@@ -1,0 +1,97 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                        C O N F I G U R A T I O N                                     |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+version: '1.0.0'
+
+# JPremium currently supports only MySQL databases.
+# When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
+# If you have issues, please see this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#database-issues
+storageHost: ''
+storagePort: 3306
+storageDatabase: ''
+storageUser: ''
+storagePassword: ''
+storageUseSSL: true
+
+# The mail server which is used to send mails.
+# Please enter data only if you want to use the passwords recovery system.
+# If you do not want to use it, please also disable the change mail address and recovery password commands.
+mailHost: ''
+mailPort: 25
+mailUser: ''
+mailPassword: ''
+mailUseTLS: true
+
+# The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
+# Please enter fully random unique value! Not: 'your-server-name-jpremium'!
+# The same token you have to enter on all your Spigot servers.
+accessToken: ''
+
+# The limbo server name in your BungeeCord network.
+# Not authorised players are redirected to the server.
+limboServerName: 'limbo'
+
+# The main server name in your BungeeCord network.
+# Authorised players are redirected to the server.
+mainServerName: 'main'
+
+# Should JPremium set new players unique ids as random (true) or as offline (false).
+# When it is disabled, premium players cannot join with changed nicknames.
+fixedUniqueIds: true
+
+# Should JPremium force new players to register on your website.
+registerOnWebsite: false
+
+# Should JPremium register new premium players.
+# When it is enabled, cracked players with premium nickname cannot join to your server.
+registerPremiumUsers: true
+
+# Should JPremium redirect players to their last server where they were before quit.
+redirectToLastServer: true
+
+# Should JPremium redirect players to their last server when their last servers is online after they were redirected to the limbo server.
+redirectToLastOnlineServer: true
+
+# Should JPremium redirect players to the limbo server from the server which is shutting down.
+redirectToLimbo: true
+
+# Should JPremium use the backup server when the official server is down to authorise players.
+# The backup server does not warrant correctness of authorisation.
+useBackupServer: false
+
+# The maximum quantity of profiles which cracked players can register using the same IP addresses.
+# When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
+maximumProfilesPerAddress: 2
+
+# The maximum time (in seconds) which cracked players have for login or register.
+maximumAuthorisationTime: 90
+
+# The maximum time (in minutes) for which cracked players can start sessions?
+# Sessions work only when cracked players have the same IP addresses, so it is not recommended to set the value too high.
+maximumSessionTime: 2880
+
+# The session time (in minutes) which is automatically started after cracked players login or register.
+autoSessionTime: 1440
+
+# The maximum quantity of join requests which can be processed within 3 minutes.
+# If it is exceed, the next join requests are rejected.
+antiBotSensitive: 150
+
+# The safe password pattern (in regular expression). Cracked players' passwords have to match to it.
+# The default pattern requires to use at least one uppercase letter, lowercase letter, number, special char and have the length from 6 to 25 chars.
+# If you do not want such a requirement, set it to '[\S]{6,25}'.
+safePasswordPattern: '^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z]).{6,25}$'
+
+# The commands which not logged cracked players can execute.
+logoutUserCommands: [login, register, l]
+
+# The command aliases for player commands.
+# To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]'.
+# If you want to disable a command, you have to enter the command to the 'disabled_commands' list in your BungeeCord configuration file.
+loginCommandAliases: [l]
