@@ -81,12 +81,17 @@ autoSessionTime: 1440
 
 # The maximum quantity of join requests which can be processed within 3 minutes.
 # If it is exceed, the next join requests are rejected.
-antiBotSensitive: 150
+antiBotSensitive: 120
 
 # The safe password pattern (in regular expression). Cracked players' passwords have to match to it.
 # The default pattern requires to use at least one uppercase letter, lowercase letter, number, special char and have the length from 6 to 25 chars.
 # If you do not want such a requirement, set it to '[\S]{6,25}'.
 safePasswordPattern: '^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z]).{6,25}$'
+
+# The hostnames which players can use to connect with your BungeeCord server.
+# If you want to disable it, please set the value to '[]'.
+# All host names have to have ports, for example: 'mc.example:25565'.
+acceptedHostnames: []
 
 # The commands which not logged cracked players can execute.
 logoutUserCommands: [login, register, l]
