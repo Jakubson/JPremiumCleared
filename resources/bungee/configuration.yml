@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: '1.0.0'
+version: 'CLEARED-Bungee-1.0.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -96,7 +96,7 @@ acceptedHostnames: []
 # The commands which not logged cracked players can execute.
 logoutUserCommands: [login, register, l]
 
-# The command aliases for player commands.
+# The command aliases.
 # To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]'.
 # If you want to disable a command, you have to enter the command to the 'disabled_commands' list in your BungeeCord configuration file.
 loginCommandAliases: [l]
