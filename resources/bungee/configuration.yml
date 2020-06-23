@@ -94,7 +94,7 @@ safePasswordPattern: '^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z]).{6,25}$
 acceptedHostnames: []
 
 # The commands which not logged cracked players can execute.
-logoutUserCommands: [login, register, l]
+logoutUserCommands: [login, register, recoverypassword, l]
 
 # The command aliases.
 # To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]'.
