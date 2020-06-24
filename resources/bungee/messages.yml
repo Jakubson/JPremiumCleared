@@ -91,6 +91,8 @@ registerSuccessRegisteredFadeOut: 30
 registerSuccessRegisteredChat: |
   &8[&a&l»&8] &7Hi on Minecraft Server Network! For more information, please execute /help command!
   &8[&a&l»&8] &7If you have a premium launcher, you can execute /premium command to automatically login the next time when you join!
+  &8[&a&l»&8] &7Your session has been automatically started for 24 hours! If you want to destroy it, please execute /destroysession command!
+  &8[&a&l»&8] &7We also recommend to add an mail address, to add it please execute /changemailaddress <password> <mail> command!
 
 unregisterErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
