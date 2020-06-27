@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.0.0'
+version: 'CLEARED-Bungee-1.1.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -61,13 +61,17 @@ redirectToLastOnlineServer: true
 # Should JPremium redirect players to the limbo server from the server which is shutting down.
 redirectToLimbo: true
 
+# Should JPremium verify captcha codes which are entered by cracked players.
+# If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
+verifyCaptchaCode: true
+
 # Should JPremium use the backup server when the official server is down to authorise players.
 # The backup server does not warrant correctness of authorisation.
 useBackupServer: false
 
 # The maximum quantity of profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
-maximumProfilesPerAddress: 2
+maximumUserProfilesPerAddress: 2
 
 # The maximum time (in seconds) which cracked players have for login or register.
 maximumAuthorisationTime: 90
