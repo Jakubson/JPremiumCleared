@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.1.0'
+version: 'CLEARED-Bungee-1.2.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -33,13 +33,13 @@ mailUseTLS: true
 # The same token you have to enter on all your Spigot servers.
 accessToken: ''
 
-# The limbo server name in your BungeeCord network.
-# Not authorised players are redirected to the server.
-limboServerName: 'limbo'
+# The limbo server names in your BungeeCord network.
+# Not authorised players are redirected to the servers.
+limboServerNames: [limbo]
 
-# The main server name in your BungeeCord network.
-# Authorised players are redirected to the server.
-mainServerName: 'main'
+# The main server names in your BungeeCord network.
+# Authorised players are redirected to the servers.
+mainServerNames: [main]
 
 # Should JPremium set new players unique ids as random (true) or as offline (false).
 # When it is disabled, premium players cannot join with changed nicknames.
@@ -53,13 +53,13 @@ registerOnWebsite: false
 registerPremiumUsers: true
 
 # Should JPremium redirect players to their last server where they were before quit.
-redirectToLastServer: true
+lastServerRedirection: true
 
-# Should JPremium redirect players to their last server when their last servers is online after they were redirected to the limbo server.
-redirectToLastOnlineServer: true
+# Should JPremium redirect players to one of the main server from the server which is shutting down.
+disconnectRedirection: true
 
-# Should JPremium redirect players to the limbo server from the server which is shutting down.
-redirectToLimbo: true
+# Should JPremium disconnect cracked players who enter wrong password during login.
+disconnectWhenWrongPassword: false
 
 # Should JPremium verify captcha codes which are entered by cracked players.
 # If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
@@ -69,7 +69,7 @@ verifyCaptchaCode: true
 # The backup server does not warrant correctness of authorisation.
 useBackupServer: false
 
-# The maximum quantity of profiles which cracked players can register using the same IP addresses.
+# The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
 maximumUserProfilesPerAddress: 2
 
@@ -81,16 +81,14 @@ maximumAuthorisationTime: 90
 maximumSessionTime: 2880
 
 # The session time (in minutes) which is automatically started after cracked players login or register.
-autoSessionTime: 1440
+autoSessionTime: 720
 
 # The maximum quantity of join requests which can be processed within 3 minutes.
 # If it is exceed, the next join requests are rejected.
 antiBotSensitive: 120
 
-# The safe password pattern (in regular expression). Cracked players' passwords have to match to it.
-# The default pattern requires to use at least one uppercase letter, lowercase letter, number, special char and have the length from 6 to 25 chars.
-# If you do not want such a requirement, set it to '[\S]{6,25}'.
-safePasswordPattern: '^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[a-z]).{6,25}$'
+# The safe password pattern (in regular expression). Cracked player passwords have to match to it.
+safePasswordPattern: '[/S]{6,25}'
 
 # The hostnames which players can use to connect with your BungeeCord server.
 # If you want to disable it, please set the value to '[]'.
