@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.1.0'
+version: 'CLEARED-Bungee-1.2.0'
 
 preLoginErrorAntiBot: '&8[&c&l»&8] &7Please try join to the server in 3 minutes!'
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
@@ -24,19 +24,13 @@ staticContentBossBarTitle: '&8[&a&l»&8] &7You are playing on &aMC.EXAMPLE.COM &
 staticContentBossBarColor: 2
 staticContentBossBarDivision: 0
 
-limboRedirectionTitle: '&c&lRedirected!'
-limboRedirectionSubTitle: '&f '
-limboRedirectionFadeIn: 30
-limboRedirectionStay: 100
-limboRedirectionFadeOut: 30
-limboRedirectionChat: '&8[&c&l»&8] &7Your server has been turned off or you have been kicked, so you have been automatically connected to the limbo server! Please wait until your last server comes back and you will be automatically connect to that server or you can go to an different server using /server command!'
-
-lastServerRedirectionTitle: '&a&lRedirected!'
-lastServerRedirectionSubTitle: '&f '
-lastServerRedirectionFadeIn: 30
-lastServerRedirectionStay: 100
-lastServerRedirectionFadeOut: 30
-lastServerRedirectionChat: '&8[&a&l»&8] &7Your server where you were last on has came back, so you have been automatically connected to this server!'
+redirectionMainServerTitle: '&c&lRedirected!'
+redirectionMainServerSubTitle: '&f '
+redirectionMainServerFadeIn: 30
+redirectionMainServerStay: 100
+redirectionMainServerFadeOut: 30
+redirectionMainServerChat: '&8[&c&l»&8] &7Your server has been turned off or you have been kicked, so you have been automatically connected to the main server! You can go to a different server using /server command!'
+redirectionErrorNoOnlineServers: '&8[&c&l»&8] &7Unfortunately, there are not any servers online with which we can connect you!'
 
 joinSessionPremiumTitle: '&a&lHi %nickname%'
 joinSessionPremiumSubTitle: '&aA premium session!'
@@ -79,7 +73,7 @@ loginSuccessLoggedChat: ''
 registerErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7You are already registered!'
 registerErrorUsage: '&8[&c&l»&8] &7Usage: /register <password> <captcha>'
-registerErrorUnsafePassword: '&8[&c&l»&8] &7An unsafe password! A safe password should contain at least one uppercase letter, lowercase letter, number, special char and has the length from 6 to 25 chars!'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
 registerErrorWrongCaptcha: '&8[&c&l»&8] &7A wrong captcha!'
 registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7You have too many accounts!'
 registerErrorTimeElapsed: '&8[&c&l»&8] &7An authorisation time elapsed!'
@@ -91,7 +85,7 @@ registerSuccessRegisteredFadeOut: 30
 registerSuccessRegisteredChat: |
   &8[&a&l»&8] &7Hi on Minecraft Server Network! For more information, please execute /help command!
   &8[&a&l»&8] &7If you have a premium launcher, you can execute /premium command to automatically login the next time when you join!
-  &8[&a&l»&8] &7Your session has been automatically started for 24 hours! If you want to destroy it, please execute /destroysession command!
+  &8[&a&l»&8] &7Your session has been automatically started for 12 hours! If you want to destroy it, please execute /destroysession command!
   &8[&a&l»&8] &7We also recommend to add an mail address, to add it please execute /changemailaddress <password> <mail> command!
 
 unregisterErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
@@ -105,7 +99,7 @@ changePasswordErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
 changePasswordErrorUsage: '&8[&c&l»&8] &7Usage: /changepassword <current-password> <new-password>'
-changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7An unsafe new password! A safe new password should contain at least one uppercase letter, lowercase letter, number, special char and has the length from 6 to 25 chars!'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
 changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7A wrong current password!'
 changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Your password has been changed!'
 
@@ -120,7 +114,7 @@ premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7You are a premium player now!'
 
 crackedErrorUserNotPremium: '&8[&c&l»&8] &7You are not a premium player!'
 crackedErrorUsage: '&8[&c&l»&8] &7Usage: /cracked <password>'
-crackedErrorUnsafePassword: '&8[&c&l»&8] &7An unsafe password! A safe new password should contain at least one uppercase letter, lowercase letter, number, special char and has the length from 6 to 25 chars!'
+crackedErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
 crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7You are a cracked player now!'
 
 startSessionErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
