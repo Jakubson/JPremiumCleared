@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.2.0'
+version: 'CLEARED-Bungee-1.3.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -78,27 +78,34 @@ maximumAuthorisationTime: 90
 
 # The maximum time (in minutes) for which cracked players can start sessions?
 # Sessions work only when cracked players have the same IP addresses, so it is not recommended to set the value too high.
-maximumSessionTime: 2880
+maximumSessionTime: 1440
 
 # The session time (in minutes) which is automatically started after cracked players login or register.
 autoSessionTime: 720
+
+# The absent time (is days) after which cracked players are automatically unregistered.
+automaticUnregisterTime: 720
+
+# The hashing algorithm which is used to hash cracked player passwords.
+# There are two options: SHA256, BCRYPT.
+passwordHashingAlgorithm: SHA256
 
 # The maximum quantity of join requests which can be processed within 3 minutes.
 # If it is exceed, the next join requests are rejected.
 antiBotSensitive: 120
 
 # The safe password pattern (in regular expression). Cracked player passwords have to match to it.
-safePasswordPattern: '[/S]{6,25}'
+safePasswordPattern: '[\S]{6,25}'
 
 # The hostnames which players can use to connect with your BungeeCord server.
 # If you want to disable it, please set the value to '[]'.
-# All host names have to have ports, for example: 'mc.example:25565'.
+# All host names have to have ports, for example: 'acceptedHostnames: [mc.example:25565]'.
 acceptedHostnames: []
 
 # The commands which not logged cracked players can execute.
 logoutUserCommands: [login, register, recoverypassword, l]
 
 # The command aliases.
-# To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]'.
+# To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]', for example: 'changePasswordCommandAliases: [chpass]'.
 # If you want to disable a command, you have to enter the command to the 'disabled_commands' list in your BungeeCord configuration file.
 loginCommandAliases: [l]
