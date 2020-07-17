@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.2.0'
+version: 'CLEARED-Bungee-1.3.0'
 
 preLoginErrorAntiBot: '&8[&c&l»&8] &7Please try join to the server in 3 minutes!'
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
@@ -68,7 +68,12 @@ loginSuccessLoggedSubTitle: '&aLogged'
 loginSuccessLoggedFadeIn: 30
 loginSuccessLoggedStay: 100
 loginSuccessLoggedFadeOut: 30
-loginSuccessLoggedChat: ''
+loginSuccessLoggedChat: |
+  &8[&a&l»&8] &7If you do not want to login next time, please execute:
+  &f
+  &f  &a&l» &7/premium <password> - if you have a &apremium&7 luncher.
+  &f  &a&l» &7/startsession <time> - if you have a &ccracked&7 luncher.
+  &f
 
 registerErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7You are already registered!'
@@ -83,10 +88,17 @@ registerSuccessRegisteredFadeIn: 30
 registerSuccessRegisteredStay: 100
 registerSuccessRegisteredFadeOut: 30
 registerSuccessRegisteredChat: |
-  &8[&a&l»&8] &7Hi on Minecraft Server Network! For more information, please execute /help command!
-  &8[&a&l»&8] &7If you have a premium launcher, you can execute /premium command to automatically login the next time when you join!
-  &8[&a&l»&8] &7Your session has been automatically started for 12 hours! If you want to destroy it, please execute /destroysession command!
-  &8[&a&l»&8] &7We also recommend to add an mail address, to add it please execute /changemailaddress <password> <mail> command!
+  &8[&a&l»&8] &7Hi on Minecraft Server Network! Here you have useful commands:
+  &f
+  &f  &a&l» &7/unregister <password>
+  &f  &a&l» &7/changepassword <current-password> <new-password>
+  &f  &a&l» &7/premium <password>
+  &f  &a&l» &7/cracked <password>
+  &f  &a&l» &7/startsession <time>
+  &f  &a&l» &7/destroysession
+  &f  &a&l» &7/changemailaddress <password> <mail-address>
+  &f  &a&l» &7/recoverypassword <mail-address>
+  &f
 
 unregisterErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
