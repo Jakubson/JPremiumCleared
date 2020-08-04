@@ -1,0 +1,252 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                            M E S S A G E S                                           |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+#              Translated by Randall_Rut (https://www.spigotmc.org/members/randall_rut.768072/)          #
+
+version: 'CLEARED-Bungee-1.3.1'
+
+preLoginErrorAntiBot: '&8[&c&l»&8] &7Intenta unirte al servidor en 3 minutos!'
+preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Por favor use un nickname diferente!'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Por favor cambie su nickname a &a%nickname%&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Por favor, únase al servidor a través de &amc.ticomania.net&7!'
+preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Ya estás en línea!'
+preLoginErrorServersDown: '&8[&c&l»&8] &7Los servidores de Mojang no responden!'
+preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Desafortunadamente, este servidor no admite el cambio de nickname premium, así que vuelva a su antiguo nickname: &a%nickname%&7!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Por favor registre su cuenta en &amc.example.com&7!'
+
+staticContentTabHeader: ''
+staticContentTabFooter: ''
+staticContentBossBarTitle: '&8[&a&l»&8] &7Estas jugando en &aMC.TICOMANIA.NET &8[&a&l«&8]'
+staticContentBossBarColor: 2
+staticContentBossBarDivision: 0
+
+redirectionMainServerTitle: '&c&lRedirigido!'
+redirectionMainServerSubTitle: '&f '
+redirectionMainServerFadeIn: 30
+redirectionMainServerStay: 100
+redirectionMainServerFadeOut: 30
+redirectionMainServerChat: '&8[&c&l»&8] &7Este servidor se apagó o lo expulsaron, por lo que se lo conectó automáticamente al Hub Central. Puede ir a un servidor diferente usando el comando /server!'
+redirectionErrorNoOnlineServers: '&8[&c&l»&8] &7Desafortunadamente, no hay servidores en línea con los que podamos conectarlo!'
+
+joinSessionPremiumTitle: '&a&lHola %nickname%'
+joinSessionPremiumSubTitle: '&aEres Premiun!'
+joinSessionPremiumFadeIn: 30
+joinSessionPremiumStay: 100
+joinSessionPremiunFadeOut: 30
+joinSessionPremiumChat: ''
+joinSessionCrackedTitle: '&a&lHola %nickname%'
+joinSessionCrackedSubTitle: '&aSesión Crackeada!'
+joinSessionCrackedFadeIn: 30
+joinSessionCrackedStay: 100
+joinSessionCrackedFadeOut: 30
+joinSessionCrackedChat: ''
+joinRequireLoginTitle: '&e&lNecesitas usar'
+joinRequireLoginSubTitle: '&6/login <contraseña>'
+joinRequireLoginFadeIn: 30
+joinRequireLoginStay: 1200
+joinRequireLoginFadeOut: 30
+joinRequireLoginChat: ''
+joinRequireRegisterTitle: '&e&lNecesitas usar'
+joinRequireRegisterSubTitle: '&6/register <contraseña> <captcha>'
+joinRequireRegisterFadeIn: 30
+joinRequireRegisterStay: 1200
+joinRequireRegisterFadeOut: 30
+joinRequireRegisterChat: ''
+
+loginErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+loginErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Ya estas registrado!'
+loginErrorUsage: '&8[&c&l»&8] &7Uso: /login <contraseña>'
+loginErrorWrongPassword: '&8[&c&l»&8] &7Contraseña incorrecta!'
+loginErrorTimeElapsed: '&8[&c&l»&8] &7Tiempo de autorización transcurrido!'
+loginSuccessLoggedTitle: '&a&lHola %nickname%'
+loginSuccessLoggedSubTitle: '&aLogueado'
+loginSuccessLoggedFadeIn: 30
+loginSuccessLoggedStay: 100
+loginSuccessLoggedFadeOut: 30
+loginSuccessLoggedChat: |
+  &8[&a&l»&8] &7Si no desea iniciar sesión la próxima vez, por favor ejecute:
+  &f
+  &f  &a&l» &7/premium <contraseña> - Si tienes un launcher &apremium&7.
+  &f  &a&l» &7/startsession <tiempo> - Si tienes un launcher &ccrackeado&7.
+  &f
+
+registerErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Usted ya está registrado!'
+registerErrorUsage: '&8[&c&l»&8] &7Uso: /register <contraseña> <captcha>'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7Su contraseña debe tener al menos 6 caracteres de longitud!'
+registerErrorWrongCaptcha: '&8[&c&l»&8] &7Captcha equivocado!'
+registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7Tienes demasiadas cuentas!'
+registerErrorTimeElapsed: '&8[&c&l»&8] &7Tiempo de autorización transcurrido!'
+registerSuccessRegisteredTitle: '&a&lHola %nickname%'
+registerSuccessRegisteredSubTitle: '&aRegistrado'
+registerSuccessRegisteredFadeIn: 30
+registerSuccessRegisteredStay: 100
+registerSuccessRegisteredFadeOut: 30
+registerSuccessRegisteredChat: |
+  &8[&a&l»&8] &7Bienvenido a la Network! Aquí tienes comandos útiles:
+  &f
+  &f  &a&l» &7/unregister <contraseña>
+  &f  &a&l» &7/changepassword <contraseña-actual> <nueva-contraseña>
+  &f  &a&l» &7/premium <contraseña>
+  &f  &a&l» &7/cracked <contraseña>
+  &f  &a&l» &7/startsession <tiempo>
+  &f  &a&l» &7/destroysession
+  &f  &a&l» &7/changemailaddress <contraseña> <email>
+  &f  &a&l» &7/recoverypassword <email>
+  &f
+
+unregisterErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+unregisterErrorUserNotLogged: '&8[&c&l»&8] &7No estás logueado!'
+unregisterErrorUsage: '&8[&c&l»&8] &7Uso: /unregister <contraseña>'
+unregisterErrorWrongPassword: '&8[&c&l»&8] &7Contraseña incorrecta!'
+unregisterSuccessUnregistered: '&8[&a&l»&8] &7Has sido des-registrado!'
+
+changePasswordErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7No estás logueado!'
+changePasswordErrorUsage: '&8[&c&l»&8] &7Uso: /changepassword <contraseña-actual> <nueva-contraseña>'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Su contraseña debe tener al menos 6 caracteres de longitud!'
+changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7Contraseña actual incorrecta!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Tu contraseña ha sido cambiada!'
+
+premiumErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+premiumErrorUserNotLogged: '&8[&c&l»&8] &7No estás logueado!'
+premiumErrorUsage: '&8[&c&l»&8] &7Usoe: /premium <contraseña>'
+premiumErrorWrongPassword: '&8[&c&l»&8] &7Contraseña incorrecta!'
+premiumErrorServersDown: '&8[&c&l»&8] &7Los servidores de Mojang no responden!'
+premiumErrorUserNotPremium: '&8[&c&l»&8] &7No tienes una cuenta premium!'
+premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Eres un jugador premium ahora!'
+
+crackedErrorUserNotPremium: '&8[&c&l»&8] &7No eres un jugador premium!'
+crackedErrorUsage: '&8[&c&l»&8] &7Uso: /cracked <contraseña>'
+crackedErrorUnsafePassword: '&8[&c&l»&8] &7Su contraseña debe tener al menos 6 caracteres de longitud!'
+crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Eres un jugador no premiun ahora!'
+
+startSessionErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+startSessionErrorUserNotLogged: '&8[&c&l»&8] &7No estás logueado!'
+startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7Ya tienes una sesión!'
+startSessionErrorUsage: '&8[&c&l»&8] &7Uso: /startsession <tiempo en minutos>'
+startSessionErrorWrongTime: '&8[&c&l»&8] &7Tiempo de sesión incorrecto!'
+startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Tu sesión ha comenzado!'
+
+destroySessionErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7No estás logueado!'
+destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7No tienes una sesión!'
+destroySessionErrorUsage: '&8[&c&l»&8] &7Uso: /destroysession'
+destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Tu sesión ha sido destruida!'
+
+changeMailAddressErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+changeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+changeMailAddressErrorUserNotLogged: '&8[&c&l»&8] &7No estás logueado!'
+changeMailAddressErrorUsage: '&8[&c&l»&8] &7Uso: /changemail <contraseña> <email>'
+changeMailAddressErrorWrongPassword: '&8[&c&l»&8] &7Contraseña incorrecta!'
+changeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7Dirección de correo incorrecta!'
+changeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7Su dirección de correo ha sido cambiada!'
+
+recoveryPasswordErrorUserPremium: '&8[&c&l»&8] &7Eres un jugador premium!'
+recoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Usted no está registrado!'
+recoveryPasswordErrorUserHasNotMailAddress: '&8[&c&l»&8] &7No tienes una direccion de correo!'
+recoveryPasswordErrorUsage: '&8[&c&l»&8] &7Uso: /recoverypassword <email>'
+recoveryPasswordErrorWrongMailAddress: '&8[&c&l»&8] &7Dirección de correo incorrecta!'
+recoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Su contraseña ha sido recuperada!'
+recoveryPasswordSuccessMailSubject: 'Tu recuperación de contraseña'
+recoveryPasswordSuccessMailMessage: 'Hola %nickname%! Ha solicitado recuperar su contraseña de la direccion IP %address%! Esta es tu nueva contraseña <b>%password%</b>. Cámbiela a medida que se une al servidor usando el comando <i>/changepassword %password% &lt;new-password&gt;</i>!'
+
+forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Uso: /userprofile <nickname>'
+forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceViewUserProfileSuccessLackOfData: '&cFalta de datos'
+forceViewUserProfileSuccessProfile: |
+  &f
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f  &a&l» &7Nickname &a&l» &7%nickname%
+  &f  &a&l» &7ID Unico &a&l» &7%unique_id%
+  &f  &a&l» &7ID Premiun &a&l» &7%premium_id%
+  &f  &a&l» &7Dirección de correo &a&l» &7%mail_address%
+  &f  &a&l» &7La sesión expira &a&l» &7%session_expire%
+  &f  &a&l» &7Ultimo servidor &a&l» &7%last_server%
+  &f  &a&l» &7Ultima direccion &a&l» &7%last_address%
+  &f  &a&l» &7Ultima vez visto &a&l» &7%last_seen%
+  &f  &a&l» &7Primera dirección &a&l» &7%first_address%
+  &f  &a&l» &7Visto por primera vez &a&l» &7%first_seen%
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f
+
+forceLoginErrorUsage: '&8[&c&l»&8] &7Uso: /forcelogin <nickname>'
+forceLoginErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceLoginErrorUserPremium: '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7%nickname% no está online!'
+forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7%nickname% ya esta logueado!'
+forceLoginSuccessLogged: '&8[&a&l»&8] &7%nickname% ha sido logueado!'
+
+forceRegisterErrorUsage: '&8[&c&l»&8] &7Uso: /forceregister <nickname> <contraseña>'
+forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceRegisterErrorUserPremium: '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7%nickname% ya está registrado!'
+forceRegisterSuccessRegistered: '&8[&a&l»&8] &7%nickname% ha sido registrado!'
+
+forceUnregisterErrorUsage: '&8[&c&l»&8] &7Uso: /forceunregister <nickname>'
+forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceUnregisterErrorUserPremium:  '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7%nickname% ha sido des-registrado!'
+
+forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Uso: /forcechangepassword <nickname> <contraseña>'
+forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceChangePasswordErrorUserPremium: '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7La contraseña de %nickname% ha sido cambiada!'
+
+forcePremiumErrorUsage: '&8[&c&l»&8] &7Uso: /forcepremium <nickname>'
+forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7%nickname% ya es un jugador premium!'
+forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forcePremiumErrorServersDown: '&8[&c&l»&8] &7Los servidores de Mojang no responden!'
+forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7%nickname% no tiene una cuenta premium!'
+forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7%nickname% es un jugador premium ahora!'
+
+forceCrackedErrorUsage: '&8[&c&l»&8] &7Uso: /forcecracked <nickname> <contraseña>'
+forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7%nickname% ya es un jugador crackeado!'
+forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7%nickname% es un jugador crackeado ahora!'
+
+forceStartSessionErrorUsage: '&8[&c&l»&8] &7Uso: /forcestartsession <nickname> <tiempo>'
+forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceStartSessionErrorUserPremium:  '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7%nickname% no está logueado!'
+forceStartSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7%nickname% ya tiene una sesión!'
+forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7Tiempo de sesión incorrecto!'
+forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7La sesión de %nickname% ha iniciado!'
+
+forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Uso: /forcedestroysession <nickname>'
+forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceDestroySessionErrorUserPremium:  '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7%nickname% does not have a session!'
+forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7%nickname%''s session has been destroyed!'
+
+forceChangeMailAddressErrorUsage: '&8[&c&l»&8] &7Uso: /forcechangemail <nickname> <email>'
+forceChangeMailAddressErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceChangeMailAddressErrorUserPremium:  '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceChangeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceChangeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7Dirección de correo incorrecta!'
+forceChangeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7La dirección de correo de %nickname% ha sido cambiada!'
+
+forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Uso: /forcerecoverypassword <nickname>'
+forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7%nickname% no existe!'
+forceRecoveryPasswordErrorUserPremium:  '&8[&c&l»&8] &7%nickname% es un jugador premium!'
+forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% no está registrado!'
+forceRecoveryPasswordErrorUserHasNotMailAddress: '&8[&c&l»&8] &7%nickname% no tiene una dirección de correo!'
+forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7La contraseña de %nickname% ha sido recuperada!'
