@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Spigot-1.3.0'
+version: 'CLEARED-Spigot-1.4.0'
 
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
 # Please enter fully random unique value! Not: 'your-server-name-jpremium'!
@@ -18,6 +18,20 @@ accessToken: ''
 # If it has '-1' value, players will not receive captcha maps.
 # If you enable verify captcha codes, one of your all Spigot servers has to have this value greater than '-1'.
 captchaMapSlot: -1
+
+# Should JPremium forbid movement of not authorised players.
+forbidMovement: true
+
+# Should JPremium forbid interactions (breaking blocks, placing blocks, attacking, chatting, etc.) of not authorised players.
+forbidInteractions: true
+
+# Should JPremium give blindness effect to not authorised players.
+blindnessEffect: true
+
+# The location where JPremium teleports all players after join.
+# If you want to disable it, please set the value to ''.
+# The schema of the location is world/x/y/z/yaw/pitch, for example: 'world/12/64/-32/90/18'.
+spawnLocation: ''
 
 # Players which do not send the valid access token will be disconnected with this reason.
 kickMessage: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
