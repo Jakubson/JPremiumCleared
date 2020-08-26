@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.3.0'
+version: 'CLEARED-Bungee-1.4.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -45,8 +45,9 @@ mainServerNames: [main]
 # When it is disabled, premium players cannot join with changed nicknames.
 fixedUniqueIds: true
 
-# Should JPremium force new players to register on your website.
-registerOnWebsite: false
+# Should JPremium force new players to register on your server, website or both side.
+# There are three options to choose: 0 - server, 1 - server and website, 2 - website.
+registerOnWebsite: 0
 
 # Should JPremium register new premium players.
 # When it is enabled, cracked players with premium nickname cannot join to your server.
