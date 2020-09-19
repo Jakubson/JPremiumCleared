@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.4.0'
+version: 'CLEARED-Bungee-1.5.0'
 
 preLoginErrorAntiBot: '&8[&c&l»&8] &7Please try join to the server in 3 minutes!'
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
@@ -17,12 +17,6 @@ preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7You are already online!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Unfortunately, this server does not support change premium nickname, so please come back to your old nickname: &a%nickname%&7!'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Please register your account on &amc.example.com&7!'
-
-staticContentTabHeader: ''
-staticContentTabFooter: ''
-staticContentBossBarTitle: '&8[&a&l»&8] &7You are playing on &aMC.EXAMPLE.COM &8[&a&l«&8]'
-staticContentBossBarColor: 2
-staticContentBossBarDivision: 0
 
 redirectionMainServerTitle: '&c&lRedirected!'
 redirectionMainServerSubTitle: '&f '
@@ -63,6 +57,9 @@ loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7You are already logged!'
 loginErrorUsage: '&8[&c&l»&8] &7Usage: /login <password>'
 loginErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 loginErrorTimeElapsed: '&8[&c&l»&8] &7An authorisation time elapsed!'
+loginBossBarTimerTitle: '&6[&e&l»&6] &eRemain time to authorization is &6%time%&es &6[&e&l«&6]'
+loginBossBarTimerColor: 2
+loginBossBarTimerDivision: 2
 loginSuccessLoggedTitle: '&a&lHi %nickname%'
 loginSuccessLoggedSubTitle: '&aLogged'
 loginSuccessLoggedFadeIn: 30
@@ -82,6 +79,9 @@ registerErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 
 registerErrorWrongCaptcha: '&8[&c&l»&8] &7A wrong captcha!'
 registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7You have too many accounts!'
 registerErrorTimeElapsed: '&8[&c&l»&8] &7An authorisation time elapsed!'
+registerBossBarTimerTitle: '&6[&e&l»&6] &eRemain time to authorization is &6%time%&es &6[&e&l«&6]'
+registerBossBarTimerColor: 2
+registerBossBarTimerDivision: 2
 registerSuccessRegisteredTitle: '&a&lHi %nickname%'
 registerSuccessRegisteredSubTitle: '&aRegistered'
 registerSuccessRegisteredFadeIn: 30
