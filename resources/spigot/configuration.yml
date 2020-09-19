@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Spigot-1.4.0'
+version: 'CLEARED-Spigot-1.5.0'
 
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
 # Please enter fully random unique value! Not: 'your-server-name-jpremium'!
@@ -15,8 +15,8 @@ version: 'CLEARED-Spigot-1.4.0'
 accessToken: ''
 
 # The hotbar slot number (1-9) where unregistered cracked players are given captcha maps.
-# If it has '-1' value, players will not receive captcha maps.
-# If you enable verify captcha codes, one of your all Spigot servers has to have this value greater than '-1'.
+# If it has -1 value, players will not receive captcha maps.
+# If you enable verify captcha codes, one of your all Spigot servers has to have this value greater than -1.
 captchaMapSlot: -1
 
 # Should JPremium forbid movement of not authorised players.
