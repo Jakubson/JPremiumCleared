@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.4.0'
+version: 'CLEARED-Bungee-1.5.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -56,6 +56,10 @@ registerPremiumUsers: true
 # Should JPremium redirect players to their last server where they were before quit.
 lastServerRedirection: true
 
+# The server names in your BungeeCord network.
+# Players will not be redirected to the servers as their last server.
+lastServerRestrictions: []
+
 # Should JPremium redirect players to one of the main server from the server which is shutting down.
 disconnectRedirection: true
 
@@ -67,7 +71,7 @@ disconnectWhenWrongPassword: false
 verifyCaptchaCode: true
 
 # Should JPremium use the backup server when the official server is down to authorise players.
-# The backup server does not warrant correctness of authorisation.
+# As the backup server JPremium use CouldFlare Workers.
 useBackupServer: false
 
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
