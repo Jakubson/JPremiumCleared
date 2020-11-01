@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.5.0'
+version: 'CLEARED-Bungee-1.6.0'
 
 preLoginErrorAntiBot: '&8[&c&l»&8] &7Please try join to the server in 3 minutes!'
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
@@ -15,7 +15,8 @@ preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname t
 preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7You are already online!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
-preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Unfortunately, this server does not support change premium nickname, so please come back to your old nickname: &a%nickname%&7!'
+preLoginErrorClaimedPremiumNickname: '&8[&c&l»&8] &7This nickname is already claimed by a premium player!'
+preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7This server does not support change premium nickname, so please come back to your old nickname: &a%nickname%&7!'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Please register your account on &amc.example.com&7!'
 
 redirectionMainServerTitle: '&c&lRedirected!'
@@ -49,7 +50,7 @@ joinRequireRegisterSubTitle: '&6/register <password> <captcha>'
 joinRequireRegisterFadeIn: 30
 joinRequireRegisterStay: 1200
 joinRequireRegisterFadeOut: 30
-joinRequireRegisterChat: ''
+joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
 
 loginErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 loginErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
@@ -76,7 +77,7 @@ registerErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7You are already registered!'
 registerErrorUsage: '&8[&c&l»&8] &7Usage: /register <password> <captcha>'
 registerErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
-registerErrorWrongCaptcha: '&8[&c&l»&8] &7A wrong captcha!'
+registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7A wrong captcha code!'
 registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7You have too many accounts!'
 registerErrorTimeElapsed: '&8[&c&l»&8] &7An authorisation time elapsed!'
 registerBossBarTimerTitle: '&6[&e&l»&6] &eRemain time to authorization is &6%time%&es &6[&e&l«&6]'
@@ -115,6 +116,7 @@ changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Your password has to have 
 changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7A wrong current password!'
 changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Your password has been changed!'
 
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 premiumErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 premiumErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 premiumErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
@@ -124,6 +126,7 @@ premiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 premiumErrorUserNotPremium: '&8[&c&l»&8] &7You do not have a premium account!'
 premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7You are a premium player now!'
 
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 crackedErrorUserNotPremium: '&8[&c&l»&8] &7You are not a premium player!'
 crackedErrorUsage: '&8[&c&l»&8] &7Usage: /cracked <password>'
 crackedErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
@@ -147,7 +150,7 @@ destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Your session has been des
 changeMailAddressErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 changeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 changeMailAddressErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
-changeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /changemail <password> <mail-address>'
+changeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /changemailaddress <password> <mail-address>'
 changeMailAddressErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 changeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7A wrong mail address!'
 changeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7Your mail address has been changed!'
@@ -205,6 +208,7 @@ forceChangePasswordErrorUserPremium: '&8[&c&l»&8] &7%nickname% is a premium pla
 forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7%nickname%''s password has been changed!'
 
+forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 forcePremiumErrorUsage: '&8[&c&l»&8] &7Usage: /forcepremium <nickname>'
 forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
 forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7%nickname% is already a premium player!'
@@ -213,6 +217,7 @@ forcePremiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!
 forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7%nickname% does not have a premium account!'
 forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7%nickname% is a premium player now!'
 
+forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 forceCrackedErrorUsage: '&8[&c&l»&8] &7Usage: /forcecracked <nickname> <password>'
 forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
 forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7%nickname% is already a cracked player!'
@@ -234,7 +239,7 @@ forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not reg
 forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7%nickname% does not have a session!'
 forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7%nickname%''s session has been destroyed!'
 
-forceChangeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /forcechangemail <nickname> <mail-address>'
+forceChangeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /forcechangemailaddress <nickname> <mail-address>'
 forceChangeMailAddressErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
 forceChangeMailAddressErrorUserPremium:  '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceChangeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
