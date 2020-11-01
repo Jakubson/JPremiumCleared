@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Spigot-1.5.0'
+version: 'CLEARED-Spigot-1.6.0'
 
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
 # Please enter fully random unique value! Not: 'your-server-name-jpremium'!
@@ -38,4 +38,4 @@ kickMessage: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
 
 # The text on captcha maps.
 # You can also change the image on captcha maps by replacing 'image.png' file.
-captchaMessage: 'Your captcha is %captcha%'
+captchaMessage: 'Your captcha is %captcha_code%'
