@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.5.0'
+version: 'CLEARED-Bungee-1.6.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -41,9 +41,11 @@ limboServerNames: [limbo]
 # Authorised players are redirected to the servers.
 mainServerNames: [main]
 
-# Should JPremium set new players unique ids as random (true) or as offline (false).
-# When it is disabled, premium players cannot join with changed nicknames.
-fixedUniqueIds: true
+# What unique ids should JPremium assign for players.
+# There are three options and each option has different restrictions.
+# It is not recommended changing this option when some players are already registered.
+# For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids
+uniqueIdsType: FIXED
 
 # Should JPremium force new players to register on your server, website or both side.
 # There are three options to choose: 0 - server, 1 - server and website, 2 - website.
@@ -70,6 +72,16 @@ disconnectWhenWrongPassword: false
 # If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
 verifyCaptchaCode: true
 
+# Should JPremium show a boss bar with remain time to authorisation for cracked players.
+showBossBarRemainAuthorisationTimer: true
+
+# Should JPremium disconnect cracked player who join second time with a claimed premium nickname.
+# It may produce sometimes false-positives.
+disconnectSecondLoginAttempt: true
+
+# Should JPremium keep a password when players change an account type for premium.
+keepPremiumUserPasswords: false
+
 # Should JPremium use the backup server when the official server is down to authorise players.
 # As the backup server JPremium use CouldFlare Workers.
 useBackupServer: false
@@ -89,10 +101,11 @@ maximumSessionTime: 1440
 autoSessionTime: 720
 
 # The absent time (is days) after which cracked players are automatically unregistered.
-automaticUnregisterTime: 720
+automaticUnregisterTime: 0
 
 # The hashing algorithm which is used to hash cracked player passwords.
-# There are two options: SHA256, BCRYPT.
+# There are two options: SHA256, SHA512, BCRYPT.
+# All of algorithms are salted.
 passwordHashingAlgorithm: SHA256
 
 # The maximum quantity of join requests which can be processed within 3 minutes.
