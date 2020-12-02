@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.6.0'
+version: 'CLEARED-Bungee-1.7.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -17,7 +17,14 @@ storagePort: 3306
 storageDatabase: ''
 storageUser: ''
 storagePassword: ''
-storageUseSSL: true
+storageProperties: [useSSL=true, verifyServerCertificate=true]
+
+# Storage connection pool settings.
+# Do not change these settings unless you know what you are doing!
+connectionPoolSize: 10
+connectionPoolIdle: 10
+connectionPoolTimeout: 5000
+connectionPoolLifetime: 1800000
 
 # The mail server which is used to send mails.
 # Please enter data only if you want to use the passwords recovery system.
@@ -68,6 +75,15 @@ disconnectRedirection: true
 # Should JPremium disconnect cracked players who enter wrong password during login.
 disconnectWhenWrongPassword: false
 
+# Should JPremium recognise Bedrock players and alters their unique ids to bedrock.
+# Works only when you install GeyserMC and Floodgate on your server.
+# For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#bedrock-support
+floodgateSupport: false
+
+# Should JPremium require to confirm a password in the register, change password and cracked commands?
+# If you enable it, please do not forget to change the usage messages in the message file.
+confirmPassword: false
+
 # Should JPremium verify captcha codes which are entered by cracked players.
 # If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
 verifyCaptchaCode: true
@@ -81,6 +97,9 @@ disconnectSecondLoginAttempt: true
 
 # Should JPremium keep a password when players change an account type for premium.
 keepPremiumUserPasswords: false
+
+# Should JPremium check server statuses and connect players only with online servers.
+checkServerStatuses: true
 
 # Should JPremium use the backup server when the official server is down to authorise players.
 # As the backup server JPremium use CouldFlare Workers.
