@@ -1,0 +1,18 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                        C O N F I G U R A T I O N                                     |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+version: 'CLEARED-Sponge-1.7.0'
+
+# The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
+# Please enter fully random unique value! Not: 'your-server-name-jpremium'!
+# The same token you have to enter on your BungeeCord server.
+accessToken: ''
+
+# Players which do not send the valid access token will be disconnected with this reason.
+disconnectionMessage: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
