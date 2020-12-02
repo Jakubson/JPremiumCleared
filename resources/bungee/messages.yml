@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.6.0'
+version: 'CLEARED-Bungee-1.7.0'
 
 preLoginErrorAntiBot: '&8[&c&l»&8] &7Please try join to the server in 3 minutes!'
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
@@ -39,6 +39,12 @@ joinSessionCrackedFadeIn: 30
 joinSessionCrackedStay: 100
 joinSessionCrackedFadeOut: 30
 joinSessionCrackedChat: ''
+joinSessionBedrockTitle: '&a&lHi %nickname%'
+joinSessionBedrockSubTitle: '&aA bedrock session!'
+joinSessionBedrockFadeIn: 30
+joinSessionBedrockStay: 100
+joinSessionBedrockFadeOut: 30
+joinSessionBedrockChat: ''
 joinRequireLoginTitle: '&e&lYou need to use'
 joinRequireLoginSubTitle: '&6/login <password>'
 joinRequireLoginFadeIn: 30
@@ -52,6 +58,7 @@ joinRequireRegisterStay: 1200
 joinRequireRegisterFadeOut: 30
 joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
 
+loginErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 loginErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 loginErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7You are already logged!'
@@ -73,9 +80,11 @@ loginSuccessLoggedChat: |
   &f  &a&l» &7/startsession <time> - if you have a &ccracked&7 luncher.
   &f
 
+registerErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 registerErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7You are already registered!'
 registerErrorUsage: '&8[&c&l»&8] &7Usage: /register <password> <captcha>'
+registerErrorDifferentPasswords: '&8[&c&l»&8] &7The passwords are different!'
 registerErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
 registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7A wrong captcha code!'
 registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7You have too many accounts!'
@@ -101,6 +110,7 @@ registerSuccessRegisteredChat: |
   &f  &a&l» &7/recoverypassword <mail-address>
   &f
 
+unregisterErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 unregisterErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 unregisterErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
@@ -108,14 +118,17 @@ unregisterErrorUsage: '&8[&c&l»&8] &7Usage: /unregister <password>'
 unregisterErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 unregisterSuccessUnregistered: '&8[&a&l»&8] &7You have been unregistered!'
 
+changePasswordErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 changePasswordErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
 changePasswordErrorUsage: '&8[&c&l»&8] &7Usage: /changepassword <current-password> <new-password>'
+changePasswordErrorDifferentNewPasswords: '&8[&c&l»&8] &7The new passwords are different!'
 changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
 changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7A wrong current password!'
 changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Your password has been changed!'
 
+premiumErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 premiumErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 premiumErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
@@ -126,12 +139,15 @@ premiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 premiumErrorUserNotPremium: '&8[&c&l»&8] &7You do not have a premium account!'
 premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7You are a premium player now!'
 
+crackedErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 crackedErrorUserNotPremium: '&8[&c&l»&8] &7You are not a premium player!'
 crackedErrorUsage: '&8[&c&l»&8] &7Usage: /cracked <password>'
+crackedErrorDifferentPasswords: '&8[&c&l»&8] &7The passwords are different!'
 crackedErrorUnsafePassword: '&8[&c&l»&8] &7Your password has to have at least 6 chars of length!'
 crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7You are a cracked player now!'
 
+startSessionErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 startSessionErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 startSessionErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
@@ -140,6 +156,7 @@ startSessionErrorUsage: '&8[&c&l»&8] &7Usage: /startsession <time in minutes>'
 startSessionErrorWrongTime: '&8[&c&l»&8] &7A wrong session time!'
 startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Your session has been started!'
 
+destroySessionErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 destroySessionErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
@@ -147,6 +164,7 @@ destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7You do not have a session!
 destroySessionErrorUsage: '&8[&c&l»&8] &7Usage: /destroysession'
 destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Your session has been destroyed!'
 
+changeMailErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 changeMailAddressErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 changeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 changeMailAddressErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
@@ -155,6 +173,7 @@ changeMailAddressErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 changeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7A wrong mail address!'
 changeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7Your mail address has been changed!'
 
+recoveryPasswordErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
 recoveryPasswordErrorUserPremium: '&8[&c&l»&8] &7You are a premium player!'
 recoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
 recoveryPasswordErrorUserHasNotMailAddress: '&8[&c&l»&8] &7You do not have a mail address!'
@@ -184,6 +203,7 @@ forceViewUserProfileSuccessProfile: |
 
 forceLoginErrorUsage: '&8[&c&l»&8] &7Usage: /forcelogin <nickname>'
 forceLoginErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceLoginErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceLoginErrorUserPremium: '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7%nickname% is not online!'
 forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
@@ -192,18 +212,21 @@ forceLoginSuccessLogged: '&8[&a&l»&8] &7%nickname% has been logged!'
 
 forceRegisterErrorUsage: '&8[&c&l»&8] &7Usage: /forceregister <nickname> <password>'
 forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceRegisterErrorUserPremium: '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7%nickname% is already registered!'
 forceRegisterSuccessRegistered: '&8[&a&l»&8] &7%nickname% has been registered!'
 
 forceUnregisterErrorUsage: '&8[&c&l»&8] &7Usage: /forceunregister <nickname>'
 forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceUnregisterErrorUserPremium:  '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7%nickname% has been unregistered!'
 
 forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Usage: /forcechangepassword <nickname> <password>'
 forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceChangePasswordErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceChangePasswordErrorUserPremium: '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7%nickname%''s password has been changed!'
@@ -211,6 +234,7 @@ forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7%nickname%''s passwor
 forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 forcePremiumErrorUsage: '&8[&c&l»&8] &7Usage: /forcepremium <nickname>'
 forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7%nickname% is already a premium player!'
 forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forcePremiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
@@ -220,11 +244,13 @@ forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7%nickname% is a premium play
 forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Unfortunately, this server does not support change an account type!'
 forceCrackedErrorUsage: '&8[&c&l»&8] &7Usage: /forcecracked <nickname> <password>'
 forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7%nickname% is already a cracked player!'
 forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7%nickname% is a cracked player now!'
 
 forceStartSessionErrorUsage: '&8[&c&l»&8] &7Usage: /forcestartsession <nickname> <time>'
 forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceStartSessionErrorUserPremium:  '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7%nickname% is not logged!'
@@ -234,6 +260,7 @@ forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7%nickname%''s session ha
 
 forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Usage: /forcedestroysession <nickname>'
 forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceDestroySessionErrorUserPremium:  '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7%nickname% does not have a session!'
@@ -241,6 +268,7 @@ forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7%nickname%''s sessio
 
 forceChangeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /forcechangemailaddress <nickname> <mail-address>'
 forceChangeMailAddressErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceChangeMailAddressErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceChangeMailAddressErrorUserPremium:  '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceChangeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceChangeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7A wrong mail address!'
@@ -248,6 +276,7 @@ forceChangeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7%nickname%''s m
 
 forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Usage: /forcerecoverypassword <nickname>'
 forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7%nickname% is not exist!'
+forceRecoveryPasswordErrorUserBedrock: '&8[&c&l»&8] &7%nickname% is a bedrock player!'
 forceRecoveryPasswordErrorUserPremium:  '&8[&c&l»&8] &7%nickname% is a premium player!'
 forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% is not registered!'
 forceRecoveryPasswordErrorUserHasNotMailAddress: '&8[&c&l»&8] &7%nickname% does not have a mail address!'
