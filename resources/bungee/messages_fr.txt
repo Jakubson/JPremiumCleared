@@ -1,0 +1,286 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                            M E S S A G E S                                           |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+#              	Translated by LRoffic (https://www.spigotmc.org/members/lroffic.968384/)    	 	     #
+
+
+version: 'CLEARED-Bungee-1.7.0'
+
+preLoginErrorAntiBot: '&8[&c&l»&8] &7S''il vous plaît, revenez dans 3 minutes!'
+preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Utilisez un pseudo différent s''ilvous plaît!'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7S''il vous plaît changez votre pseudo en &a%nickname%&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7S''il vous plaît venez sur le serveur avec &amc.example.com&7!'
+preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Vous êtes déjà connecté!'
+preLoginErrorServersDown: '&8[&c&l»&8] &7Les serveurs Mojang ne répondent pas!'
+preLoginErrorClaimedPremiumNickname: '&8[&c&l»&8] &7Ce pseudo est déjà utilisé par un joueur Minecraft Premium!'
+preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Malheureusement, ne support pas le changement de pseudo premium, donc s''il vous plaît utilisez vtre ancien pseudo: &a%nickname%&7!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7S''il vous plaît enregistrer vous sur &amc.example.com&7!'
+
+redirectionMainServerTitle: '&c&lRedirigé!'
+redirectionMainServerSubTitle: '&f '
+redirectionMainServerFadeIn: 30
+redirectionMainServerStay: 100
+redirectionMainServerFadeOut: 30
+redirectionMainServerChat: '&8[&c&l»&8] &7Vous avez été déconnecté du serveur, donc vous avez été téléporté vers le hub! Raison de déconnexion: ''%reason%&7''!'
+redirectionErrorNoOnlineServers: '&8[&c&l»&8] &Malheureusement, Il n''y a aucun serveur en ligne sur lequel nous pouvons vous connecter!'
+
+joinSessionPremiumTitle: '&a&lBienvenue %nickname%'
+joinSessionPremiumSubTitle: '&aUne session premium!'
+joinSessionPremiumFadeIn: 30
+joinSessionPremiumStay: 100
+joinSessionPremiunFadeOut: 30
+joinSessionPremiumChat: ''
+joinSessionCrackedTitle: '&a&lBienvenue %nickname%'
+joinSessionCrackedSubTitle: '&aUne session minecraft crack!'
+joinSessionCrackedFadeIn: 30
+joinSessionCrackedStay: 100
+joinSessionCrackedFadeOut: 30
+joinSessionCrackedChat: ''
+joinSessionBedrockTitle: '&a&lBienvenue %nickname%'
+joinSessionBedrockSubTitle: '&aUne session Bedrock!'
+joinSessionBedrockFadeIn: 30
+joinSessionBedrockStay: 100
+joinSessionBedrockFadeOut: 30
+joinSessionBedrockChat: ''
+joinRequireLoginTitle: '&e&lVous devez utiliser la commande'
+joinRequireLoginSubTitle: '&6/login <mot-de-passe>'
+joinRequireLoginFadeIn: 30
+joinRequireLoginStay: 1200
+joinRequireLoginFadeOut: 30
+joinRequireLoginChat: ''
+joinRequireRegisterTitle: '&e&lVous devez utiliser la commande'
+joinRequireRegisterSubTitle: '&6/register <mot-de-passe> <captcha>'
+joinRequireRegisterFadeIn: 30
+joinRequireRegisterStay: 1200
+joinRequireRegisterFadeOut: 30
+joinRequireRegisterChat: '&e&lPour vous inscrire, utilisez la commande &6/register <mot-de-passe> <captcha> &eLe captcha se trouve sur la carte dans votre inventaire' # You can use '%captcha_code%' placeholder to show a captcha code.
+
+loginErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+loginErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur premium!'
+loginErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas inscris!'
+loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Vous êtes déjà connecté!'
+loginErrorUsage: '&8[&c&l»&8] &7Utilisation: /login <mot-de-passe>'
+loginErrorWrongPassword: '&8[&c&l»&8] &7Mauvais mot-de-passe!'
+loginErrorTimeElapsed: '&8[&c&l»&8] &7Temps de connexion expiré!'
+loginBossBarTimerTitle: '&6[&e&l»&6] &eTemps pour se connecter restant &6%time%&es &6[&e&l«&6]'
+loginBossBarTimerColor: 2
+loginBossBarTimerDivision: 2
+loginSuccessLoggedTitle: '&a&lBienvenue %nickname%'
+loginSuccessLoggedSubTitle: '&aConnecter'
+loginSuccessLoggedFadeIn: 30
+loginSuccessLoggedStay: 100
+loginSuccessLoggedFadeOut: 30
+loginSuccessLoggedChat: |
+  &8[&a&l»&8] &7Si vous ne souhaitez pas vous connecter la prochaine fois, veuillez exécuter:
+  &f
+  &f  &a&l» &7/premium <password> - Si vous avez un compte minecraft &apremium.
+  &f  &a&l» &7/startsession <time> - Si vous avez un compte minecraft &ccrack.
+  &f
+
+registerErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+registerErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un utilisateur Premium!'
+registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Vous êtes déjà enregistré!'
+registerErrorUsage: '&8[&c&l»&8] &7Usage: /register <password> <captcha>'
+registerErrorDifferentPasswords: '&8[&c&l»&8] &7Les mot de passe sont différent!'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7Votre mot de passe doit contenir plus de 6 caractères!'
+registerErrorWrongCaptcha: '&8[&c&l»&8] &7Mauvais captcha!'
+registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7Vous avez trop de comptes!'
+registerErrorTimeElapsed: '&8[&c&l»&8] &7Temps de connexion trop long!'
+registerBossBarTimerTitle: '&6[&e&l»&6] &eTemps restant pour la connexion &6%time%&es &6[&e&l«&6]'
+registerBossBarTimerColor: 2
+registerBossBarTimerDivision: 2
+registerSuccessRegisteredTitle: '&a&lSalut %nickname%'
+registerSuccessRegisteredSubTitle: '&aEnregistrer'
+registerSuccessRegisteredFadeIn: 30
+registerSuccessRegisteredStay: 100
+registerSuccessRegisteredFadeOut: 30
+registerSuccessRegisteredChat: |
+  &8[&a&l»&8] &7Salut, bienvenue sur Minecraft Server Network! Voici quelques commandes utiles:
+  &f
+  &f  &a&l» &7/unregister <password>
+  &f  &a&l» &7/changepassword <current-password> <new-password>
+  &f  &a&l» &7/premium <password>
+  &f  &a&l» &7/cracked <password>
+  &f  &a&l» &7/startsession <time>
+  &f  &a&l» &7/destroysession
+  &f  &a&l» &7/changemailaddress <password> <mail-address>
+  &f  &a&l» &7/recoverypassword <mail-address>
+  &f
+
+unregisterErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+unregisterErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur premium!'
+unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+unregisterErrorUserNotLogged: '&8[&c&l»&8] &7Vous n''êtes pas connecté!'
+unregisterErrorUsage: '&8[&c&l»&8] &7Usage: /unregister <password>'
+unregisterErrorWrongPassword: '&8[&c&l»&8] &7Mauvais mot de passe!'
+unregisterSuccessUnregistered: '&8[&a&l»&8] &7Vous n''êtes plus enregistré!'
+
+changePasswordErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+changePasswordErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur premium!'
+changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7Vous n''êtes pas connecté!'
+changePasswordErrorUsage: '&8[&c&l»&8] &7Usage: /changepassword <current-password> <new-password>'
+changePasswordErrorDifferentNewPasswords: '&8[&c&l»&8] &7Les nouveaux mot de passe sont différents!'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Votre mot de passe doit faire plus de 6 caractère!'
+changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7Mauvais mot de passe!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Votre mot de passe à été modifié!'
+
+premiumErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Malheureusement le serveur ne supporte pas le change de type de compte (crack et premium)!'
+premiumErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur premium!'
+premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+premiumErrorUserNotLogged: '&8[&c&l»&8] &7Vous n''êtes pas connecté!'
+premiumErrorUsage: '&8[&c&l»&8] &7Usage: /premium <password>'
+premiumErrorWrongPassword: '&8[&c&l»&8] &7Mauvais mot de passe!'
+premiumErrorServersDown: '&8[&c&l»&8] &7Les serveurs de Mojang ne répondent pas!'
+premiumErrorUserNotPremium: '&8[&c&l»&8] &7Vous n''avez pas de compte Minecraft Premium!'
+premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Vous êtes un joueur Premium maintenant!'
+
+crackedErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Malheureusement le serveur ne supporte pas le change de type de compte (crack et premium)!'
+crackedErrorUserNotPremium: '&8[&c&l»&8] &7Vous êtes un joueur premium!'
+crackedErrorUsage: '&8[&c&l»&8] &7Usage: /cracked <password>'
+crackedErrorDifferentPasswords: '&8[&c&l»&8] &7Les mot de passe sont différent!'
+crackedErrorUnsafePassword: '&8[&c&l»&8] &7Votre mot de passe doit faire plus de 6 caractère!'
+crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Vous êtes un joueur Minecraft crack maintenant!'
+
+startSessionErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+startSessionErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur Premium!'
+startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+startSessionErrorUserNotLogged: '&8[&c&l»&8] &7Vous n''êtes pas connecté!'
+startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7Vous avez déjà une session!'
+startSessionErrorUsage: '&8[&c&l»&8] &7Usage: /startsession <time in minutes>'
+startSessionErrorWrongTime: '&8[&c&l»&8] &7Mauvais temps de session!'
+startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Votre session à été crée!'
+
+destroySessionErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+destroySessionErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur Premium!'
+destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
+destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7You do not have a session!'
+destroySessionErrorUsage: '&8[&c&l»&8] &7Usage: /destroysession'
+destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Your session has been destroyed!'
+
+changeMailErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+changeMailAddressErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur Premium!'
+changeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+changeMailAddressErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
+changeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /changemail <password> <mail-address>'
+changeMailAddressErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
+changeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7A wrong mail address!'
+changeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7Your mail address has been changed!'
+
+recoveryPasswordErrorUserBedrock: '&8[&c&l»&8] &7Vous êtes un joueur Bedrock!'
+recoveryPasswordErrorUserPremium: '&8[&c&l»&8] &7Vous êtes un joueur Premium!'
+recoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas enregistré!'
+recoveryPasswordErrorUserHasNotMailAddress: '&8[&c&l»&8] &7Vous n''avez pas renseigné d''adresse mail!'
+recoveryPasswordErrorUsage: '&8[&c&l»&8] &7Usage: /recoverypassword <mail-address>'
+recoveryPasswordErrorWrongMailAddress: '&8[&c&l»&8] &7Mauvais adresse mail!'
+recoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Votre mot de passe a été récupéré!'
+recoveryPasswordSuccessMailSubject: 'Récupération de votre mot de passe'
+recoveryPasswordSuccessMailMessage: 'Salut %nickname%! Vous avez demandé à récupérer votre mot de passe depuis l''adresse IP %address% ! Ceci est ton nouveaux mot de passe <b>%password%</b>. S''ile te plaît change le lorsque tu rejoindras le serveur en utilisant la commande <i>/changepassword %password% &lt;new-password&gt;</i>!'
+
+forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Usage: /userprofile <nickname>'
+forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceViewUserProfileSuccessProfile: |
+  &f
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f  &a&l» &7Pseudo &a&l» &7%nickname%
+  &f  &a&l» &7Unique id &a&l» &7%unique_id%
+  &f  &a&l» &7Premium id &a&l» &7%premium_id%
+  &f  &a&l» &7Adresse Email &a&l» &7%mail_address%
+  &f  &a&l» &7Expiration de la session &a&l» &7%session_expire%
+  &f  &a&l» &7Dernier serveur &a&l» &7%last_server%
+  &f  &a&l» &7Dernière adresse &a&l» &7%last_address%
+  &f  &a&l» &7Dernière vue &a&l» &7%last_seen%
+  &f  &a&l» &7Première adresse &a&l» &7%first_address%
+  &f  &a&l» &7Vu la première fois &a&l» &7%first_seen%
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f
+
+forceLoginErrorUsage: '&8[&c&l»&8] &7Usage: /forcelogin <nickname>'
+forceLoginErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceLoginErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceLoginErrorUserPremium: '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7%nickname% n''est pas connecté!'
+forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas enregistrer!'
+forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7%nickname% est déjà connecté!'
+forceLoginSuccessLogged: '&8[&a&l»&8] &7%nickname% à été connecté!'
+
+forceRegisterErrorUsage: '&8[&c&l»&8] &7Usage: /forceregister <nickname> <password>'
+forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceRegisterErrorUserPremium: '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7%nickname% est déjà inscrit!'
+forceRegisterSuccessRegistered: '&8[&a&l»&8] &7%nickname% à été désinscrit!'
+
+forceUnregisterErrorUsage: '&8[&c&l»&8] &7Usage: /forceunregister <nickname>'
+forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceUnregisterErrorUserPremium:  '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7%nickname% à été désinscrit!'
+
+forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Usage: /forcechangepassword <nickname> <password>'
+forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceChangePasswordErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceChangePasswordErrorUserPremium: '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Le mot de passe de %nickname% à été changé!'
+
+forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Malheureusement le serveur ne supporte pas le change de type de compte (crack et premium)!'
+forcePremiumErrorUsage: '&8[&c&l»&8] &7Usage: /forcepremium <nickname>'
+forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7%nickname% est déjà un joueur premium!'
+forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forcePremiumErrorServersDown: '&8[&c&l»&8] &7Les serveurs de Mojang ne répondent pas!'
+forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7%nickname% n''a pas de compte premium!'
+forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7%nickname% est un joueur premium maintenant!'
+
+forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Malheureusement le serveur ne supporte pas le change de type de compte (crack et premium)!'
+forceCrackedErrorUsage: '&8[&c&l»&8] &7Usage: /forcecracked <nickname> <password>'
+forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7%nickname% est déjà un joueur minecraft cracké!'
+forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7%nickname% est un joueur minecraft cracké maintenant!'
+
+forceStartSessionErrorUsage: '&8[&c&l»&8] &7Usage: /forcestartsession <nickname> <time>'
+forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceStartSessionErrorUserPremium:  '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7%nickname% n''est pas connecté!'
+forceStartSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7%nickname% a déjà une session!'
+forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7Un mauvais temps de session!'
+forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7La session de %nickname% à été commencé!'
+
+forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Usage: /forcedestroysession <nickname>'
+forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceDestroySessionErrorUserPremium:  '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7%nickname% n''a pas de session!'
+forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7La session de %nickname% à été détruite!'
+
+forceChangeMailAddressErrorUsage: '&8[&c&l»&8] &7Usage: /forcechangemailaddress <nickname> <mail-address>'
+forceChangeMailAddressErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceChangeMailAddressErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceChangeMailAddressErrorUserPremium:  '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceChangeMailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forceChangeMailAddressErrorWrongMailAddress: '&8[&c&l»&8] &7Une mauvaise adresse e-mail!'
+forceChangeMailAddressSuccessMailAddressChanged: '&8[&a&l»&8] &7L''adresse e-mail de%nickname%à été changé!'
+
+forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Usage: /forcerecoverypassword <nickname>'
+forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7%nickname% n''existe pas!'
+forceRecoveryPasswordErrorUserBedrock: '&8[&c&l»&8] &7%nickname% est un joueur bedrock!'
+forceRecoveryPasswordErrorUserPremium:  '&8[&c&l»&8] &7%nickname% est un joueur premium!'
+forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7%nickname% n''est pas inscrit!'
+forceRecoveryPasswordErrorUserHasNotMailAddress: '&8[&c&l»&8] &7%nickname% n''a pas d''adresse e-mail!'
+forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Le mot de passe de %nickname% à été rétablie!'
