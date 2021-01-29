@@ -101,10 +101,6 @@ checkServerStatuses: true
 # As the backup server JPremium use CouldFlare Workers.
 useBackupServer: false
 
-# Should JPremium load user data during the login stage.
-# It is an experimental feature.
-loadUserProfileDataOnJoin: false
-
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
 maximumUserProfilesPerAddress: 2
