@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Spigot-1.8.0'
+version: 'CLEARED-Spigot-1.9.0'
 
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
 # Please enter fully random unique value! Not: 'your-server-name-jpremium'!
