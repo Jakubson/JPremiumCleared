@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.8.0'
+version: 'CLEARED-Bungee-1.9.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -54,23 +54,16 @@ mainServerNames: [main]
 # For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids
 uniqueIdsType: FIXED
 
+# If a player with a premium nickname disconnects on the login stage, should JPremium recognise the player as cracked.
+secondLoginCracked: false
+
 # Should JPremium force new players to register on your server, website or both side.
 # There are three options to choose: 0 - server, 1 - server and website, 2 - website.
 registerOnWebsite: 0
 
 # Should JPremium register new premium players.
-# When it is enabled, cracked players with premium nickname cannot join to your server.
+# When it is enabled, cracked players with premium nickname cannot join to your server unless you enable the 'secondLoginCracked' option.
 registerPremiumUsers: true
-
-# Should JPremium redirect players to their last server where they were before quit.
-lastServerRedirection: true
-
-# The server names in your BungeeCord network.
-# Players will not be redirected to the servers as their last server.
-lastServerRestrictions: []
-
-# Should JPremium redirect players to one of the main server from the server which is shutting down.
-disconnectRedirection: true
 
 # Should JPremium disconnect cracked players who enter wrong password during login.
 disconnectWhenWrongPassword: false
@@ -80,25 +73,20 @@ disconnectWhenWrongPassword: false
 # For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#bedrock-support
 floodgateSupport: false
 
-# Should JPremium require to confirm a password in the register, change password and cracked commands?
-# If you enable it, please do not forget to change the usage messages in the message file.
-confirmPassword: false
-
 # Should JPremium verify captcha codes which are entered by cracked players.
 # If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
 verifyCaptchaCode: true
 
+# Should JPremium require to confirm a password in the register, change password and create password commands?
+# If you enable it, please do not forget to change the usage messages in the message file.
+confirmPassword: false
+
 # Should JPremium show a boss bar with remain time to authorisation for cracked players.
 showBossBarRemainAuthorisationTimer: true
 
-# Should JPremium keep a password when players change an account type for premium.
-keepPremiumUserPasswords: false
-
-# Should JPremium check server statuses and connect players only with online servers.
-checkServerStatuses: true
-
-# Should JPremium use the backup server when the official server is down to authorise players.
-# As the backup server JPremium use CouldFlare Workers.
+# Should JPremium use the backup server when the official server is down to verify players nicknames.
+# If you want to use it, you need to contact with the JPremium author.
+# Your request will be process and may be accepted or rejected.
 useBackupServer: false
 
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
@@ -108,12 +96,15 @@ maximumUserProfilesPerAddress: 2
 # The maximum time (in seconds) which cracked players have for login or register.
 maximumAuthorisationTime: 90
 
-# The maximum time (in minutes) for which cracked players can start sessions?
-# Sessions work only when cracked players have the same IP addresses, so it is not recommended to set the value too high.
-maximumSessionTime: 1440
+# The session time (in minutes) which is started when a cracked player executes the /startsession command.
+# Sessions work only when a cracked player has the same IP address. It is not recommended to set the value too high.
+manuallySessionTime: 720
 
-# The session time (in minutes) which is automatically started after cracked players login or register.
-autoSessionTime: 720
+# The session time (in minutes) which is automatically started when a cracked player logins or registers.
+automaticSessionTime: 10
+
+# The delay time (in minutes) between recovering a password by a player.
+recoveringPasswordDelay: 30
 
 # The absent time (is days) after which cracked players are automatically unregistered.
 automaticUnregisterTime: 0
@@ -122,10 +113,6 @@ automaticUnregisterTime: 0
 # There are two options: SHA256, SHA512, BCRYPT.
 # All of algorithms are salted.
 passwordHashingAlgorithm: SHA256
-
-# The maximum quantity of join requests which can be processed within 3 minutes.
-# If it is exceed, the next join requests are rejected.
-antiBotSensitive: 120
 
 # The safe password pattern (in regular expression). Cracked player passwords have to match to it.
 safePasswordPattern: '[\S]{6,25}'
@@ -136,7 +123,7 @@ safePasswordPattern: '[\S]{6,25}'
 acceptedHostnames: []
 
 # The commands which not logged cracked players can execute.
-logoutUserCommands: [login, register, recoverypassword, l]
+logoutUserCommands: [login, register, recoverypassword, confirmpasswordrecovery, l]
 
 # The command aliases.
 # To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]', for example: 'changePasswordCommandAliases: [chpass]'.
