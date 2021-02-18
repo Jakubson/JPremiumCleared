@@ -104,7 +104,7 @@ manuallySessionTime: 720
 automaticSessionTime: 10
 
 # The delay time (in minutes) between recovering a password by a player.
-recoveringPasswordDelay: 30
+recoveringPasswordDelay: 60
 
 # The absent time (is days) after which cracked players are automatically unregistered.
 automaticUnregisterTime: 0
