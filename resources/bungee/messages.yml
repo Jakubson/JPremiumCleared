@@ -75,7 +75,6 @@ loginSuccessLoggedSubTitle: '&aLogged'
 loginSuccessLoggedFadeIn: 30
 loginSuccessLoggedStay: 100
 loginSuccessLoggedFadeOut: 30
-loginSuccessLoggedDelayed: 0
 loginSuccessLoggedChat: |-
   &f
   &8[&a&l»&8] &7If you do not want to login next time, please execute:
@@ -103,7 +102,6 @@ registerSuccessRegisteredSubTitle: '&aRegistered'
 registerSuccessRegisteredFadeIn: 30
 registerSuccessRegisteredStay: 100
 registerSuccessRegisteredFadeOut: 30
-registerSuccessRegisteredDelayed: 0
 registerSuccessRegisteredChat: |
   &f
   &8[&a&l»&8] &7Hi on Minecraft Server Network! Here you have useful commands:
