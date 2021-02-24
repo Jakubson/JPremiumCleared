@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.0'
+version: 'CLEARED-Bungee-1.9.1'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -67,6 +67,14 @@ registerPremiumUsers: true
 
 # Should JPremium disconnect cracked players who enter wrong password during login.
 disconnectWhenWrongPassword: false
+
+# Should JPremium redirect a player to the other server when the player is kicked from the current server.
+# When the player is logged, JPremium redirects the player to the one of the main servers.
+# When the player is not logged, JPremium redirects the player to the one of the limo servers.
+disconnectRedirection: true
+
+# Should JPremium redirect a player to their last server where they were before quit.
+lastServerRedirection: false
 
 # Should JPremium recognise Bedrock players and alters their unique ids to bedrock.
 # Works only when you install GeyserMC and Floodgate on your server.
