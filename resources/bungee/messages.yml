@@ -14,7 +14,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.0'
+version: 'CLEARED-Bungee-1.9.1'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname to &a%nickname%&7!'
@@ -26,8 +26,12 @@ preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7This server does not suppor
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Your user profile was not loaded not the pre-login stage!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Your premium account has been verified! Please join to the server again!'
 
-connectionErrorOccurred: '&8[&c&l»&8] &7You cannot be connected to the target server! Maybe it is disabled or your version is not compatible with the server version!'
-connectionPlayerDisconnected: '&8[&c&l»&8] &7You have been disconnected from the target server due to ''%reason%&7''!'
+disconnectRedirectionTitle: ''
+disconnectRedirectionSubTitle: ''
+disconnectRedirectionFadeIn: 0
+disconnectRedirectionStay: 0
+disconnectRedirectionFadeOut: 0
+disconnectRedirectionChat: '&8[&c&l»&8] &7You have been disconnected from the server and you have been automatically redirected to the other server! The disconnect reason is ''%reason%&7''!'
 
 joinSessionPremiumTitle: '&a&lHi %nickname%'
 joinSessionPremiumSubTitle: '&aA premium session!'
@@ -251,6 +255,7 @@ forceCrackedErrorUsage: '&8[&c&l»&8] &7Usage: /forcecracked <nickname>'
 forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7Such a user is not exist!'
 forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7The user is a bedrock player!'
 forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7The user is already a cracked player!'
+forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7The user does not have a password!'
 forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7The user is a cracked player now!'
 
 forceStartSessionErrorUsage: '&8[&c&l»&8] &7Usage: /forcestartsession <nickname>'
