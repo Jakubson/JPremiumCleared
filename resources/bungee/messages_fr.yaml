@@ -15,7 +15,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.0'
+version: 'CLEARED-Bungee-1.9.1'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Utilisez un pseudo différent s''il vous plaît!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7S''il vous plaît, utilisez le pseudo &a%nickname%&7!'
@@ -27,8 +27,12 @@ preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Ce serveur ne supporte pas 
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Votre profil utilisateur n''a pas été chargé à l''étape de pré-connexion!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Votre compte premium à été vérifier! Merci de vous reconnectez!'
 
-connectionErrorOccurred: '&8[&c&l»&8] &7Vous ne pouvez pas vous connectez au serveur cible! Il est peut-être désactivé ou votre version n''est pas compatible avec la version du serveur!'
-connectionPlayerDisconnected: '&8[&c&l»&8] &7Vous avez été déconnecté du serveur cible pour la raison: ''%reason%&7''!'
+disconnectRedirectionTitle: ''
+disconnectRedirectionSubTitle: ''
+disconnectRedirectionFadeIn: 0
+disconnectRedirectionStay: 0
+disconnectRedirectionFadeOut: 0
+disconnectRedirectionChat: '&8[&c&l»&8] &7Vous avez été déconnecté du serveur et vous avez été redirigé automatiquement vers un autre serveur! La raison de déconnexion est ''%reason%&7''!'
 
 joinSessionPremiumTitle: '&a&lBienvenue %nickname%'
 joinSessionPremiumSubTitle: '&aUn session Minecraft Premium!'
@@ -254,6 +258,7 @@ forceCrackedErrorUsage: '&8[&c&l»&8] &7Utilisation: /forcecracked <pseudo>'
 forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7L''utilisateur n''existe pas!'
 forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7Cet utilisateur est un joueur Bedrock!'
 forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7Cet utilisateur est déjà un utilisateur cracké!'
+forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7L''utilisateur n''a pas de mot de passe!'
 forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7L''utilisateur est un joueur crack maintenant!'
 
 forceStartSessionErrorUsage: '&8[&c&l»&8] &7Utilisation: /forcestartsession <pseudo>'
