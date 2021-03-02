@@ -141,7 +141,7 @@ changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Votre nouveau mot de passe
 changePasswordErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Votre nouveaux mot de passe ne doit pas contenir votre pseudo'
 changePasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Votre mot de passe est trop faible!'
 changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7Mot de passe actuel incorrect!'
-changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Votre mot de à été modifié!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Votre mot de passe à été modifié!'
 
 createPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Vous n''êtes pas inscrit!'
 createPasswordErrorUserNotLogged: '&8[&c&l»&8] &7Vous n''êtes pas connecté!'
