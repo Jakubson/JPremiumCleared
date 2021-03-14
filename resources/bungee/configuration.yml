@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.1'
+version: 'CLEARED-Bungee-1.9.2'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -75,6 +75,9 @@ disconnectRedirection: true
 
 # Should JPremium redirect a player to their last server where they were before quit.
 lastServerRedirection: false
+
+# Some cracked launcher do not handle titles and chat messages which are sent immediately after join, so you can delay them for 1.5 seconds.
+delayTitlesAfterUserJoin: false
 
 # Should JPremium recognise Bedrock players and alters their unique ids to bedrock.
 # Works only when you install GeyserMC and Floodgate on your server.
