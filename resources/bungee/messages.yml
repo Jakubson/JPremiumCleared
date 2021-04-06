@@ -14,7 +14,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.2'
+version: 'CLEARED-Bungee-1.9.3'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname to &a%nickname%&7!'
@@ -23,6 +23,7 @@ preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7You are already online!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Please register your account on &amc.example.com&7!'
 preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7This server does not support change premium nickname, so please come back to your old nickname: &a%nickname%&7!'
+preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Could not load your user profile!'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Your user profile was not loaded on the pre-login stage!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Your premium account has been verified! Please join to the server again!'
 
@@ -158,6 +159,7 @@ premiumErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
 premiumErrorUsage: '&8[&c&l»&8] &7Usage: /premium <password>'
 premiumErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 premiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
+premiumErrorDatabaseDown: '&8[&c&l»&8] &7The database is not responding!'
 premiumErrorUserNotPremium: '&8[&c&l»&8] &7You do not have a premium account!'
 premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7The premium player with such an premium id already exits! Please contact with the staff to solve the issue!'
 premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7You are a premium player now!'
@@ -246,6 +248,7 @@ forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7The user is a bedrock player!'
 forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7The user is already a premium player!'
 forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7The user is not registered!'
 forcePremiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
+forcePremiumErrorDatabaseDown: '&8[&c&l»&8] &7The database is not responding!'
 forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7The user does not have a premium account!'
 forcePremiumErrorUserAlreadyExists: '&8[&c&l»&8] &7The premium player with such an premium id already exits!'
 forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7The user is a premium player now!'
