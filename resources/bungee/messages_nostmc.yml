@@ -1,0 +1,321 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                            M E S S A G E S                                           |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                              You can find some translations at:                                      |#
+#|                https://github.com/Jakubson/JPremiumCleared/tree/master/resources/bungee              |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+version: 'CLEARED-Bungee-1.9.3'
+
+preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Nickname inválido, use um diferente'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Mude seu Nickname para: &a%nickname%&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Por favor entre no servidor via &ajogar.nostalgiamc.com.br&7!'
+preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Você já está no online!'
+preLoginErrorServersDown: '&8[&c&l»&8] &7Servidor da Mojang não está respondendo, tente novamente mais tarde!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Por favor, registre sua conta em &ajogar.nostalgiamc.com.br&7!'
+preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Este servidor não oferece suporte para alteração de apelido premium, portanto, volte ao seu apelido antigo: &a%nickname%&7!'
+preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Could not load your user profile!'
+preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Seu perfil de usuário não foi carregado na fase de pré-login!'
+preLoginPremiumVerification: '&8[&a&l»&8] &7Sua conta premium foi verificada! Por favor, conecte-se ao servidor novamente!'
+
+disconnectRedirectionTitle: ''
+disconnectRedirectionSubTitle: ''
+disconnectRedirectionFadeIn: 0
+disconnectRedirectionStay: 0
+disconnectRedirectionFadeOut: 0
+disconnectRedirectionChat: '&8[&c&l»&8] &7Você foi desconectado do servidor e foi redirecionado automaticamente para o outro servidor! motivo: ''%reason%&7''!'
+
+joinSessionPremiumTitle: '&a&lOla %nickname%'
+joinSessionPremiumSubTitle: '&aUma sessão premium!'
+joinSessionPremiumFadeIn: 30
+joinSessionPremiumStay: 100
+joinSessionPremiumFadeOut: 30
+joinSessionPremiumChat: ''
+joinSessionCrackedTitle: '&a&lOla %nickname%'
+joinSessionCrackedSubTitle: '&aUma sessão pirata!'
+joinSessionCrackedFadeIn: 30
+joinSessionCrackedStay: 100
+joinSessionCrackedFadeOut: 30
+joinSessionCrackedChat: ''
+joinSessionBedrockTitle: '&a&lOla %nickname%'
+joinSessionBedrockSubTitle: '&aUma sessão Bedrock!'
+joinSessionBedrockFadeIn: 30
+joinSessionBedrockStay: 100
+joinSessionBedrockFadeOut: 30
+joinSessionBedrockChat: ''
+joinRequireLoginTitle: '&e&lVocê precisa usar'
+joinRequireLoginSubTitle: '&6/login <senha>'
+joinRequireLoginFadeIn: 30
+joinRequireLoginStay: 1200
+joinRequireLoginFadeOut: 30
+joinRequireLoginChat: ''
+joinRequireRegisterTitle: '&e&lVocê precisa usar'
+joinRequireRegisterSubTitle: '&6/register <senha> <captcha>'
+joinRequireRegisterFadeIn: 30
+joinRequireRegisterStay: 1200
+joinRequireRegisterFadeOut: 30
+joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
+
+loginErrorUserBedrock: '&8[&c&l»&8] &7Você é um jogador bedrock!'
+loginErrorUserPremium: '&8[&c&l»&8] &7Você é um jogador premium!'
+loginErrorUserNotRegistered: '&8[&c&l»&8] &7Você não foi Registrado!'
+loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Você já está no jogo!'
+loginErrorUsage: '&8[&c&l»&8] &7exemplo: /login <senha>'
+loginErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+loginErrorTimeElapsed: '&8[&c&l»&8] &7Tempo esgotado!'
+loginBossBarTimerTitle: '&6[&e&l»&6] &eTempo Restánte &6%time%&es &6[&e&l«&6]'
+loginBossBarTimerColor: 2
+loginBossBarTimerDivision: 2
+loginSuccessLoggedTitle: '&a&lOla %nickname%'
+loginSuccessLoggedSubTitle: '&aLogado'
+loginSuccessLoggedFadeIn: 30
+loginSuccessLoggedStay: 100
+loginSuccessLoggedFadeOut: 30
+loginSuccessLoggedChat: |-
+  &8[&a&l»&8] Ola %nickname%:
+  &f
+  &f  &a&l» &7Para comecar uma sessao no jogo.
+  &f  &a&l» &7 Digite: &f/ncomecar <minutos>  &7**tempo maximo é 720(12h) 
+  &f  &a&l» &eObs: Você não precisara escrever /login nesse meio tempo
+  &f  &a&l» &7
+  &f  &a&l» &7Para terminar uma sessao no jogo
+  &f  &a&l» &7Digite: &f/nencerrar
+
+registerErrorUserBedrock: '&8[&c&l»&8] &7Você é um usuario bedrock!'
+registerErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Você ja foi registrado!'
+registerErrorUsage: '&8[&c&l»&8] &7exemplo: /register <senha> <senha>'
+registerErrorDifferentPasswords: '&8[&c&l»&8] &7As senhas são diferentes!'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7Sua senha precisa conter no minimo 6 letras!'
+registerErrorPasswordContainsNickname: '&8[&c&l»&8] &7Uma senha não pode conter seu nickname!'
+registerErrorPasswordTooWeak: '&8[&c&l»&8] &7Uma senha é muito fraca!'
+registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7Código captcha errado!'
+registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7Você tem muitas contas!'
+registerErrorTimeElapsed: '&8[&c&l»&8] &7Tempo esgotado!'
+registerBossBarTimerTitle: '&6[&e&l»&6] &eTempo restánte: &6%time%&es &6[&e&l«&6]'
+registerBossBarTimerColor: 2
+registerBossBarTimerDivision: 2
+registerSuccessRegisteredTitle: '&a&lOla %nickname%'
+registerSuccessRegisteredSubTitle: '&aRegistrado'
+registerSuccessRegisteredFadeIn: 30
+registerSuccessRegisteredStay: 100
+registerSuccessRegisteredFadeOut: 30
+registerSuccessRegisteredChat: |
+  &8[&a&l»&8] &7Bem Vindo(a) a NostalgiaMC! aqui está alguns Comando uteis:
+  &f
+  &f  &a&l» &7Para comecar uma sessao no jogo
+  &f  &a&l» &7 Digite: &f/ncomecar <minutos>  &7**tempo maximo é 720(12h) 
+  &f  &a&l» &2Obs: Você não precisara escrever /login nesse meio tempo
+  &f  &a&l» &7
+  &f  &a&l» &7Para terminar uma sessao no jogo
+  &f  &a&l» &7Digite: &f/nencerrar
+  &f  &a&l» &7
+  &f  &a&l» &7Usuarios originais consegue desativar seu /login digitando
+  &f  &a&l» &7 &f/original 
+  &f  &a&l» &cObs: Leia com cuidado, pode ocorrer crash se você utiliza conta pirata.
+  &f  &a&l» &cUsuários piratas perderam sua conta caso escreva.
+  &f  &a&l» &7
+  &f  &a&l» &7Comando para Mudar sua senha
+  &f  &a&l» &7Digite: &2/changepassword <Atual> <NovaSenha>
+
+unregisterErrorUserBedrock: '&8[&c&l»&8] &7Você é um jogador bedrock!'
+unregisterErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+unregisterErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+unregisterErrorUsage: '&8[&c&l»&8] &7Exemplo: /unregister <senha>'
+unregisterErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+unregisterSuccessUnregistered: '&8[&a&l»&8] &7Seu Registro foi apagado!'
+
+changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+changePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Voce nao tem uma senha!'
+changePasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /changepassword <Atual> <NovaSenha>'
+changePasswordErrorDifferentNewPasswords: '&8[&c&l»&8] &7As novas senhas são diferentes!'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Uma nova senha deve ter pelo menos 6 caracteres de comprimento!'
+changePasswordErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Uma nova senha não pode conter seu nickname!'
+changePasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7senha é muito fraca!'
+changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7senha atual errada!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Sua senha foi alterada!'
+
+createPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+createPasswordErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+createPasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7Voce ja tem uma senha!'
+createPasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /createpassword <senha>'
+createPasswordErrorDifferentPasswords: '&8[&c&l»&8] &7As senhas são diferentes!'
+createPasswordErrorUnsafePassword: '&8[&c&l»&8] &7A senha deve ter pelo menos 6 caracteres de comprimento!'
+createPasswordErrorPasswordContainsNickname: '&8[&c&l»&8] &7A senha não pode conter seu nickname!'
+createPasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Uma senha é muito fraca!'
+createPasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Sua senha foi criada!'
+
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Este servidor não suporta a mudança de tipo de conta!'
+premiumErrorUserBedrock: '&8[&c&l»&8] &7Você é um jogador bedrock!'
+premiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Você já é um jogador premium!'
+premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+premiumErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+premiumErrorUsage: '&8[&c&l»&8] &7Exemplo: /premium <senha>'
+premiumErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+premiumErrorServersDown: '&8[&c&l»&8] &7Os servidores Mojang não estão respondendo!'
+premiumErrorDatabaseDown: '&8[&c&l»&8] &7O banco de dados não está respondendo!'
+premiumErrorUserNotPremium: '&8[&c&l»&8] &7Você não tem uma conta premium!'
+premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7O jogador premium com esse ID premium já existe! Entre em contato com a staff para resolver o problema!'
+premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Você é um usuario Original agora!'
+
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Este servidor não suporta a mudança de tipo de conta!'
+crackedErrorUserBedrock: '&8[&c&l»&8] &7Você é um jogador bedrock!'
+crackedErrorUserNotPremium: '&8[&c&l»&8] &7Você não é um jogador premium!'
+crackedErrorUserHasNotPassword: '&8[&c&l»&8] &7Voce nao tem uma senha!'
+crackedErrorUsage: '&8[&c&l»&8] &7Exemplo: /cracked <senha>'
+crackedErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Você é um jogador Pirata agora!'
+
+startSessionErrorUserBedrock: '&8[&c&l»&8] &7Você é um jogador bedrock!'
+startSessionErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+startSessionErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7Você já tem uma sessão!'
+startSessionErrorUsage: '&8[&c&l»&8] &7Exemplo: /startsession'
+startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Sua sessão foi iniciada!'
+
+destroySessionErrorUserBedrock: '&8[&c&l»&8] &7Você é um jogador bedrock!'
+destroySessionErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7Você não tem uma sessão!'
+destroySessionErrorUsage: '&8[&c&l»&8] &7Exemplo: /destroysession'
+destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Sua sessão foi destruída!'
+
+changeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+changeEmailAddressErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+changeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7Voce nao tem uma senha!'
+changeEmailAddressErrorUsage: '&8[&c&l»&8] &7Exemplo: /changeemailaddress <senha> <email-address>'
+changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Endereço de e-mail errado!'
+changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Seu endereço de e-mail foi alterado!'
+
+recoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+recoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Voce nao tem uma senha!'
+recoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Você não tem um endereço de e-mail!'
+recoveryPasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /recoverypassword <email-address>'
+recoveryPasswordErrorWrongEmailAddress: '&8[&c&l»&8] &7Endereço de e-mail errado!'
+recoveryPasswordErrorRecoveringDelay: '&8[&c&l»&8] &7Você pode recuperar uma senha a cada 1 hora!'
+recoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Sua senha foi recuperada!'
+recoveryPasswordSuccessEmailSubject: 'A recuperação da senha'
+recoveryPasswordSuccessEmailMessage: 'Ola %nickname%! Você solicitou a recuperação de sua senha de %address% endereço de IP! Esta é a sua nova senha <b>%password%</b>. Por favor entre no servidor e mude-o o mais rápido possível usando <b>/changepassword %password% <NovaSenha> <NovaSenha></b> commando!'
+
+forceLoginErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcelogin <nickname>'
+forceLoginErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceLoginErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceLoginErrorUserPremium: '&8[&c&l»&8] &7O usuário é um jogador premium!'
+forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7O usuário não está online!'
+forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7O usuário já está logado!'
+forceLoginSuccessLogged: '&8[&a&l»&8] &7O usuário foi logado!'
+
+forceRegisterErrorUsage: '&8[&c&l»&8] &7Exemplo: /forceregister <nickname> <senha>'
+forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceRegisterErrorUserPremium: '&8[&c&l»&8] &O usuário é um jogador premium!'
+forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7O usuário já está cadastrado!'
+forceRegisterSuccessRegistered: '&8[&a&l»&8] &7O usuário foi registrado!'
+
+forceUnregisterErrorUsage: '&8[&c&l»&8] &7Exemplo: /forceunregister <nickname>'
+forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceUnregisterErrorUserPremium:  '&8[&c&l»&8] &7O usuário é um jogador premium!'
+forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7O usuário foi apagado!'
+
+forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcechangepassword <nickname> <senha>'
+forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceChangePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7O usuário não tem uma senha!'
+forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7A senha do usuário foi alterada!'
+
+forceCreatePasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcecreatepassword <nickname> <senha>'
+forceCreatePasswordErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceCreatePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceCreatePasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7O usuário já tem uma senha!'
+forceCreatePasswordSuccessPasswordCreated: '&8[&a&l»&8] &7A senha do usuário foi criada!'
+
+forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Este servidor não suporta a alteração do tipo de conta!'
+forcePremiumErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcepremium <nickname>'
+forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7O usuário já é um jogador premium!'
+forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forcePremiumErrorServersDown: '&8[&c&l»&8] &7Os servidores Mojang não estão respondendo!'
+forcePremiumErrorDatabaseDown: '&8[&c&l»&8] &7O banco de dados não está respondendo!'
+forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7O usuário não possui uma conta premium!'
+forcePremiumErrorUserAlreadyExists: '&8[&c&l»&8] &7O player premium com esse ID premium já existe!'
+forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7O usuário é um jogador premium agora!'
+
+forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Este servidor não suporta a alteração do tipo de conta!'
+forceCrackedErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcecracked <nickname>'
+forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7O usuário já é um jogador pirata!'
+forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7O usuário não tem uma senha!'
+forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7O usuário é um jogador pirata agora!'
+
+forceStartSessionErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcestartsession <nickname>'
+forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceStartSessionErrorUserPremium:  '&8[&c&l»&8] &7O usuário é um jogador premium!'
+forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7O usuário não está logado!'
+forceStartSessionErrorUserAlreadyHasSession: '&8[&c&l»&8] &7O usuário já tem uma sessão!'
+forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7Horário de sessão errado!'
+forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7A sessão do usuário foi iniciada!'
+
+forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcedestroysession <nickname>'
+forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceDestroySessionErrorUserPremium:  '&8[&c&l»&8] &7O usuário é um jogador premium!'
+forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7O usuário não tem uma sessão!'
+forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7A sessão do usuário foi destruída!'
+
+forceChangeEmailAddressErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcechangemail <nickname> <email-address>'
+forceChangeEmailAddressErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceChangeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceChangeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7O usuário não tem uma senha!'
+forceChangeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Um endereço de e-mail errado!'
+forceChangeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7O endereço de e-mail do usuário foi alterado!'
+
+forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcerecoverypassword <nickname>'
+forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceRecoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7O usuário não tem uma senha!'
+forceRecoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7O usuário não possui um endereço de e-mail!'
+forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7A senha do usuário foi recuperada!'
+
+forcePurgeUserProfileErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcepurgeuserprofile <nickname>'
+forcePurgeUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7O usuário foi eliminado!'
+forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Você foi eliminado!'
+
+forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Exemplo: /forceviewuserprofile <nickname>'
+forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceViewUserProfileSuccessProfile: |-
+  &f
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f  &a&l» &7Nickname &a&l» &7%nickname%
+  &f  &a&l» &7Unique id &a&l» &7%unique_id%
+  &f  &a&l» &7Premium id &a&l» &7%premium_id%
+  &f  &a&l» &7Email address &a&l» &7%email_address%
+  &f  &a&l» &7Session expires &a&l» &7%session_expires%
+  &f  &a&l» &7Last address &a&l» &7%last_address%
+  &f  &a&l» &7Last seen &a&l» &7%last_seen%
+  &f  &a&l» &7First address &a&l» &7%first_address%
+  &f  &a&l» &7First seen &a&l» &7%first_seen%
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f
