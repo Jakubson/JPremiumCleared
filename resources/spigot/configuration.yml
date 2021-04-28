@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Spigot-1.9.3'
+version: 'CLEARED-Spigot-1.10.0'
 
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
 # Please enter fully random unique value! Not: 'your-server-name-jpremium'!
@@ -27,6 +27,13 @@ forbidInteractions: true
 
 # Should JPremium give blindness effect to not authorised players.
 blindnessEffect: true
+
+# If a player is not authorized, the player can use inventories which have such titles.
+allowInventoryTitles: []
+
+# Should JPremium handle players as if they come from a Velocity proxy.
+# Do not enable that option if you have not configured a Velocity proxy and JPremium correctly!
+velocityMode: false
 
 # The location where JPremium teleports all players after join.
 # If you want to disable it, please set the value to ''.
