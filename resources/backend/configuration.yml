@@ -1,0 +1,51 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                           J P R E M I U M                                            |#
+#|                                       C O N F I G U R A T I O N                                      |#
+#|                                                                                                      |#
+#|                                        CLEARED-Backend-1.11.0                                        |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                 If you are looking for support with the configuration or with JPremium,              |#
+#|                          please contact with the author on SpigotMC.org:                             |#
+#|                      https://www.spigotmc.org/conversations/add?to=Jakubson                          |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+# An access token which is used for verifying connections inbound to the server.
+# You must enter the same token which you have in your JPremium configuration on the proxy server.
+# You should not share it and publish it otherwise somebody can bypass the protection and destroy your server.
+# The access token should be fully random and have 64 chars of length! Use a password generator: https://www.avast.com/random-password-generator
+accessToken: ''
+
+# A slot in the hot-bar where unregistered players get the captcha map.
+# If you enable captcha codes verification in the proxy JPremium configuration, you should enable that option on all limbo servers.
+# Set the option to a number from 1 to 9 to enable. Set to -1 to disable.
+captchaMapSlot: -1
+
+# Should JPremium restrict moving for unauthorized players?
+restrictedMovement: true
+
+# Should JPremium restrict interacting with the environment for unauthorized players?
+# Such as: block breaking, block placing, damaging entities, taking damage, chatting, etc.
+restrictedInteractions: true
+
+# Should JPremium give a blindness effect to unauthorized players?
+blindnessEffect: true
+
+# A location to where players are teleported after joining the server.
+# Authorized and unauthorized players are teleported to the location.
+# The format of the location is world/x/y/z/yaw/pitch. Leave empty to disable.
+spawnLocation: ''
+
+# A message which is shown on the captcha map with a captcha code.
+# The message should be short to fit in on the map.
+# The Minecraft Map Font supports only chars a-z, A-Z, 0-9 and several basic special chars.
+# You need to use placeholder %captcha_code% which will be replaced with a real captcha code.
+# You can change an icon on the captcha map by replacing file 'image.png' to your own image. The image should have maximum resolution 100x100.
+captchaMessage: 'Your captcha is %captcha_code%'
+
+# Players who send an invalid access token during the handshake process are disconnected with that message.
+disconnectionMessage: '§8[§c§l»§8] §7Please join to the server via §amc.example.com§7!'
