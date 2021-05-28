@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.3'
+version: 'CLEARED-Bungee-1.11.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -80,9 +80,12 @@ lastServerRedirection: false
 delayTitlesAfterJoinTime: 1000
 
 # Should JPremium recognise Bedrock players and alters their unique ids to bedrock.
-# Works only when you install GeyserMC and Floodgate on your server.
+# Works only when you install GeyserMC 2.0 and Floodgate 2.0 on your server.
 # For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#bedrock-support
 floodgateSupport: false
+
+# Should JPremium manage user objects in such a way to support a multi-proxy network.
+multiProxySupport: false
 
 # Should JPremium verify captcha codes which are entered by cracked players.
 # If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
@@ -92,13 +95,17 @@ verifyCaptchaCode: true
 # If you enable it, please do not forget to change the usage messages in the message file.
 confirmPassword: false
 
-# Should JPremium show a boss bar with remain time to authorisation for cracked players.
-showBossBarRemainAuthorisationTimer: true
-
 # Should JPremium use the backup server when the official server is down to verify players nicknames.
 # If you want to use it, you need to contact with the JPremium author.
 # Your request will be process and may be accepted or rejected.
 useBackupServer: false
+
+# The email subject which is sent when a player requests password recovery.
+passwordRecoverySubject: The password recovery
+
+# A server name which is used for generating a TOTP auth link.
+# The server name is shown in a TOTP application.
+serverName: MC Example
 
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
