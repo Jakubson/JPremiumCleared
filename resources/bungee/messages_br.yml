@@ -14,7 +14,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.9.3'
+version: 'CLEARED-Bungee-1.11.0'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Nickname inválido, use um diferente'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Mude seu Nickname para: &a%nickname%&7!'
@@ -58,6 +58,12 @@ joinRequireLoginFadeIn: 30
 joinRequireLoginStay: 1200
 joinRequireLoginFadeOut: 30
 joinRequireLoginChat: ''
+joinRequireSecurityLoginTitle: '&e&lVocê precisa usar'
+joinRequireSecurityLoginSubTitle: '&6/login <senha> <codigo>'
+joinRequireSecurityLoginFadeIn: 30
+joinRequireSecurityLoginStay: 1200
+joinRequireSecurityLoginFadeOut: 30
+joinRequireSecurityLoginChat: ''
 joinRequireRegisterTitle: '&e&lVocê precisa usar'
 joinRequireRegisterSubTitle: '&6/register <senha> <captcha>'
 joinRequireRegisterFadeIn: 30
@@ -71,10 +77,12 @@ loginErrorUserNotRegistered: '&8[&c&l»&8] &7Você não foi Registrado!'
 loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Você já está no jogo!'
 loginErrorUsage: '&8[&c&l»&8] &7exemplo: /login <senha>'
 loginErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+loginErrorWrongCode: '&8[&c&l»&8] &7Código errado!'
 loginErrorTimeElapsed: '&8[&c&l»&8] &7Tempo esgotado!'
 loginBossBarTimerTitle: '&6[&e&l»&6] &eTempo Restánte &6%time%&es &6[&e&l«&6]'
 loginBossBarTimerColor: 2
 loginBossBarTimerDivision: 2
+loginActionBarTimer: ''
 loginSuccessLoggedTitle: '&a&lOla %nickname%'
 loginSuccessLoggedSubTitle: '&aLogado'
 loginSuccessLoggedFadeIn: 30
@@ -102,6 +110,7 @@ registerErrorTimeElapsed: '&8[&c&l»&8] &7Tempo esgotado!'
 registerBossBarTimerTitle: '&6[&e&l»&6] &eTempo restánte: &6%time%&es &6[&e&l«&6]'
 registerBossBarTimerColor: 2
 registerBossBarTimerDivision: 2
+registerActionBarTimer: ''
 registerSuccessRegisteredTitle: '&a&lOla %nickname%'
 registerSuccessRegisteredSubTitle: '&aRegistrado'
 registerSuccessRegisteredFadeIn: 30
@@ -112,7 +121,7 @@ registerSuccessRegisteredChat: |
   &8[&a&l»&8] &7Olá, no Minecraft Server Network! Aqui você tem comandos úteis:
   &f
   &f  &a&l» &7/unregister <senha>
-  &f  &a&l» &7/changepassword <current-password> <new-password>
+  &f  &a&l» &7/changepassword <senha-atual> <nova-senha>
   &f  &a&l» &7/createpassword <senha>
   &f  &a&l» &7/premium <senha>
   &f  &a&l» &7/cracked <senha>
@@ -128,6 +137,7 @@ unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
 unregisterErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
 unregisterErrorUsage: '&8[&c&l»&8] &7Exemplo: /unregister <senha>'
 unregisterErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7Você precisa desabilitar uma autorização de segundo fator!'
 unregisterSuccessUnregistered: '&8[&a&l»&8] &7Seu Registro foi apagado!'
 
 changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
@@ -158,6 +168,7 @@ premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
 premiumErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
 premiumErrorUsage: '&8[&c&l»&8] &7Exemplo: /premium <senha>'
 premiumErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
+premiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Você precisa desabilitar a autorização de segundo fator!'
 premiumErrorServersDown: '&8[&c&l»&8] &7Os servidores Mojang não estão respondendo!'
 premiumErrorDatabaseDown: '&8[&c&l»&8] &7O banco de dados não está respondendo!'
 premiumErrorUserNotPremium: '&8[&c&l»&8] &7Você não tem uma conta premium!'
@@ -196,15 +207,52 @@ changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7Senha incorreta!'
 changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Endereço de e-mail errado!'
 changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Seu endereço de e-mail foi alterado!'
 
-recoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
-recoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Voce nao tem uma senha!'
-recoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Você não tem um endereço de e-mail!'
-recoveryPasswordErrorUsage: '&8[&c&l»&8] &7Exemplo: /recoverypassword <email-address>'
-recoveryPasswordErrorWrongEmailAddress: '&8[&c&l»&8] &7Endereço de e-mail errado!'
-recoveryPasswordErrorRecoveringDelay: '&8[&c&l»&8] &7Você pode recuperar uma senha a cada 1 hora!'
-recoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Sua senha foi recuperada!'
-recoveryPasswordSuccessEmailSubject: 'A recuperação da senha'
-recoveryPasswordSuccessEmailMessage: 'Ola %nickname%! Você solicitou a recuperação de sua senha de %address% endereço de IP! Esta é a sua nova senha <b>%password%</b>. Por favor entre no servidor e mude-o o mais rápido possível usando <b>/changepassword %password% <NovaSenha> <NovaSenha></b> commando!'
+requestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+requestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7Voce nao tem uma senha!'
+requestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Você não tem um endereço de e-mail!'
+requestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Exemplo: /requestpasswordrecovery <email-address>'
+requestPasswordRecoveryErrorWrongEmailAddress: '&8[&c&l»&8] &7Um endereço de e-mail errado!'
+requestPasswordRecoveryErrorRecoveringDelay: '&8[&c&l»&8] &7Você pode recuperar uma senha a cada 1 hora!'
+requestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Sua solicitação de recuperação de senha foi enviada!'
+
+confirmPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+confirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7Você não tem um código de recuperação!'
+confirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Exemplo: /confirmpasswordrecovery <código de recuperação> <nova-senha>'
+confirmPasswordRecoveryErrorDifferentNewPasswords: '&8[&c&l»&8] &7As novas senhas são diferentes!'
+confirmPasswordRecoveryErrorUnsafeNewPassword: '&8[&c&l»&8] &7Uma nova senha deve ter pelo menos 6 caracteres de comprimento!'
+confirmPasswordRecoveryErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Uma senha não pode conter seu apelido!'
+confirmPasswordRecoveryErrorPasswordTooWeak: '&8[&c&l»&8] &7Uma senha é muito fraca!'
+confirmPasswordRecoveryErrorWrongRecoveryCode: '&8[&c&l»&8] &7Código de recuperação errado!'
+confirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Sua solicitação de recuperação de senha foi confirmada!'
+
+requestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Voce e um jogador bedrock!'
+requestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+requestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+requestSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+requestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Você já tem um segundo fator!'
+requestSecondFactorErrorUsage: '&8[&c&l»&8] &7Exemplo: /requestsecondfactor'
+requestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Please go to this website &o[click on this message] &7and scan the QR code using your application! Then execute /activatesecondfactor <senha> <codigo> command!'
+
+activateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Voce e um jogador bedrock!'
+activateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+activateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+activateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+activateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Você já tem um segundo fator!'
+activateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Você não solicitou um segundo fator!'
+activateSecondFactorErrorUsage: '&8[&c&l»&8] &7Exemplo: /activatesecondfactor <senha> <codigo>'
+activateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7Senha arrada!'
+activateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Código errado!'
+activateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7Um segundo fator foi ativado!'
+
+deactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Voce e um jogador bedrock!'
+deactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Você é um usuario Original!'
+deactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Você não está registrado!'
+deactivateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Você não está Logado!'
+deactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7Você já tem um segundo fator!'
+deactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Exemplo: /deactivatesecondfactor <senha> <codigo>'
+deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7Senha arrada!'
+deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Código errado!'
+deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7Um segundo fator foi desativado!'
 
 forceLoginErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcelogin <nickname>'
 forceLoginErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
@@ -247,6 +295,7 @@ forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
 forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
 forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7O usuário já é um jogador premium!'
 forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forcePremiumErrorSecondFactorActivated: '&8[&c&l»&8] &7O usuário precisa desabilitar uma autorização de segundo fator!'
 forcePremiumErrorServersDown: '&8[&c&l»&8] &7Os servidores Mojang não estão respondendo!'
 forcePremiumErrorDatabaseDown: '&8[&c&l»&8] &7O banco de dados não está respondendo!'
 forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7O usuário não possui uma conta premium!'
@@ -293,6 +342,43 @@ forceRecoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7O usuário não te
 forceRecoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7O usuário não possui um endereço de e-mail!'
 forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7A senha do usuário foi recuperada!'
 
+forceRequestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcerequestpasswordrecovery <nickname>'
+forceRequestPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceRequestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceRequestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7O usuário não tem uma senha!'
+forceRequestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7O usuário não possui um endereço de e-mail!'
+forceRequestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7A solicitação de recuperação de senha do usuário foi enviada!'
+
+forceConfirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcerconfirmpasswordrecovery <nickname> <nova-senha>'
+forceConfirmPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceConfirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7O usuário não possui um código de recuperação!'
+forceConfirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7A solicitação de recuperação de senha do usuário foi confirmada!'
+
+forceRequestSecondFactorErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcerequestsecondfactor <nickname>'
+forceRequestSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceRequestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceRequestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7O usuário é um jogador original!'
+forceRequestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceRequestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7O usuário já tem um segundo fator!'
+forceRequestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7A segunda solicitação de fator do usuário foi enviada!'
+
+forceActivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Exemplo: /forceactivatesecondfactor <nickname>'
+forceActivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceActivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceActivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7O usuário é um jogador original!'
+forceActivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7O usuário não está cadastrado!'
+forceActivateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7O usuário já tem um segundo fator!'
+forceActivateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7O usuário não solicitou um segundo fator!'
+forceActivateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7A segunda solicitação de fator do usuário foi ativada!'
+
+forceDeactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcedeactivatesecondfactor <nickname>'
+forceDeactivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceDeactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7O usuário é um jogador bedrock!'
+forceDeactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7O usuário é um jogador original!'
+forceDeactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &O usuário não está cadastrado!'
+forceDeactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7O usuário não tem um segundo fator!'
+forceDeactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7A solicitação de segundo fator do usuário foi desativada!'
+
 forcePurgeUserProfileErrorUsage: '&8[&c&l»&8] &7Exemplo: /forcepurgeuserprofile <nickname>'
 forcePurgeUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
 forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7O usuário foi eliminado!'
@@ -300,6 +386,7 @@ forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Você foi eliminado!'
 
 forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Exemplo: /forceviewuserprofile <nickname>'
 forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Esse usuário não existe!'
+forceViewUserProfileSuccessNoData: '&c[sem dados]'
 forceViewUserProfileSuccessProfile: |-
   &f
   &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
