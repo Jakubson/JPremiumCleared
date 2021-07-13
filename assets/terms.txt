@@ -4,4 +4,4 @@
 4. The buyer can request a money refund within 14 days since the purchase date, then the author refunds the money which is downsized by PayPal commissions.
 5. The author does not warrant the product is not lacking errors and is not liable for damages caused by using the product.
 6. The author makes an effort to repair or improve the product, but does not warrant updating the product or repairing all issues.
-7. The plugin gets anonymous metrics data which are processed my bstats.org.
+7. The plugin gets anonymous metrics data which are processed by bstats.org.
