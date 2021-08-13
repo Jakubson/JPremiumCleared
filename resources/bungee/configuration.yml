@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.11.0'
+version: 'CLEARED-Bungee-1.12.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -95,9 +95,8 @@ verifyCaptchaCode: true
 # If you enable it, please do not forget to change the usage messages in the message file.
 confirmPassword: false
 
-# Should JPremium use the backup server when the official server is down to verify players nicknames.
-# If you want to use it, you need to contact with the JPremium author.
-# Your request will be process and may be accepted or rejected.
+# Should JPremium use an external API server when the API server cannot process requests to verify players nicknames.
+# The external API sometimes may reruns wrong responses!
 useBackupServer: false
 
 # The email subject which is sent when a player requests password recovery.
@@ -126,6 +125,9 @@ recoveringPasswordDelay: 60
 
 # The absent time (is days) after which cracked players are automatically unregistered.
 automaticUnregisterTime: 0
+
+# How many players can send a login requests in 5 minutes. Set to 0 to disable.
+antiBotSensitivity: 500
 
 # The hashing algorithm which is used to hash cracked player passwords.
 # There are two options: SHA256, SHA512, BCRYPT.
