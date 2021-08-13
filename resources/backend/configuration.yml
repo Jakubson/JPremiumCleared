@@ -4,7 +4,7 @@
 #|                                           J P R E M I U M                                            |#
 #|                                       C O N F I G U R A T I O N                                      |#
 #|                                                                                                      |#
-#|                                        CLEARED-Backend-1.11.0                                        |#
+#|                                        CLEARED-Backend-1.12.0                                        |#
 #|                                                                                                      |#
 #|                                                                                                      |#
 #|                 If you are looking for support with the configuration or with JPremium,              |#
@@ -22,8 +22,8 @@ accessToken: ''
 
 # A slot in the hot-bar where unregistered players get the captcha map.
 # If you enable captcha codes verification in the proxy JPremium configuration, you should enable that option on all limbo servers.
-# Set the option to a number from 1 to 9 to enable. Set to -1 to disable.
-captchaMapSlot: -1
+# Set the option to a number from 1 to 9 to enable. Set to 0 to disable.
+captchaMapSlot: 0
 
 # Should JPremium restrict moving for unauthorized players?
 restrictedMovement: true
@@ -48,4 +48,4 @@ spawnLocation: ''
 captchaMessage: 'Your captcha is %captcha_code%'
 
 # Players who send an invalid access token during the handshake process are disconnected with that message.
-disconnectionMessage: '§8[§c§l»§8] §7Please join to the server via §amc.example.com§7!'
+disconnectionMessage: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
