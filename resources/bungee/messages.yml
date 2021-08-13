@@ -14,7 +14,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.11.0'
+version: 'CLEARED-Bungee-1.12.0'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname to &a%nickname%&7!'
@@ -26,6 +26,7 @@ preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7This server does not suppor
 preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Could not load your user profile!'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Your user profile was not loaded on the pre-login stage!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Your premium account has been verified! Please join to the server again!'
+preLoginAntiBotActivated: '&8[&c&l»&8] &7Too many login requests! Please wait up to 5 minutes before next join!'
 
 disconnectRedirectionTitle: ''
 disconnectRedirectionSubTitle: ''
@@ -92,8 +93,8 @@ loginSuccessLoggedChat: |-
   &f
   &8[&a&l»&8] &7If you do not want to login next time, please execute:
   &f
-  &f  &a&l» &7/premium <password> - if you have a &apremium&7 luncher.
-  &f  &a&l» &7/startsession - if you have a &ccracked&7 luncher.
+  &f  &a&l» &7/premium <password> - if you have a &apremium&7 launcher.
+  &f  &a&l» &7/startsession - if you have a &ccracked&7 launcher.
   &f
 
 registerErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
