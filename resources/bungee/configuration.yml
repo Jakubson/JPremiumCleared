@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.12.0'
+version: 'CLEARED-Bungee-1.13.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -17,7 +17,7 @@ storagePort: 3306
 storageDatabase: ''
 storageUser: ''
 storagePassword: ''
-storageProperties: [useSSL=true, verifyServerCertificate=true]
+storageProperties: []
 
 # Storage connection pool settings.
 # Do not change these settings unless you know what you are doing!
@@ -85,6 +85,8 @@ delayTitlesAfterJoinTime: 1000
 floodgateSupport: false
 
 # Should JPremium manage user objects in such a way to support a multi-proxy network.
+# Enable it only when you have more than one BungeeCord and you installed JPremium on all BungeeCord!
+# If you have only one BungeeCord, do NOT enable it!
 multiProxySupport: false
 
 # Should JPremium verify captcha codes which are entered by cracked players.
@@ -97,7 +99,7 @@ confirmPassword: false
 
 # Should JPremium use an external API server when the API server cannot process requests to verify players nicknames.
 # The external API sometimes may reruns wrong responses!
-useBackupServer: false
+useBackupServer: true
 
 # The email subject which is sent when a player requests password recovery.
 passwordRecoverySubject: The password recovery
@@ -126,12 +128,9 @@ recoveringPasswordDelay: 60
 # The absent time (is days) after which cracked players are automatically unregistered.
 automaticUnregisterTime: 0
 
-# How many players can send a login requests in 5 minutes. Set to 0 to disable.
-antiBotSensitivity: 500
-
 # The hashing algorithm which is used to hash cracked player passwords.
 # There are two options: SHA256, SHA512, BCRYPT.
-# All of algorithms are salted.
+# All the algorithms are salted.
 passwordHashingAlgorithm: SHA256
 
 # The safe password pattern (in regular expression). Cracked player passwords have to match to it.
