@@ -1,4 +1,4 @@
-|#+------------------------------------------------------------------------------------------------------+#
+#+------------------------------------------------------------------------------------------------------+#
 #|                                                                                                      |#
 #|                                                                                                      |#
 #|                                            J P R E M I U M                                           |#
@@ -55,13 +55,13 @@ joinRequireLoginStay: 1200
 joinRequireLoginFadeOut: 30
 joinRequireLoginChat: ''
 joinRequireSecurityLoginTitle: '&e&lUtiliza'
-joinRequireSecurityLoginSubTitle: '&6/login <contraseña> %captcha_code%
+joinRequireSecurityLoginSubTitle: '&6/login <contraseña>'
 joinRequireSecurityLoginFadeIn: 30
 joinRequireSecurityLoginStay: 1200
 joinRequireSecurityLoginFadeOut: 30
 joinRequireSecurityLoginChat: ''
-joinRequireRegisterTitle: '&e&lUtiliza'
-joinRequireRegisterSubTitle: '&6/register <contraseña> %captcha_code%
+joinRequireRegisterTitle: '&eUtiliza'
+joinRequireRegisterSubTitle: '&6/register <contraseña>'
 joinRequireRegisterFadeIn: 30
 joinRequireRegisterStay: 1200
 joinRequireRegisterFadeOut: 30
@@ -95,7 +95,7 @@ loginSuccessLoggedChat: |-
 registerErrorUserBedrock: '&8[&c&l»&8] &7Tú eres usuario de bedrock!'
 registerErrorUserPremium: '&8[&c&l»&8] &7Tú eres usuario premium!'
 registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Este Nick ya esta registrado!'
-registerErrorUsage: '&8[&c&l»&8] Usa /register <contraseña> %captcha_code%'
+registerErrorUsage: '&8[&c&l»&8] Usa /register <contraseña>'
 registerErrorDifferentPasswords: '&8[&c&l»&8] &7Las contraseñas son diferentes!'
 registerErrorUnsafePassword: '&8[&c&l»&8] &7La contraseña debe contener almenos 6 caracteres!'
 registerErrorPasswordContainsNickname: '&8[&c&l»&8] &7Tú nick no puede ser la contraseña!'
@@ -114,7 +114,7 @@ registerSuccessRegisteredStay: 100
 registerSuccessRegisteredFadeOut: 30
 registerSuccessRegisteredChat: |
   &f
-  &8[&a&l»&8] &7Bienvenid@ a lexcraft Network! Estos comandos te pueden ser de ayuda:
+  &8[&a&l»&8] &7Bienvenid@ a el servidor! Estos comandos te pueden ser de ayuda:
   &f
   &f  &a&l» &7/unregister <contraseña>
   &f  &a&l» &7/changepassword <contraseña-actual> <contraseña-nueva>
