@@ -13,7 +13,7 @@ version: 'CLEARED-Bungee-1.13.0'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Porfavor utiliza un nick diferente!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Porfavor cambia tu nick a &a%nickname%&7!'
-preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Porfavor unete via &amc.lexcraft.ga&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Porfavor unete via &amc.tuservidor.com&7!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Ya estas en linea!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Los Servidores de mojang no responden!'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Porfavor rejistra tu cuenta en la web'
