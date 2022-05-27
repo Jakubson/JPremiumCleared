@@ -1,7 +1,1 @@
-1. The buyer can use the product only on their own server.
-2. The buyer cannot decompile or edit the source code of the product without the author agreement.
-3. The buyer cannot distribute the product or the source code of the product without the author agreement.
-4. The buyer can request a money refund within 14 days since the purchase date, then the author refunds the money which is downsized by PayPal commissions.
-5. The author does not warrant the product is not lacking errors and is not liable for damages caused by using the product.
-6. The author makes an effort to repair or improve the product, but does not warrant updating the product or repairing all issues.
-7. The plugin collects anonymous metrics data which are processed by bstats.org.
+in progress
