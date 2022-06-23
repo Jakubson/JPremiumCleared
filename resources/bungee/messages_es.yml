@@ -1,4 +1,4 @@
-|#+------------------------------------------------------------------------------------------------------+#
+#+------------------------------------------------------------------------------------------------------+#
 #|                                                                                                      |#
 #|                                                                                                      |#
 #|                                            J P R E M I U M                                           |#
@@ -31,13 +31,13 @@ disconnectRedirectionFadeOut: 0
 disconnectRedirectionChat: '&8[&c&l»&8] &7Haz sido desconectado de el servidor y te hemos redirijido a el lobby, motivo: ''%reason%&7''!'
 
 joinSessionPremiumTitle: '&a&lBienvenid@ %nickname%'
-joinSessionPremiumSubTitle: '&aseción iniciada como premium!'
+joinSessionPremiumSubTitle: '&asesión iniciada como premium!'
 joinSessionPremiumFadeIn: 30
 joinSessionPremiumStay: 100
 joinSessionPremiumFadeOut: 30
 joinSessionPremiumChat: ''
 joinSessionCrackedTitle: '&a&lBienvenid@ %nickname%'
-joinSessionCrackedSubTitle: '&seción iniciada como no-premium!'
+joinSessionCrackedSubTitle: '&sesión iniciada como no-premium!'
 joinSessionCrackedFadeIn: 30
 joinSessionCrackedStay: 100
 joinSessionCrackedFadeOut: 30
@@ -86,7 +86,7 @@ loginSuccessLoggedStay: 100
 loginSuccessLoggedFadeOut: 30
 loginSuccessLoggedChat: |-
   &f
-  &8[&a&l»&8] &7If you do not want to login next time, please execute:
+  &8[&a&l»&8] &7Si no quieres iniciar sesión la próxima vez utiliza:
   &f
   &f  &a&l» &7/premium <contraseña> - si tu tienes un launcher &apremium.
   &f  &a&l» &7/startsession - si tu tienes un laucher &cNo oficial
