@@ -31,7 +31,7 @@ disconnectRedirectionFadeOut: 0
 disconnectRedirectionChat: '&8[&c&l»&8] &7Haz sido desconectado de el servidor y te hemos redirijido a el lobby, motivo: ''%reason%&7''!'
 
 joinSessionPremiumTitle: '&a&lBienvenid@ %nickname%'
-joinSessionPremiumSubTitle: '&aseción iniciada como premium!'
+joinSessionPremiumSubTitle: '&asesión iniciada como premium!'
 joinSessionPremiumFadeIn: 30
 joinSessionPremiumStay: 100
 joinSessionPremiumFadeOut: 30
@@ -43,7 +43,7 @@ joinSessionCrackedStay: 100
 joinSessionCrackedFadeOut: 30
 joinSessionCrackedChat: ''
 joinSessionBedrockTitle: '&a&lBienvend@i %nickname%'
-joinSessionBedrockSubTitle: '&aseción iniciada con bedrock!'
+joinSessionBedrockSubTitle: '&asesión iniciada con bedrock!'
 joinSessionBedrockFadeIn: 30
 joinSessionBedrockStay: 100
 joinSessionBedrockFadeOut: 30
@@ -80,7 +80,7 @@ loginBossBarTimerColor: 2
 loginBossBarTimerDivision: 2
 loginActionBarTimer: ''
 loginSuccessLoggedTitle: '&a&lBienvenid@ %nickname%'
-loginSuccessLoggedSubTitle: '&aseción iniciada'
+loginSuccessLoggedSubTitle: '&asesión iniciada'
 loginSuccessLoggedFadeIn: 30
 loginSuccessLoggedStay: 100
 loginSuccessLoggedFadeOut: 30
