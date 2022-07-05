@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.13.0'
+version: 'CLEARED-Bungee-1.14.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -97,9 +97,11 @@ verifyCaptchaCode: true
 # If you enable it, please do not forget to change the usage messages in the message file.
 confirmPassword: false
 
+# !!! THIS FEATURE IS DEPRECATED DUE TO ITS UNRELIABILITY !!!
+# !!! YOU USE IT AT YOUR OW RISK !!!
 # Should JPremium use an external API server when the API server cannot process requests to verify players nicknames.
-# The external API sometimes may reruns wrong responses!
-useBackupServer: true
+# The external API sometimes may return wrong responses!
+useBackupServer: false
 
 # The email subject which is sent when a player requests password recovery.
 passwordRecoverySubject: The password recovery
@@ -138,7 +140,7 @@ safePasswordPattern: '[\S]{6,25}'
 
 # The hostnames which players can use to connect with your BungeeCord server.
 # If you want to disable it, please set the value to '[]'.
-# All host names have to have ports, for example: 'acceptedHostnames: [mc.example:25565]'.
+# For example: 'acceptedHostnames: [mc.example.com]'.
 acceptedHostnames: []
 
 # The commands which not logged cracked players can execute.
