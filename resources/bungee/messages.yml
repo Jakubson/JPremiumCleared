@@ -14,7 +14,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.13.0'
+version: 'CLEARED-Bungee-1.14.0'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname to &a%nickname%&7!'
@@ -84,6 +84,8 @@ loginBossBarTimerTitle: '&6[&e&l»&6] &eRemain time to authorization is &6%time%
 loginBossBarTimerColor: 2
 loginBossBarTimerDivision: 2
 loginActionBarTimer: ''
+loginReminderEmail: '&6[&e&l»&6] &7You still do not have an email address assigned to your account. Please assign it now using /changemailaddress <password> <email-address>!'
+loginReminderSecondFactor: '&6[&e&l»&6] &7You still do not have second factor enabled on your account. Please enable it now using /requestsecondfactor!'
 loginSuccessLoggedTitle: '&a&lHi %nickname%'
 loginSuccessLoggedSubTitle: '&aLogged'
 loginSuccessLoggedFadeIn: 30
@@ -402,3 +404,12 @@ forceViewUserProfileSuccessProfile: |-
   &f  &a&l» &7First seen &a&l» &7%first_seen%
   &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
   &f
+
+forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7Usage: /forcemergepremiumuserprofile <current-nickname> <previous-nickname>'
+forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Such a current user is not exist!'
+forceMergePremiumUserProfileErrorUserNotPremium: '&8[&c&l»&8] &7The current user is not a premium player!'
+forceMergePremiumUserProfileErrorMergedWithUserNotExist: '&8[&c&l»&8] &7Such a previous user is not exist!'
+forceMergePremiumUserProfileErrorMergedWithUserBedrock: '&8[&c&l»&8] &7The previous user is a bedrock player!'
+forceMergePremiumUserProfileErrorMergedWithUserPremium: '&8[&c&l»&8] &7The previous user is a premium player!'
+forceMergePremiumUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7You have been merged!'
+forceMergePremiumUserProfileSuccessMerged: '&8[&a&l»&8] &7The user has been merged!'
