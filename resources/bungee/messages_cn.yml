@@ -108,8 +108,19 @@ loginBossBarTimerTitle: '&6[&e&l»&6] &e剩余 &6%time%&es 进行验证捏 &6[&e
 loginBossBarTimerColor: 2
 loginBossBarTimerDivision: 2
 loginActionBarTimer: ''
-loginReminderEmail: '&6[&e&l»&6] &7您账号似乎没有绑定邮箱!为了安全似乎可以绑一个?awa 使用 angemailaddress <密码> <邮箱地址>即可()'
-loginReminderSecondFactor: '&6[&e&l»&6] &7您的账号似乎没有开启2FA捏?如果需要的话可以使用 /requestsecondfactor 进行开启'
+loginReminderEmail: |-
+  &6[&e&l»&6] &7您账号似乎没有绑定邮箱!
+  &f 
+  &f 为了安全似乎可以绑一个awa? 
+  &f &a&l» &7/changemailaddress <密码> <邮箱地址>
+  &f 
+loginReminderSecondFactor: |-
+  &6[&e&l»&6] &7您账号似乎没有启用2FA!
+  &f 
+  &f 为了安全似乎可以启用一个看看qwq?
+  &f 你可以使用以下命令以请求 2FA验证器 绑定二维码!
+  &f &a&l» &7/requestsecondfactor
+  &f 
 loginSuccessLoggedTitle: '&a&l您好 %nickname%'
 loginSuccessLoggedSubTitle: '&a登录咯!'
 loginSuccessLoggedFadeIn: 30
