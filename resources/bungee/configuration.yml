@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.14.0'
+version: 'CLEARED-Bungee-1.16.0'
 
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
@@ -33,6 +33,7 @@ mailHost: ''
 mailPort: 25
 mailUser: ''
 mailPassword: ''
+mailName: Your server name
 mailUseTLS: true
 
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
@@ -108,7 +109,7 @@ passwordRecoverySubject: The password recovery
 
 # A server name which is used for generating a TOTP auth link.
 # The server name is shown in a TOTP application.
-serverName: MC Example
+serverName: Your server name
 
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
@@ -144,7 +145,7 @@ safePasswordPattern: '[\S]{6,25}'
 acceptedHostnames: []
 
 # The commands which not logged cracked players can execute.
-logoutUserCommands: [login, register, recoverypassword, confirmpasswordrecovery, l]
+logoutUserCommands: [login, register, requestpasswordrecovery, confirmpasswordrecovery, l]
 
 # The command aliases.
 # To add more aliases for commands, please add new values using this format '<command>CommandAliases: [<alias>, <alias>, ...]', for example: 'changePasswordCommandAliases: [chpass]'.
