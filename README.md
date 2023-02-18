@@ -1,1 +1,1 @@
-**Full details and purchase is available on builtbybit.com: https://builtbybit.com/resources/jpremium-proxy-authorization-plugin.17227/**
+**Full details and purchase is available on builtbybit.com: https://builtbybit.com/resources/17227/**
