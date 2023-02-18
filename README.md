@@ -1,1 +1,1 @@
-Description of the plugin, you can find there: https://www.spigotmc.org/resources/27766/
+**Full details and purchase is available on builtbybit.com: https://builtbybit.com/resources/jpremium-proxy-authorization-plugin.17227/**
