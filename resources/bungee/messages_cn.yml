@@ -1,25 +1,24 @@
-### 该配置文件由 TRCloud 和 心火计划翻译组 共同翻译
+### Translated By TRCloud Studio and Heartfire Project
 
 #+------------------------------------------------------------------------------------------------------+#
 #|                                                                                                      |#
 #|                                                                                                      |#
 #|                                            J P R E M I U M                                           |#
-#|                                              语 言 文 件                                              |#
+#|                                            M E S S A G E S                                           |#
 #|                                                                                                      |#
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
 #+------------------------------------------------------------------------------------------------------+#
 #|                                                                                                      |#
-#|                            你可以在这里找到些其他语言的翻译文件:                                        |#
+#|                              You can find some translations at:                                      |#
 #|                https://github.com/Jakubson/JPremiumCleared/tree/master/resources/bungee              |#
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-## 版本
-version: 'CLEARED-Bungee-1.15.0'
 
-## 预登录消息
+version: 'CLEARED-Velocity-1.16.2'
+
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7请使用另一个玩家名!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7请您玩家名改为 &a%nickname%&7!  &0 Help Us '
 preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7 请通过&axiaomckedou233.top或JK服&7进入服务器!'
@@ -31,15 +30,8 @@ preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7无法加载您的玩家资料�
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7您的玩家资料似乎卡在第一阶段加载了?'
 preLoginPremiumVerification: '&8[&a&l»&8] &7您的正版身份已认证! 请重新进入服务器!'
 
-## 掉线提示
-disconnectRedirectionTitle: ''
-disconnectRedirectionSubTitle: ''
-disconnectRedirectionFadeIn: 0
-disconnectRedirectionStay: 0
-disconnectRedirectionFadeOut: 0
-disconnectRedirectionChat: '&8[&c&l»&8] &7您已从服务器掉线,同时被自动的重定向到了别的服务器! 掉线原因 ''%reason%&7'''
+lastServerRedirection: '&8[&a&l»&8] &7你已经被重定向到上次退出时所在的服务器!'
 
-## 玩家进入服务器时的提示
 joinSessionPremiumTitle: '&a&l你好 %nickname%'
 joinSessionPremiumSubTitle: '&a是正版玩家耶!'
 joinSessionPremiumFadeIn: 30
@@ -77,8 +69,6 @@ joinRequireRegisterStay: 1200
 joinRequireRegisterFadeOut: 30
 joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
 
-### 玩家命令&帮助
-## 登入
 loginErrorUserBedrock: '&8[&c&l»&8] &7您已经是基岩版玩家了诶!'
 loginErrorUserPremium: '&8[&c&l»&8] &7您已经是正版玩家了诶!'
 loginErrorUserNotRegistered: '&8[&c&l»&8] &7唔姆?你似乎没注册'
@@ -87,25 +77,15 @@ loginErrorUsage: '&8[&c&l»&8] 用法: /login <密码>'
 loginErrorWrongPassword: '&8[&c&l»&8] &7A 唔?密码错了诶'
 loginErrorWrongCode: '&8[&c&l»&8] &7诶?验证码似乎错了'
 loginErrorTimeElapsed: '&8[&c&l»&8] &7验证超时了诶!下次速度快点罢'
-loginBossBarTimerTitle: '&6[&e&l»&6] &e剩余 &6%time%&es 进行验证捏 &6[&e&l«&6]'
-loginBossBarTimerColor: 2
-loginBossBarTimerDivision: 2
+loginErrorSecurityUsage: '&8[&c&l»&8] &7使用方法: /login <密码> <登录验证码>'
+loginBossBarTimerTitle: '&6[&e&l»&6] &e你还剩余 &6%time%&es 进行登录验证!&6[&e&l«&6]'
+loginBossBarTimerColor: YELLOW
+loginBossBarTimerDivision: NOTCHED_6
 loginActionBarTimer: ''
-loginReminderEmail: |-
-  &6[&e&l»&6] &7您账号似乎没有绑定邮箱!
-  &f 
-  &f 为了安全似乎可以绑一个awa? 
-  &f &a&l» &7/changemailaddress <密码> <邮箱地址>
-  &f 
-loginReminderSecondFactor: |-
-  &6[&e&l»&6] &7您账号似乎没有启用2FA!
-  &f 
-  &f 为了安全似乎可以启用一个看看qwq?
-  &f 你可以使用以下命令以请求 2FA验证器 绑定二维码!
-  &f &a&l» &7/requestsecondfactor
-  &f 
-loginSuccessLoggedTitle: '&a&l您好 %nickname%'
-loginSuccessLoggedSubTitle: '&a登录咯!'
+loginReminderEmail: '&6[&e&l»&6] &7你还没有为你的帐号绑定一个邮箱, 请使用 [/changemailaddress <密码> <邮箱地址>] 命令绑定一个!'
+loginReminderSecondFactor: '&6[&e&l»&6] &7你还没有为你的帐号启用两步验证, 请使用 [/requestsecondfactor] 启用两步验证!'
+loginSuccessLoggedTitle: '&a&l欢迎 %nickname% 加入服务器!'
+loginSuccessLoggedSubTitle: '&a已登入'
 loginSuccessLoggedFadeIn: 30
 loginSuccessLoggedStay: 100
 loginSuccessLoggedFadeOut: 30
@@ -117,7 +97,6 @@ loginSuccessLoggedChat: |-
   &f  &a&l» &7/startsession - 如果您是 &c离线玩家&7.
   &f
 
-# 注册
 registerErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家诶!'
 registerErrorUserPremium: '&8[&c&l»&8] &7您是正版玩家诶!'
 registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7您已经注册了诶?'
@@ -129,9 +108,9 @@ registerErrorPasswordTooWeak: '&8[&c&l»&8] &7你密码是不是太不安全了?
 registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7错误的验证码'
 registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7您有太多的账号了!'
 registerErrorTimeElapsed: '&8[&c&l»&8] &7超过了验证时间捏!'
-registerBossBarTimerTitle: '&6[&e&l»&6] &e剩余验证时间 &6%time%&es &6[&e&l«&6]'
-registerBossBarTimerColor: 2
-registerBossBarTimerDivision: 2
+registerBossBarTimerTitle: '&6[&e&l»&6] &e你还剩余 &6%time%&es 进行注册!&6[&e&l«&6]'
+registerBossBarTimerColor: YELLOW
+registerBossBarTimerDivision: NOTCHED_6
 registerActionBarTimer: ''
 registerSuccessRegisteredTitle: '&a&l您好 %nickname%'
 registerSuccessRegisteredSubTitle: '&a已注册!'
@@ -153,7 +132,6 @@ registerSuccessRegisteredChat: |
   &f  &a&l» &7/recoverypassword <邮箱地址>
   &f
 
-## 注销
 unregisterErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家!'
 unregisterErrorUserPremium: '&8[&c&l»&8] &7您是正版玩家!'
 unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7你还没有注册!'
@@ -163,7 +141,6 @@ unregisterErrorWrongPassword: '&8[&c&l»&8] &7一个错误的密码!'
 unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7你需要禁用2FA验证!'
 unregisterSuccessUnregistered: '&8[&a&l»&8] &7你已经成功注销!'
 
-## 修改密码
 changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7你还没有注册!'
 changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7你还没有登录!'
 changePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7你还没有一个密码!'
@@ -175,7 +152,6 @@ changePasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7密码似乎不太安全捏?
 changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7当前的密码错误!'
 changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7您已成功更改您的密码!'
 
-## 创建密码
 createPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7您没有注册!'
 createPasswordErrorUserNotLogged: '&8[&c&l»&8] &7您没有登录捏!'
 createPasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7您已经有了密码捏'
@@ -186,7 +162,6 @@ createPasswordErrorPasswordContainsNickname: '&8[&c&l»&8] &7密码不能包括�
 createPasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7密码似乎太安全捏?qwq'
 createPasswordSuccessPasswordCreated: '&8[&a&l»&8] &7您的密码已创建!'
 
-## 正版
 premiumErrorFeatureDisabled: '&8[&c&l»&8] &7服务器不支持这个账户捏?'
 premiumErrorUserBedrock: '&8[&c&l»&8] &7您已经是基岩版玩家了诶!'
 premiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7您已经是正版玩家了!'
@@ -201,7 +176,6 @@ premiumErrorUserNotPremium: '&8[&c&l»&8] &7您不是正版玩家捏!'
 premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7该正版玩家ID已存在!也许可以联系管理看看捏?'
 premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7您现在已经是一个正版玩家了!'
 
-## 离线
 crackedErrorFeatureDisabled: '&8[&c&l»&8] &7这个服务器不支持切换账户登录方式(离线->正版/正版->离线)!'
 crackedErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
 crackedErrorUserNotPremium: '&8[&c&l»&8] &7您不是正版玩家捏!'
@@ -210,7 +184,6 @@ crackedErrorUsage: '&8[&c&l»&8] &7用法: /cracked <密码>'
 crackedErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
 crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7您现在已经是一个离线版玩家了!'
 
-## 创建登录会话
 startSessionErrorUserBedrock: '&8[&c&l»&8] &7您已经是基岩版玩家了诶!'
 startSessionErrorUserPremium: '&8[&c&l»&8] &7您已经是正版玩家了诶!'
 startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7您没有注册捏!'
@@ -219,7 +192,6 @@ startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7您已经有一个登录
 startSessionErrorUsage: '&8[&c&l»&8] &7用法: /startsession'
 startSessionSuccessSessionStarted: '&8[&a&l»&8] &7您的登录会话已创建!'
 
-## 结束登录会话
 destroySessionErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
 destroySessionErrorUserPremium: '&8[&c&l»&8] &7您是正版玩家捏!'
 destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7您还没有注册!'
@@ -228,7 +200,6 @@ destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7您没有登录会话!'
 destroySessionErrorUsage: '&8[&c&l»&8] &7用法: /destroysession'
 destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7您的登录会话已结束!'
 
-## 修改邮箱地址
 changeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7您还没有注册!'
 changeEmailAddressErrorUserNotLogged: '&8[&c&l»&8] &7您还没有登录!'
 changeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7您没有密码捏!'
@@ -237,7 +208,6 @@ changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
 changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7错误的邮箱地址!'
 changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7您的邮箱地址!'
 
-## 请求重置密码邮件 
 requestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7您还没有注册!'
 requestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7您没有密码捏!'
 requestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7您还没有绑定邮箱地址捏!'
@@ -246,7 +216,6 @@ requestPasswordRecoveryErrorWrongEmailAddress: '&8[&c&l»&8] &7错误的邮箱�
 requestPasswordRecoveryErrorRecoveringDelay: '&8[&c&l»&8] &7您每一小时可以重置一次!'
 requestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7您的密码重置请求已发送!'
 
-## 确认重置密码
 confirmPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7您没有注册捏!'
 confirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7您还没有发送重置密码邮件捏!'
 confirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7用法: /confirmpasswordrecovery <确认码> <新密码>'
@@ -257,7 +226,6 @@ confirmPasswordRecoveryErrorPasswordTooWeak: '&8[&c&l»&8] &7密码似乎不太�
 confirmPasswordRecoveryErrorWrongRecoveryCode: '&8[&c&l»&8] &7错误的确认码!'
 confirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7您的密码重置请求已验证!'
 
-## 请求2FA验证码
 requestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
 requestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7您是正版玩家捏!'
 requestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7您没有注册捏!'
@@ -266,7 +234,6 @@ requestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7您已经有
 requestSecondFactorErrorUsage: '&8[&c&l»&8] &7用法: /requestsecondfactor'
 requestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7请进入 &o [这个网站] &7然后使用您的 2FA 验证软件 扫描二维码! 然后使用 /activatesecondfactor <密码> <2FA码>即可!'
 
-## 启用2FA
 activateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
 activateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7您是正版玩家捏!'
 activateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7您还没有注册捏!'
@@ -278,7 +245,6 @@ activateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
 activateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7错误的 2FA 验证码!'
 activateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &72FA 已被启用!'
 
-## 禁用2FA
 deactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
 deactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7您是正版玩家捏!'
 deactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7您还没有注册捏!'
@@ -289,8 +255,6 @@ deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
 deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7错误的 2FA 验证码!'
 deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &72FA 已被禁用!'
 
-### 管理命令&帮助
-## 强制让某玩家登录
 forceLoginErrorUsage: '&8[&c&l»&8] &7用法: /forcelogin <玩家名>'
 forceLoginErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceLoginErrorUserBedrock: '&8[&c&l»&8] &7这位玩家是基岩版玩家捏!'
@@ -300,7 +264,6 @@ forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册
 forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7这位玩家已经登录了!'
 forceLoginSuccessLogged: '&8[&a&l»&8] &7这位玩家成功登录了,好耶!'
 
-## 强制注册某玩家
 forceRegisterErrorUsage: '&8[&c&l»&8] &7用法: /forceregister <玩家名> <密码>'
 forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7这位玩家是基岩版玩家捏!'
@@ -308,7 +271,6 @@ forceRegisterErrorUserPremium: '&8[&c&l»&8] &这位玩家是正版玩家捏!'
 forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
 forceRegisterSuccessRegistered: '&8[&a&l»&8] &7这位玩家成功登录了,好耶!'
 
-## 强制注销某玩家
 forceUnregisterErrorUsage: '&8[&c&l»&8] &7用法: /forceunregister <玩家名>'
 forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7这位玩家是基岩版玩家捏!'
@@ -316,21 +278,18 @@ forceUnregisterErrorUserPremium:  '&8[&c&l»&8] &7这位玩家是正版玩家捏
 forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
 forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7已注销这位玩家!'
 
-## 强制修改某玩家的密码
 forceChangePasswordErrorUsage: '&8[&c&l»&8] &7用法: /forcechangepassword <玩家名> <密码>'
 forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
 forceChangePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7这位玩家还没有密码!'
 forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7这位玩家的密码已被更改!'
 
-## 强制为某玩家创建密码
 forceCreatePasswordErrorUsage: '&8[&c&l»&8] &用法: /forcecreatepassword <玩家名> <密码>'
 forceCreatePasswordErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceCreatePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
 forceCreatePasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7这位玩家已经拥有密码了!'
 forceCreatePasswordSuccessPasswordCreated: '&8[&a&l»&8] &7成功为这位玩家创建了密码!'
 
-## 强制将某玩家的用户类型修改为正版
 forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7此服务器不支持更改账号类型!'
 forcePremiumErrorUsage: '&8[&c&l»&8] &7用法: /forcepremium <玩家名>'
 forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
@@ -344,7 +303,6 @@ forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7这位玩家没有正版账号?
 forcePremiumErrorUserAlreadyExists: '&8[&c&l»&8] &7这位正版玩家的正版ID已经存在了!'
 forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7这位玩家现在是正版玩家了!'
 
-## 强制将某玩家的用户类型修改为离线
 forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7此服务器不支持更改账号类型:!'
 forceCrackedErrorUsage: '&8[&c&l»&8] &7用法: /forcecracked <玩家名>'
 forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
@@ -353,7 +311,6 @@ forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7这位玩家已经是离线玩�
 forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7这位玩家还没有密码!'
 forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7这位玩家现在是离线玩家了!'
 
-## 强制为某玩家开始一个登录会话
 forceStartSessionErrorUsage: '&8[&c&l»&8] &7用法: /forcestartsession <玩家名>'
 forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7这位玩家是基岩版玩家捏!'
@@ -364,7 +321,6 @@ forceStartSessionErrorUserAlreadyHasSession: '&8[&c&l»&8] &7这位玩家已经�
 forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7登录会话有效时长错误!'
 forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7这位玩家的登录会话已创建!'
 
-## 强制为某玩家结束一个登录会话
 forceDestroySessionErrorUsage: '&8[&c&l»&8] &7用法: /forcedestroysession <玩家名>'
 forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7huh,玩家不存在诶?'
 forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
@@ -373,7 +329,6 @@ forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没
 forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7这位玩家还没有任何登录会话!'
 forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7这位玩家的登录会话已结束!'
 
-## 强制修改某玩家的邮箱
 forceChangeEmailAddressErrorUsage: '&8[&c&l»&8] &7用法: /forcechangemail <玩家名> <邮箱地址>'
 forceChangeEmailAddressErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceChangeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
@@ -381,7 +336,6 @@ forceChangeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7这位玩家没�
 forceChangeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7一个错误的邮箱地址!'
 forceChangeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7这位玩家的邮箱地址已被更改!'
 
-## 强制为某玩家重置密码
 forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7用法: /forcerecoverypassword <玩家名>'
 forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
@@ -389,7 +343,6 @@ forceRecoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7这位玩家还没
 forceRecoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7这位玩家没有绑定邮箱地址!'
 forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7已经成功重置了这位玩家的密码!'
 
-## 强制为某玩家请求重置密码邮件
 forceRequestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7用法: /forcerequestpasswordrecovery <玩家名>'
 forceRequestPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceRequestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似乎没有注册?'
@@ -397,13 +350,11 @@ forceRequestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7这位玩�
 forceRequestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7这位玩家还没有绑定邮箱地址!'
 forceRequestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7这位玩家的重置密码请求邮件已发送!'
 
-## 强制为某玩家确认重置密码
 forceConfirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7用法: /forcerconfirmpasswordrecovery <玩家名> <新的密码>'
 forceConfirmPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceConfirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7这位玩家还没有发送密码重置邮件捏!'
 forceConfirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7这位玩家的密码恢复请求已被确认!'
 
-## 强制为某玩家请求双重认证绑定二维码
 forceRequestSecondFactorErrorUsage: '&8[&c&l»&8] &7用法: /forcerequestsecondfactor <玩家名>'
 forceRequestSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceRequestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7这位玩家是基岩版玩家捏!'
@@ -412,7 +363,6 @@ forceRequestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家似�
 forceRequestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7这位玩家已经有一个 2FA 了!'
 forceRequestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7这位玩家的 2FA 请求已被发送!'
 
-## 强制为某玩家启用双重认证
 forceActivateSecondFactorErrorUsage: '&8[&c&l»&8] &7用法: /forceactivatesecondfactor <玩家名>'
 forceActivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceActivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7这位玩家是基岩版玩家捏!'
@@ -422,7 +372,6 @@ forceActivateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7这位
 forceActivateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7这位玩家没有申请两步验证!'
 forceActivateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7这位玩家的两步验证请求已被&a启用&7!'
 
-## 强制为某玩家禁用双重认证
 forceDeactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7用法: /forcedeactivatesecondfactor <玩家名>'
 forceDeactivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceDeactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
@@ -431,13 +380,11 @@ forceDeactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7这位玩家�
 forceDeactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7这位玩家没有两步验证!'
 forceDeactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7这位玩家的 2FA 已被&c禁用&7!'
 
-## 强制清除某玩家的档案
 forcePurgeUserProfileErrorUsage: '&8[&c&l»&8] &7用法: /forcepurgeuserprofile <玩家名>'
 forcePurgeUserProfileErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7这位玩家的玩家档案已被清除!'
 forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7你的玩家档案已被清除!'
 
-## 强制查看某玩家的信息
 forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7用法: /forceviewuserprofile <玩家名>'
 forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
 forceViewUserProfileSuccessNoData: '&cNull'
@@ -456,7 +403,6 @@ forceViewUserProfileSuccessProfile: |-
   &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
   &f
 
-## 强制合并某正版玩家的所有用户数据
 forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7用法: /forcemergepremiumuserprofile <当前的玩家名> <先前的玩家名>'
 forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7当前玩家不存在捏!'
 forceMergePremiumUserProfileErrorUserNotPremium: '&8[&c&l»&8] &7当前玩家不是正版玩家捏!'
