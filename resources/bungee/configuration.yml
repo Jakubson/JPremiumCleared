@@ -7,8 +7,6 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.16.0'
-
 # JPremium currently supports only MySQL databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
 # If you have issues, please see this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#database-issues
@@ -56,18 +54,15 @@ mainServerNames: [main]
 uniqueIdsType: FIXED
 
 # If a player with a premium nickname disconnects on the login stage, should JPremium recognise the player as cracked.
+# This option doesn't affect when 'registerOnWebsite' is enabled.
 secondLoginCracked: false
 
-# Should JPremium force new players to register on your server, website or both side.
-# There are three options to choose: 0 - server, 1 - server and website, 2 - website.
-registerOnWebsite: 0
+# Should JPremium force new cracked players to register at your website.
+registerOnWebsite: false
 
 # Should JPremium register new premium players.
 # When it is enabled, cracked players with premium nickname cannot join to your server unless you enable the 'secondLoginCracked' option.
 registerPremiumUsers: true
-
-# Should JPremium disconnect cracked players who enter wrong password during login.
-disconnectWhenWrongPassword: false
 
 # Should JPremium redirect a player to the other server when the player is kicked from the current server.
 # When the player is logged, JPremium redirects the player to the one of the main servers.
@@ -111,9 +106,13 @@ passwordRecoverySubject: The password recovery
 # The server name is shown in a TOTP application.
 serverName: Your server name
 
+# The maximum attempts of login tries before a cracked player will be disconnected.
+# Set to 0 to disable.
+maximumLoginTriesBeforeDisconnection: 3
+
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
-maximumUserProfilesPerAddress: 2
+maximumUserProfilesPerAddress: 5
 
 # The maximum time (in seconds) which cracked players have for login or register.
 maximumAuthorisationTime: 90
