@@ -1,0 +1,420 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                            M E S S A G E S                                           |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                              You can find some translations at:                                      |#
+#|                https://github.com/Jakubson/JPremiumCleared/tree/master/resources/bungee              |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+#Czech languege :)
+
+#Translete by unkn0wn1111/ZuixEU
+
+preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Prosím, používejte jinou přezdívku!!'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Změňte si prosím svou přezdívku na &a%nickname%&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Připojte se prosím k serveru přes &amc.example.com&7!'
+preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Již jste online!'
+preLoginErrorServersDown: '&8[&c&l»&8] &7Servery Mojangu neodpovídají!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Zaregistrujte si prosím svůj účet na &amc.example.com&7!'
+preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Tento server nepodporuje změnu prémiové přezdívky, takže se prosím vraťte ke své staré přezdívce: &a%nickname%&7!'
+preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Nepodařilo se načíst váš uživatelský profil!'
+preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Váš uživatelský profil nebyl načten ve fázi před přihlášením!'
+preLoginPremiumVerification: '&8[&a&l»&8] &7Váš prémiový účet byl ověřen! Připojte se prosím znovu k serveru'
+
+disconnectRedirectionTitle: ''
+disconnectRedirectionSubTitle: ''
+disconnectRedirectionFadeIn: 0
+disconnectRedirectionStay: 0
+disconnectRedirectionFadeOut: 0
+disconnectRedirectionChat: '&8[&c&l»&8] &7Byli jste odpojeni od serveru a automaticky přesměrováni na jiný server! Důvodem odpojení je ''%reason%&7''!'
+
+lastServerRedirection: '&8[&a&l»&8] &7Byli jste přesměrováni na server, na kterém jste byli naposledy!'
+
+joinSessionPremiumTitle: '&a&lAhoj %nickname%'
+joinSessionPremiumSubTitle: '&aPrémiová relace!'
+joinSessionPremiumFadeIn: 30
+joinSessionPremiumStay: 100
+joinSessionPremiumFadeOut: 30
+joinSessionPremiumChat: ''
+joinSessionCrackedTitle: '&a&lAhoj %nickname%'
+joinSessionCrackedSubTitle: '&aCracked relace!'
+joinSessionCrackedFadeIn: 30
+joinSessionCrackedStay: 100
+joinSessionCrackedFadeOut: 30
+joinSessionCrackedChat: ''
+joinSessionBedrockTitle: '&a&lAhoj %nickname%'
+joinSessionBedrockSubTitle: '&aBedrock relace!'
+joinSessionBedrockFadeIn: 30
+joinSessionBedrockStay: 100
+joinSessionBedrockFadeOut: 30
+joinSessionBedrockChat: ''
+joinRequireLoginTitle: '&e&lMusíte použít'
+joinRequireLoginSubTitle: '&6/login <heslo>'
+joinRequireLoginFadeIn: 30
+joinRequireLoginStay: 1200
+joinRequireLoginFadeOut: 30
+joinRequireLoginChat: ''
+joinRequireSecurityLoginTitle: '&e&lMusíte použít'
+joinRequireSecurityLoginSubTitle: '&6/login <heslo> <kód>'
+joinRequireSecurityLoginFadeIn: 30
+joinRequireSecurityLoginStay: 1200
+joinRequireSecurityLoginFadeOut: 30
+joinRequireSecurityLoginChat: ''
+joinRequireRegisterTitle: '&e&lMusíte použít'
+joinRequireRegisterSubTitle: '&6/register <heslo> <kód>'
+joinRequireRegisterFadeIn: 30
+joinRequireRegisterStay: 1200
+joinRequireRegisterFadeOut: 30
+joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
+
+loginErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+loginErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+loginErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Jste již přihlášeni!'
+loginErrorUsage: '&8[&c&l»&8] &7Použíj: /login <heslo>'
+loginErrorSecurityUsage: '&8[&c&l»&8] &7Použíj: /login <heslo> <kód>'
+loginErrorWrongPassword: '&8[&c&l»&8] &7Špatné heslo!'
+loginErrorWrongCode: '&8[&c&l»&8] &7Špatný kód!'
+loginErrorTimeElapsed: '&8[&c&l»&8] &7Uplynula doba autorizace!'
+loginBossBarTimerTitle: '&6[&e&l»&6] &eZbývající čas do autorizace je &6%time%&es &6[&e&l«&6]'
+loginBossBarTimerColor: 2
+loginBossBarTimerDivision: 2
+loginActionBarTimer: ''
+loginReminderEmail: '&6[&e&l»&6] &7tále nemáte k účtu přiřazenou e-mailovou adresu. Přiřaďte ji nyní pomocí příkazu /changemailaddress <heslo> <emailová adresa>!'
+loginReminderSecondFactor: '&6[&e&l»&6] &7Na účtu stále nemáte povolený druhý faktor. Povolte jej nyní pomocí /requestsecondfactor!'
+loginSuccessLoggedTitle: '&a&lHi %nickname%'
+loginSuccessLoggedSubTitle: '&aLogged'
+loginSuccessLoggedFadeIn: 30
+loginSuccessLoggedStay: 100
+loginSuccessLoggedFadeOut: 30
+loginSuccessLoggedChat: |-
+  &f
+  &8[&a&l»&8] &7If you do not want to login next time, please execute:
+  &f
+  &f  &a&l» &7/premium <heslo> - if you have a &apremium&7 launcher.
+  &f  &a&l» &7/startsession - if you have a &ccracked&7 launcher.
+  &f
+
+registerErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+registerErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Jste již zaregistrováni!'
+registerErrorUsage: '&8[&c&l»&8] &7Použíj: /register <heslo> <kód>'
+registerErrorDifferentPasswords: '&8[&c&l»&8] &7Hesla jsou odlišná!'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7Heslo musí mít alespoň 6 znaků!'
+registerErrorPasswordContainsNickname: '&8[&c&l»&8] &7Heslo nesmí obsahovat vaši přezdívku!'
+registerErrorPasswordTooWeak: '&8[&c&l»&8] &7Heslo je příliš slabé!'
+registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7Špatný kód captcha!'
+registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7Máte příliš mnoho účtů!'
+registerErrorTimeElapsed: '&8[&c&l»&8] &7Uplynula doba autorizace!'
+registerBossBarTimerTitle: '&6[&e&l»&6] &eZbývající čas do autorizace je &6%time%&es &6[&e&l«&6]'
+registerBossBarTimerColor: 2
+registerBossBarTimerDivision: 2
+registerActionBarTimer: ''
+registerSuccessRegisteredTitle: '&a&lAhoj %nickname%'
+registerSuccessRegisteredSubTitle: '&aRegistrován'
+registerSuccessRegisteredFadeIn: 30
+registerSuccessRegisteredStay: 100
+registerSuccessRegisteredFadeOut: 30
+registerSuccessRegisteredChat: |
+  &f
+  &8[&a&l»&8] &7Ahoj v síti serverů Minecraft! Zde máte užitečné příkazy:
+  &f
+  &f  &a&l» &7/unregister <heslo>
+  &f  &a&l» &7/changepassword <aktuální-heslo> <nové-heslo>
+  &f  &a&l» &7/createpassword <heslo>
+  &f  &a&l» &7/premium <heslo>
+  &f  &a&l» &7/cracked <heslo>
+  &f  &a&l» &7/startsession
+  &f  &a&l» &7/destroysession
+  &f  &a&l» &7/changeemailaddress <heslo> <emailová adresa>
+  &f  &a&l» &7/recoverypassword <emailová adresa>
+  &f
+
+unregisterErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+unregisterErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+unregisterErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+unregisterErrorUsage: '&8[&c&l»&8] &7Použíj: /unregister <heslo>'
+unregisterErrorWrongPassword: '&8[&c&l»&8] &7Špatné heslo!'
+unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7Musíte zakázat autorizaci druhého faktoru!'
+unregisterSuccessUnregistered: '&8[&a&l»&8] &7Byli jste odregistrováni!'
+
+changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+changePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Nemáte heslo!'
+changePasswordErrorUsage: '&8[&c&l»&8] &7Použíj: /changepassword <aktuální-heslo> <nové-heslo>'
+changePasswordErrorDifferentNewPasswords: '&8[&c&l»&8] &7Nová hesla jsou odlišná!'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Nové heslo musí mít alespoň 6 znaků!'
+changePasswordErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Nové heslo nesmí obsahovat vaši přezdívku!'
+changePasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Heslo je příliš slabé!'
+changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7Špatně zadané aktuální heslo!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Vaše heslo bylo změněno!'
+
+createPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+createPasswordErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+createPasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7Heslo již máte!'
+createPasswordErrorUsage: '&8[&c&l»&8] &7Použíj: /createpassword <heslo>'
+createPasswordErrorDifferentPasswords: '&8[&c&l»&8] &7Hesla jsou odlišná!'
+createPasswordErrorUnsafePassword: '&8[&c&l»&8] &7Heslo musí mít alespoň 6 znaků!'
+createPasswordErrorPasswordContainsNickname: '&8[&c&l»&8] &7Heslo nesmí obsahovat vaši přezdívku!'
+createPasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Heslo je příliš slabé!'
+createPasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Vaše heslo bylo vytvořeno!'
+
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Tento server nepodporuje změnu typu účtu!'
+premiumErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+premiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Již jste prémiovým hráčem!'
+premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+premiumErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+premiumErrorUsage: '&8[&c&l»&8] &7Použíj: /premium <heslo>'
+premiumErrorWrongPassword: '&8[&c&l»&8] &7Špatně zadané heslo!'
+premiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Je třeba zakázat autorizaci druhého faktoru!'
+premiumErrorServersDown: '&8[&c&l»&8] &7Servery Mojangu neodpovídají!'
+premiumErrorDatabaseDown: '&8[&c&l»&8] &7Databáze neodpovídá!'
+premiumErrorUserNotPremium: '&8[&c&l»&8] &Nemáte prémiový účet!'
+premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7Prémiový hráč s takovým prémiovým ID již existuje! Kontaktujte prosím personál, aby problém vyřešil!'
+premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Nyní jste prémiovým hráčem!'
+
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Tento server nepodporuje změnu typu účtu!'
+crackedErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+crackedErrorUserNotPremium: '&8[&c&l»&8] &7Nejste prémiový hráč!'
+crackedErrorUserHasNotPassword: '&8[&c&l»&8] &7Nemáte žádné heslo!'
+crackedErrorUsage: '&8[&c&l»&8] &7Použíj: /cracked <heslo>'
+crackedErrorWrongPassword: '&8[&c&l»&8] &7Špatně zadané heslo!'
+crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Nyní jste cracked hráč!'
+
+startSessionErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+startSessionErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+startSessionErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7Již máte session'
+startSessionErrorUsage: '&8[&c&l»&8] &7Použíj: /startsession'
+startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Vaše relace byla zahájena!'
+
+destroySessionErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+destroySessionErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7Nemáte žádný session!'
+destroySessionErrorUsage: '&8[&c&l»&8] &7Použíj: /destroysession'
+destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Vaše relace byla zničena!'
+
+changeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+changeEmailAddressErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+changeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7Nemáte žádné heslo!'
+changeEmailAddressErrorUsage: '&8[&c&l»&8] &7Použíj: /changeemailaddress <heslo> <emailová adresa>'
+changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7Špatně zadané heslo!'
+changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Špatná e-mailová adresa!'
+changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Vaše e-mailová adresa byla změněna!'
+
+requestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+requestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7Nemáte žádné heslo!'
+requestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Nemáte e-mailovou adresu!'
+requestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Použíj: /requestpasswordrecovery <emailová adresa>'
+requestPasswordRecoveryErrorWrongEmailAddress: '&8[&c&l»&8] &7Špatná e-mailová adresa!'
+requestPasswordRecoveryErrorRecoveringDelay: '&8[&c&l»&8] &7Heslo můžete obnovit každou 1 hodinu!'
+requestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Vaše žádost o obnovení hesla byla odeslána!'
+
+confirmPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+confirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7Nemáte kód pro obnovení!'
+confirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Použíj: /confirmpasswordrecovery <založní kód> <nové heslo>'
+confirmPasswordRecoveryErrorDifferentNewPasswords: '&8[&c&l»&8] &7Nová hesla jsou jiná!'
+confirmPasswordRecoveryErrorUnsafeNewPassword: '&8[&c&l»&8] &7Nové heslo musí mít alespoň 6 znaků!'
+confirmPasswordRecoveryErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Heslo nesmí obsahovat vaši přezdívku!'
+confirmPasswordRecoveryErrorPasswordTooWeak: '&8[&c&l»&8] &7Heslo je příliš slabé!'
+confirmPasswordRecoveryErrorWrongRecoveryCode: '&8[&c&l»&8] &7Špatný kód pro obnovení!'
+confirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Vaše žádost o obnovení hesla byla potvrzena!'
+
+requestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+requestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+requestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+requestSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+requestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Druhý faktor už máte!'
+requestSecondFactorErrorUsage: '&8[&c&l»&8] &7Použíj: /requestsecondfactor'
+requestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Přejděte prosím na tuto webovou stránku &o[klikněte na tuto zprávu] &7a naskenujte QR kód pomocí své aplikace! Poté proveďte příkaz /activatesecondfactor <heslo> <kód>!'
+
+activateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+activateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+activateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+activateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+activateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Druhý faktor už máte!'
+activateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Druhý faktor jste si nevyžádali!'
+activateSecondFactorErrorUsage: '&8[&c&l»&8] &7Použíj: /activatesecondfactor <heslo> <kód>'
+activateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7Špatně zadané heslo!'
+activateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Špatný kód!'
+activateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7Byl aktivován druhý faktor!'
+
+deactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Jste bedrock hráč!'
+deactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Jste prémiový hráč!'
+deactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Nejste zaregistrováni!'
+deactivateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Nejste přihlášeni!'
+deactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7You do not have a second factor!'
+deactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Použíj: /deactivatesecondfactor <heslo> <kód>'
+deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7Špatně zadané heslo!'
+deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Špatný kód!'
+deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7Druhý faktor byl deaktivován!'
+
+forceLoginErrorUsage: '&8[&c&l»&8] &7Použíj: /forcelogin <jméno hráče>'
+forceLoginErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceLoginErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceLoginErrorUserPremium: '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7Uživatel není online!'
+forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Uživatel je již přihlášen!'
+forceLoginSuccessLogged: '&8[&a&l»&8] &7Uživatel byl přihlášen!'
+
+forceRegisterErrorUsage: '&8[&c&l»&8] &7Použíj: /forceregister <jméno hráče> <heslo>'
+forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceRegisterErrorUserPremium: '&8[&c&l»&8] &Tento uživatel je premium hráč!'
+forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Uživatel je již zaregistrován!'
+forceRegisterSuccessRegistered: '&8[&a&l»&8] &7Uživatel byl zaregistrován!'
+
+forceUnregisterErrorUsage: '&8[&c&l»&8] &7Použíj: /forceunregister <jméno hráče>'
+forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceUnregisterErrorUserPremium:  '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7Uživatel byl odhlášen!'
+
+forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Použíj: /forcechangepassword <jméno hráče> <heslo>'
+forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceChangePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Uživatel nemá heslo!'
+forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Heslo uživatele bylo změněno!'
+
+forceCreatePasswordErrorUsage: '&8[&c&l»&8] &7Použíj: /forcecreatepassword <jméno hráče> <heslo>'
+forceCreatePasswordErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceCreatePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceCreatePasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7Uživatel již má heslo!'
+forceCreatePasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Heslo uživatele bylo vytvořeno!'
+
+forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Tento server nepodporuje změnu typu účtu!'
+forcePremiumErrorUsage: '&8[&c&l»&8] &7Použíj: /forcepremium <jméno hráče>'
+forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Uživatel je již prémiovým hráčem!'
+forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forcePremiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Uživatel musí zakázat druhý faktor autorizace!'
+forcePremiumErrorServersDown: '&8[&c&l»&8] &7Servery Mojangu neodpovídají!'
+forcePremiumErrorDatabaseDown: '&8[&c&l»&8] &7Databáze neodpovídá!'
+forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7Uživatel nemá účet Premium!'
+forcePremiumErrorUserAlreadyExists: '&8[&c&l»&8] &7Prémiový hráč s takovým prémiovým ID již existuje!'
+forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Uživatel je nyní prémiovým hráčem!'
+
+forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Tento server nepodporuje změnu typu účtu!'
+forceCrackedErrorUsage: '&8[&c&l»&8] &7Použíj: /forcecracked <jméno hráče>'
+forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7Uživatel je již cracknutý hráč!'
+forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7Uživatel nemá heslo!'
+forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Uživatel je nyní cracknutý hráč!'
+
+forceStartSessionErrorUsage: '&8[&c&l»&8] &7Použíj: /forcestartsession <jméno hráče>'
+forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceStartSessionErrorUserPremium:  '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7Uživatel není přihlášen!'
+forceStartSessionErrorUserAlreadyHasSession: '&8[&c&l»&8] &7Uživatel již má relaci!'
+forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7Špatný čas relace!'
+forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7Relace uživatele byla zahájena!'
+
+forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Použíj: /forcedestroysession <jméno hráče>'
+forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceDestroySessionErrorUserPremium:  '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7Uživatel nemá relaci!'
+forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Relace uživatele byla zničena!'
+
+forceChangeEmailAddressErrorUsage: '&8[&c&l»&8] &7Použíj: /forcechangemail <jméno hráče> <emailová adresa>'
+forceChangeEmailAddressErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceChangeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceChangeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7Uživatel nemá heslo!'
+forceChangeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Špatná e-mailová adresa!'
+forceChangeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7E-mailová adresa uživatele byla změněna!'
+
+forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Použíj: /forcerecoverypassword <jméno hráče>'
+forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceRecoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Uživatel nemá heslo!'
+forceRecoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Uživatel nemá e-mailovou adresu!'
+forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Heslo uživatele bylo obnoveno!'
+
+forceRequestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Použíj: /forcerequestpasswordrecovery <jméno hráče>'
+forceRequestPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceRequestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceRequestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7Uživatel nemá heslo!'
+forceRequestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Uživatel nemá e-mailovou adresu!'
+forceRequestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Žádost o obnovení hesla uživatele byla odeslána!'
+
+forceConfirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Použíj: /forcerconfirmpasswordrecovery <jméno hráče> <new-password>'
+forceConfirmPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceConfirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7uživatel nemá kód pro obnovení!'
+forceConfirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Žádost uživatele o obnovení hesla byla potvrzena!'
+
+forceRequestSecondFactorErrorUsage: '&8[&c&l»&8] &7Použíj: /forcerequestsecondfactor <jméno hráče>'
+forceRequestSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceRequestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceRequestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceRequestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceRequestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Uživatel již má druhý faktor!'
+forceRequestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Druhý požadavek na faktor uživatele byl odeslán!'
+
+forceActivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Použíj: /forceactivatesecondfactor <jméno hráče>'
+forceActivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceActivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceActivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceActivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Uživatel není registrován!'
+forceActivateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Uživatel již má druhý faktor!'
+forceActivateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Uživatel si nevyžádal druhý faktor!'
+forceActivateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7Druhý požadavek na faktor uživatele byl aktivován!'
+
+forceDeactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Použíj: /forcedeactivatesecondfactor <jméno hráče>'
+forceDeactivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceDeactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Tento uživatel je bedrock hráč!'
+forceDeactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Tento uživatel je premium hráč!'
+forceDeactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &Uživatel není registrován!'
+forceDeactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7Uživatel nemá druhý faktor!'
+forceDeactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7Druhý požadavek na faktor uživatele byl deaktivován!'
+
+forcePurgeUserProfileErrorUsage: '&8[&c&l»&8] &7Použíj: /forcepurgeuserprofile <jméno hráče>'
+forcePurgeUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7Uživatel byl vymazán!'
+forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Byli jste vyčištěni!'
+
+forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Použíj: /forceviewuserprofile <jméno hráče>'
+forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Takový uživatel neexistuje!'
+forceViewUserProfileSuccessNoData: '&c[ádná data]'
+forceViewUserProfileSuccessProfile: |-
+  &f
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f  &a&l» &7Jméno hráče &a&l» &7%nickname%
+  &f  &a&l» &7Unikátní id &a&l» &7%unique_id%
+  &f  &a&l» &7Premiové id &a&l» &7%premium_id%
+  &f  &a&l» &7Emailová adresa &a&l» &7%email_address%
+  &f  &a&l» &7SRelace skončila &a&l» &7%session_expires%
+  &f  &a&l» &7Poslední server &a&l» &7%last_server%
+  &f  &a&l» &7Poslední adresa &a&l» &7%last_address%
+  &f  &a&l» &7Naposledy spatřen &a&l» &7%last_seen%
+  &f  &a&l» &7První adresa &a&l» &7%first_address%
+  &f  &a&l» &7Poprvé spatřen &a&l» &7%first_seen%
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f
+
+forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7Použíj: /forcemergepremiumuserprofile <aktuální jméno hráče> <předchozí jméno hráče>'
+forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7STakový současný uživatel neexistuje!'
+forceMergePremiumUserProfileErrorUserNotPremium: '&8[&c&l»&8] &7Aktuální uživatel není prémiový hráč!'
+forceMergePremiumUserProfileErrorMergedWithUserNotExist: '&8[&c&l»&8] &7Takový předchozí uživatel neexistuje!'
+forceMergePremiumUserProfileErrorMergedWithUserBedrock: '&8[&c&l»&8] &7Předchozí uživatel je bedrock player!'
+forceMergePremiumUserProfileErrorMergedWithUserPremium: '&8[&c&l»&8] &7Předchozí uživatel je prémiový hráč!'
+forceMergePremiumUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Byli jste sloučeni!'
+forceMergePremiumUserProfileSuccessMerged: '&8[&a&l»&8] &7Uživatel byl sloučen!'
