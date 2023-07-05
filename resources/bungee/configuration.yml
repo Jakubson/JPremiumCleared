@@ -7,9 +7,11 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-# JPremium currently supports only MySQL databases.
+# JPremium currently supports SQLite, MySQL and MariaDB databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
 # If you have issues, please see this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#database-issues
+# If you want to use MariaDB, please see this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#bungeecord-and-mariadb
+storageType: SQLITE # SQLITE, MYSQL, MARIADB
 storageHost: ''
 storagePort: 3306
 storageDatabase: ''
