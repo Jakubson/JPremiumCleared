@@ -21,11 +21,11 @@
 version: 'CLEARED-Bungee-1.18.1'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7请使用另一个玩家名!'
-preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7请您的玩家名改为 &a%nickname%&7!'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7请把您的玩家名改为 &a%nickname%&7!'
 preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7请通过 &aplay.gtemc.cn &7进入服务器!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7您已经在线了!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Bugjump的验证服务器未回应,也许熟了?'
-preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7请在 &awww.gtemc.cn&7 注册您的账号!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7请在 &ayour.regiester.domain&7 注册您的账号!'
 preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7这个服务器并不支持正版改名后进入!, 所以麻烦您改回您的旧名: &a%nickname%&7!'
 preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7无法加载您的玩家资料捏?'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7您的玩家资料似乎卡在第一阶段加载了?'
