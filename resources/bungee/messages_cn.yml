@@ -211,7 +211,7 @@ destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7您的登录会话已结�
 changeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7您还没有注册!'
 changeEmailAddressErrorUserNotLogged: '&8[&c&l»&8] &7您还没有登录!'
 changeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7您没有密码捏!'
-changeEmailAddressErrorUsage: '&8[&c&l»&8] &7用法: angeemailaddress <密码> <邮件地址>'
+changeEmailAddressErrorUsage: '&8[&c&l»&8] &7用法: /changeemailaddress <密码> <邮件地址>'
 changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
 changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7错误的邮箱地址!'
 changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7您的邮箱地址更改成功!'
