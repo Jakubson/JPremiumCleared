@@ -22,7 +22,7 @@ version: 'CLEARED-Bungee-1.18.1'
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7请使用另一个玩家名!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7请把您的玩家名改为 &a%nickname%&7!'
-preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7请通过 &aplay.gtemc.cn &7进入服务器!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7请通过 &ayour.minecraft.server &7进入服务器!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7您已经在线了!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Bugjump的验证服务器未回应,也许熟了?'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7请在 &ayour.regiester.domain&7 注册您的账号!'
