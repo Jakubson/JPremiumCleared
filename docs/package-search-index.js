@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.jakub.jpremium.velocity.api"},{"l":"com.jakub.jpremium.velocity.api.event"},{"l":"com.jakub.premium.api"},{"l":"com.jakub.premium.api.event"}];updateSearchResults();
