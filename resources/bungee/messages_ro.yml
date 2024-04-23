@@ -1,0 +1,421 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                            M E S S A G E S                                           |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                              You can find some translations at:                                      |#
+#|                https://github.com/Jakubson/JPremiumCleared/tree/master/resources/bungee              |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Te rog sa foloesti alt nume!!'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Te rog sa intri cu &c%nickname%&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Te rog sa intri cu &cplay.noxlcraft.fun&7!'
+preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Tu esti deja online'
+preLoginErrorServersDown: '&8[&c&l»&8] &7Ne pare rau dar serverele de la mojang au picat'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Te rog sa iti faci un cont pe &cpanel.noxlcraft.fun!'
+preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Ups aparent nu poti sa intri cu numele asta! Intra cu &c%nickname%&7!'
+preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Nu sa putut incarca user data!'
+preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Te rog sa reintri pe server!'
+preLoginPremiumVerification: '&8[&a&l»&8] &7Te rog sa reintri pe server!'
+
+disconnectRedirectionTitle: ''
+disconnectRedirectionSubTitle: ''
+disconnectRedirectionFadeIn: 0
+disconnectRedirectionStay: 0
+disconnectRedirectionFadeOut: 0
+disconnectRedirectionChat: '&8[&c&l»&8] &7Ai fost deconectat de la server si ai fost redirectionat automat catre celalalt server! Motivul deconectarii este &c''%reason%&7''!'
+
+lastServerRedirection: '&8[&a&l»&8] &7Ai fost redirectionat catre serverul la care ai fost ultima data!'
+
+joinSessionPremiumTitle: '&7Buna, &c%nickname%'
+joinSessionPremiumSubTitle: '&7Bine ai venit pe server!'
+joinSessionPremiumFadeIn: 30
+joinSessionPremiumStay: 100
+joinSessionPremiumFadeOut: 30
+joinSessionPremiumChat: ''
+joinSessionCrackedTitle: '&7Buna, &c%nickname%'
+joinSessionCrackedSubTitle: '&7Bine ai venit pe server!'
+joinSessionCrackedFadeIn: 30
+joinSessionCrackedStay: 100
+joinSessionCrackedFadeOut: 30
+joinSessionCrackedChat: ''
+joinSessionBedrockTitle: '&7Buna, &c%nickname%'
+joinSessionBedrockSubTitle: '&7Bine ai venit pe server!'
+joinSessionBedrockFadeIn: 30
+joinSessionBedrockStay: 100
+joinSessionBedrockFadeOut: 30
+joinSessionBedrockChat: ''
+joinRequireLoginTitle: '&7Te rog sa te conectezi!'
+joinRequireLoginSubTitle: '&c/login <parola>'
+joinRequireLoginFadeIn: 30
+joinRequireLoginStay: 1200
+joinRequireLoginFadeOut: 30
+joinRequireLoginChat: ''
+joinRequireSecurityLoginTitle: '&7Te rog sa te conectezi'
+joinRequireSecurityLoginSubTitle: '&c/login <parola> <cod>'
+joinRequireSecurityLoginFadeIn: 30
+joinRequireSecurityLoginStay: 1200
+joinRequireSecurityLoginFadeOut: 30
+joinRequireSecurityLoginChat: ''
+joinRequireRegisterTitle: '&7Te rog sa te inregistrezi'
+joinRequireRegisterSubTitle: '&c/register <parola> <parola>'
+joinRequireRegisterFadeIn: 30
+joinRequireRegisterStay: 1200
+joinRequireRegisterFadeOut: 30
+joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
+
+loginErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+loginErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+loginErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Esti deja autentificat!'
+loginErrorUsage: '&8[&c&l»&8] &7Utilizare: /login <parola>'
+loginErrorSecurityUsage: '&8[&c&l»&8] &7Utilizare: /login <parola> <cod>'
+loginErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+loginErrorWrongCode: '&8[&c&l»&8] &7Un cod gresit!'
+loginErrorTimeElapsed: '&8[&c&l»&8] &7A expirat timpul de autorizare!'
+loginBossBarTimerTitle: '&8[&c&l»&8] &7Timpul ramas pentru autorizare este &4%time%&cs &8[&c&l«&8]'
+loginBossBarTimerColor: 2
+loginBossBarTimerDivision: 2
+loginActionBarTimer: ''
+loginReminderEmail: '&8[&c&l»&8] &7inca nu ai asignata o adresa de email contului tau. Te rog sa o asignezi acum folosind &c/changemailaddress <parola> <adresa-de-email>!'
+loginReminderSecondFactor: '&8[&c&l»&8] &7inca nu ai activat al doilea factor de autentificare pe contul tau. Te rog sa-l activezi acum folosind &c/requestsecondfactor!'
+loginSuccessLoggedTitle: '&7Salut &c&l%nickname%'
+loginSuccessLoggedSubTitle: '&cAutentificat'
+loginSuccessLoggedFadeIn: 30
+loginSuccessLoggedStay: 100
+loginSuccessLoggedFadeOut: 30
+loginSuccessLoggedChat: |-
+  &f
+  &8[&4&l»&8] &7Daca nu doresti sa te autentifici data viitoare, te rog sa executi:
+  &f
+  &f  &c&l» &7/premium <parola> - daca folosesti un launcher &apremium&7.
+  &f  &c&l» &7/startsession - daca folosesti un launcher &ccracked&7.
+  &f
+
+registerErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+registerErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Esti deja inregistrat!'
+registerErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/register <parola> <captcha>'
+registerErrorDifferentPasswords: '&8[&c&l»&8] &7Parolele sunt diferite!'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7O parola trebuie sa aiba cel putin 6 caractere!'
+registerErrorPasswordContainsNickname: '&8[&c&l»&8] &7O parola nu poate contine numele tau de utilizator!'
+registerErrorPasswordTooWeak: '&8[&c&l»&8] &7Parola este prea slaba!'
+registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7Un cod captcha gresit!'
+registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7Ai prea multe conturi!'
+registerErrorTimeElapsed: '&8[&c&l»&8] &7A expirat timpul de autorizare!'
+registerBossBarTimerTitle: '&8[&c&l»&8] &7Timpul ramas pentru autorizare este &4%time%&cs &8[&c&l«&8]'
+registerBossBarTimerColor: 2
+registerBossBarTimerDivision: 2
+registerActionBarTimer: ''
+registerSuccessRegisteredTitle: '&7Salut &c&l%nickname%'
+registerSuccessRegisteredSubTitle: '&cinregistrat'
+registerSuccessRegisteredFadeIn: 30
+registerSuccessRegisteredStay: 100
+registerSuccessRegisteredFadeOut: 30
+registerSuccessRegisteredChat: |
+  &f
+  &8[&4&l»&8] &7Salut pe Serverul Minecraft! Aici ai comenzi utile:
+  &f
+  &f  &c&l» &7/unregister <parola>
+  &f  &c&l» &7/changepassword <parola-curenta> <parola-noua>
+  &f  &c&l» &7/createpassword <parola>
+  &f  &c&l» &7/premium <parola>
+  &f  &c&l» &7/cracked <parola>
+  &f  &c&l» &7/startsession
+  &f  &c&l» &7/destroysession
+  &f  &c&l» &7/changeemailaddress <parola> <adresa-de-email>
+  &f  &c&l» &7/recoverypassword <adresa-de-email>
+  &f
+
+unregisterErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+unregisterErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+unregisterErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+unregisterErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/unregister <parola>'
+unregisterErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7Trebuie sa dezactivezi a doua autentificare factoriala!'
+unregisterConfirmation: '&8[&e&l»&8] &7Aceasta operatie va sterge inregistrarea contului tau de pe server! Daca esti sigur ca vrei sa continui, te rog sa executi comanda &c/confirm!'
+unregisterSuccessUnregistered: '&8[&a&l»&8] &7Ai fost sters dinregistrarea!'
+
+changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+changePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Nu ai o parola!'
+changePasswordErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/changepassword <parola-curenta> <parola-noua>'
+changePasswordErrorDifferentNewPasswords: '&8[&c&l»&8] &7Parolele noi sunt diferite!'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7O parola noua trebuie sa aiba cel putin 6 caractere!'
+changePasswordErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7O parola noua nu poate contine numele tau de utilizator!'
+changePasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Parola este prea slaba!'
+changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7O parola curenta gresita!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Parola ta a fost schimbata!'
+
+createPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+createPasswordErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+createPasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7Deja ai o parola!'
+createPasswordErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/createpassword <parola>'
+createPasswordErrorDifferentPasswords: '&8[&c&l»&8] &7Parolele sunt diferite!'
+createPasswordErrorUnsafePassword: '&8[&c&l»&8] &7O parola trebuie sa aiba cel putin 6 caractere!'
+createPasswordErrorPasswordContainsNickname: '&8[&c&l»&8] &7O parola nu poate contine numele tau de utilizator!'
+createPasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Parola este prea slaba!'
+createPasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Parola ta a fost creata!'
+
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Acest server nu suporta schimbarea tipului de cont!'
+premiumErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+premiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Esti deja un jucator premium!'
+premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+premiumErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+premiumErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/premium <parola>'
+premiumErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+premiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Trebuie sa dezactivezi a doua autentificare factoriala!'
+premiumErrorServersDown: '&8[&c&l»&8] &7Serverele Mojang nu raspund!'
+premiumErrorDatabaseDown: '&8[&c&l»&8] &7Baza de date nu raspunde!'
+premiumErrorUserNotPremium: '&8[&c&l»&8] &7Nu ai un cont premium!'
+premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7Jucatorul premium cu un astfel de id premium exista deja! Te rog sa contactezi personalul pentru a rezolva problema!'
+premiumConfirmation: '&8[&e&l»&8] &7Aceasta operatie va face contul tau premium pe server! Daca nu ai un launcher oficial Minecraft, nu vei putea sa te alaturi serverului! Daca esti sigur ca vrei sa continui, te rog sa executi comanda &c/confirm!'
+premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Esti acum un jucator premium!'
+
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Acest server nu suporta schimbarea tipului de cont!'
+crackedErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+crackedErrorUserNotPremium: '&8[&c&l»&8] &7Nu esti un jucator premium!'
+crackedErrorUserHasNotPassword: '&8[&c&l»&8] &7Nu ai o parola!'
+crackedErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/cracked <parola>'
+crackedErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+crackedConfirmation: '&8[&e&l»&8] &7Aceasta operatie va face contul tau cracked pe server! Daca esti sigur ca vrei sa continui, te rog sa executi comanda &c/confirm!'
+crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Esti acum un jucator cracked!'
+
+startSessionErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+startSessionErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+startSessionErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7Deja ai o sesiune!'
+startSessionErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/startsession'
+startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Sesiunea ta a fost inceputa!'
+
+destroySessionErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+destroySessionErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7Nu ai o sesiune!'
+destroySessionErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/destroysession'
+destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Sesiunea ta a fost distrusa!'
+
+changeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+changeEmailAddressErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+changeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7Nu ai o parola!'
+changeEmailAddressErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/changeemailaddress <parola> <adresa-de-email>'
+changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7O adresa de email gresita!'
+changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Adresa ta de email a fost schimbata!'
+
+requestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+requestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7Nu ai o parola!'
+requestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Nu ai o adresa de email!'
+requestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/requestpasswordrecovery <adresa-de-email>'
+requestPasswordRecoveryErrorWrongEmailAddress: '&8[&c&l»&8] &7O adresa de email gresita!'
+requestPasswordRecoveryErrorRecoveringDelay: '&8[&c&l»&8] &7Poti recupera o parola o data la 1 ora!'
+requestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Cererea ta de recuperare a parolei a fost trimisa!'
+
+confirmPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+confirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7Nu ai un cod de recuperare!'
+confirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/confirmpasswordrecovery <cod-de-recuperare> <parola-noua>'
+confirmPasswordRecoveryErrorDifferentNewPasswords: '&8[&c&l»&8] &7Parolele noi sunt diferite!'
+confirmPasswordRecoveryErrorUnsafeNewPassword: '&8[&c&l»&8] &7O parola noua trebuie sa aiba cel putin 6 caractere!'
+confirmPasswordRecoveryErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7O parola nu poate contine numele tau de utilizator!'
+confirmPasswordRecoveryErrorPasswordTooWeak: '&8[&c&l»&8] &7Parola este prea slaba!'
+confirmPasswordRecoveryErrorWrongRecoveryCode: '&8[&c&l»&8] &7Un cod de recuperare gresit!'
+confirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Cererea ta de recuperare a parolei a fost confirmata!'
+
+requestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+requestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+requestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+requestSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+requestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Deja ai o a doua autentificare!'
+requestSecondFactorErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/requestsecondfactor'
+requestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Te rog sa mergi la acest site &o[clic aici] &7si sa scanezi codul QR folosind aplicatia ta! Apoi executa comanda &c/activatesecondfactor <parola> <cod>!'
+
+activateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+activateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+activateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+activateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+activateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Deja ai o a doua autentificare!'
+activateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Nu ai solicitat o a doua autentificare!'
+activateSecondFactorErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/activatesecondfactor <parola> <cod>'
+activateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+activateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Un cod gresit!'
+activateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7A doua autentificare a fost activata!'
+
+deactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Esti un jucator bedrock!'
+deactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Esti un jucator premium!'
+deactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Nu esti inregistrat!'
+deactivateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Nu esti autentificat!'
+deactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7Nu ai o a doua autentificare!'
+deactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/deactivatesecondfactor <parola> <cod>'
+deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7O parola gresita!'
+deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Un cod gresit!'
+deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7A doua autentificare a fost dezactivata!'
+
+confirmNotWaiting: '&8[&c&l»&8] &7Nu ai nicio operatie de confirmat!'
+
+forceLoginErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcelogin <porecla>'
+forceLoginErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceLoginErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceLoginErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7Utilizatorul nu este online!'
+forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Utilizatorul este deja autentificat!'
+forceLoginSuccessLogged: '&8[&a&l»&8] &7Utilizatorul a fost autentificat!'
+
+forceRegisterErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forceregister <porecla> <parola>'
+forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceRegisterErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Utilizatorul este deja inregistrat!'
+forceRegisterSuccessRegistered: '&8[&a&l»&8] &7Utilizatorul a fost inregistrat!'
+
+forceUnregisterErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forceunregister <porecla>'
+forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceUnregisterErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7Utilizatorul a fost dezregistrat!'
+
+forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcechangepassword <porecla> <parola>'
+forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceChangePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Utilizatorul nu are o parola!'
+forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Parola utilizatorului a fost schimbata!'
+
+forceCreatePasswordErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcecreatepassword <porecla> <parola>'
+forceCreatePasswordErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceCreatePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceCreatePasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7Utilizatorul deja are o parola!'
+forceCreatePasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Parola utilizatorului a fost creata!'
+
+forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Acest server nu suporta schimbarea tipului de cont!'
+forcePremiumErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcepremium <porecla>'
+forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Utilizatorul este deja un jucator premium!'
+forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forcePremiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Utilizatorul trebuie sa dezactiveze autorizarea cu factorul secundar!'
+forcePremiumErrorServersDown: '&8[&c&l»&8] &7Serverele Mojang nu raspund!'
+forcePremiumErrorDatabaseDown: '&8[&c&l»&8] &7Baza de date nu raspunde!'
+forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7Utilizatorul nu are un cont premium!'
+forcePremiumErrorUserAlreadyExists: '&8[&c&l»&8] &7Jucatorul premium cu un astfel de ID premium deja exista!'
+forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Utilizatorul este acum un jucator premium!'
+
+forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Acest server nu suporta schimbarea tipului de cont!'
+forceCrackedErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcecracked <porecla>'
+forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7Utilizatorul este deja un jucator cracked!'
+forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7Utilizatorul nu are o parola!'
+forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Utilizatorul este acum un jucator cracked!'
+
+forceStartSessionErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcestartsession <porecla>'
+forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceStartSessionErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7Utilizatorul nu este autentificat!'
+forceStartSessionErrorUserAlreadyHasSession: '&8[&c&l»&8] &7Utilizatorul deja are o sesiune!'
+forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7O durata de sesiune incorecta!'
+forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7Sesiunea utilizatorului a inceput!'
+
+forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcedestroysession <porecla>'
+forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceDestroySessionErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7Utilizatorul nu are o sesiune!'
+forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Sesiunea utilizatorului a fost distrusa!'
+
+forceChangeEmailAddressErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcechangemail <porecla> <adresa-de-email>'
+forceChangeEmailAddressErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceChangeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceChangeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7Utilizatorul nu are o parola!'
+forceChangeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7O adresa de email gresita!'
+forceChangeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Adresa de email a utilizatorului a fost schimbata!'
+
+forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcerecoverypassword <porecla>'
+forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceRecoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7Utilizatorul nu are o parola!'
+forceRecoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Utilizatorul nu are o adresa de email!'
+forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Parola utilizatorului a fost recuperata!'
+
+forceRequestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcerequestpasswordrecovery <porecla>'
+forceRequestPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceRequestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceRequestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7Utilizatorul nu are o parola!'
+forceRequestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7Utilizatorul nu are o adresa de email!'
+forceRequestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Cererea de recuperare a parolei utilizatorului a fost trimisa!'
+
+forceConfirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcerconfirmpasswordrecovery <porecla> <parola-noua>'
+forceConfirmPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceConfirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7Utilizatorul nu are un cod de recuperare!'
+forceConfirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Cererea de recuperare a parolei utilizatorului a fost confirmata!'
+
+forceRequestSecondFactorErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcerequestsecondfactor <porecla>'
+forceRequestSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceRequestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceRequestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceRequestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceRequestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Utilizatorul are deja un factor secundar!'
+forceRequestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Cererea de al doilea factor a utilizatorului a fost trimisa!'
+
+forceActivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forceactivatesecondfactor <porecla>'
+forceActivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceActivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceActivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceActivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceActivateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7Utilizatorul are deja un factor secundar!'
+forceActivateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Utilizatorul nu a solicitat un al doilea factor!'
+forceActivateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7Cererea de al doilea factor a utilizatorului a fost activata!'
+
+forceDeactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcedeactivatesecondfactor <porecla>'
+forceDeactivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceDeactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Utilizatorul este un jucator Bedrock!'
+forceDeactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Utilizatorul este un jucator premium!'
+forceDeactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Utilizatorul nu este inregistrat!'
+forceDeactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7Utilizatorul nu are un al doilea factor!'
+forceDeactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7Cererea de al doilea factor a utilizatorului a fost dezactivata!'
+
+forcePurgeUserProfileErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forcepurgeuserprofile <porecla>'
+forcePurgeUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7Utilizatorul a fost eliminat!'
+forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Ai fost eliminat!'
+
+forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Utilizare: &c/forceviewuserprofile <porecla>'
+forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Un astfel de utilizator nu exista!'
+forceViewUserProfileSuccessNoData: '&c[fara date]'
+forceViewUserProfileSuccessProfile: |-
+  &f
+  &8[&4&l»&8] ══════════════════════════════ [&4&l«&8]
+  &f  &c&l» &7Porecla &c&l» &7%nickname%
+  &f  &c&l» &7ID unic &c&l» &7%unique_id%
+  &f  &c&l» &7ID premium &c&l» &7%premium_id%
+  &f  &c&l» &7Adresa de email &c&l» &7%email_address%
+  &f  &c&l» &7Sesiune expirata &c&l» &7%session_expires%
+  &f  &c&l» &7Ultimul server &c&l» &7%last_server%
+  &f  &c&l» &7Ultima adresa &c&l» &7%last_address%
+  &f  &c&l» &7Ultima vizualizare &c&l» &7%last_seen%
+  &f  &c&l» &7Prima adresa &c&l» &7%first_address%
+  &f  &c&l» &7Prima vizualizare &c&l» &7%first_seen%
+  &8[&4&l»&8] ══════════════════════════════ [&4&l«&8]
+  &f
+
+forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7Utilizare: /forcemergepremiumuserprofile <porecla-curenta> <porecla-anterioara>'
+forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7O astfel de porecla actuala nu exista!'
+forceMergePremiumUserProfileErrorUserNotPremium: '&8[&c&l»&8] &7Utilizatorul curent nu este un jucator premium!'
+forceMergePremiumUserProfileErrorMergedWithUserNotExist: '&8[&c&l»&8] &7O astfel de porecla anterioara nu exista!'
+forceMergePremiumUserProfileErrorMergedWithUserBedrock: '&8[&c&l»&8] &7Utilizatorul anterior este un jucator Bedrock!'
+forceMergePremiumUserProfileErrorMergedWithUserPremium: '&8[&c&l»&8] &7Utilizatorul anterior este un jucator premium!'
+forceMergePremiumUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Ai fost unit!'
+forceMergePremiumUserProfileSuccessMerged: '&8[&a&l»&8] &7Utilizatorul a fost unit!'
