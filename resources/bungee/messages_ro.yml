@@ -16,10 +16,10 @@
 
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Te rog sa foloesti alt nume!!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Te rog sa intri cu &c%nickname%&7!'
-preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Te rog sa intri cu &cplay.noxlcraft.fun&7!'
+preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Te rog sa intri cu &c<domain>&7!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Tu esti deja online'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Ne pare rau dar serverele de la mojang au picat'
-preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Te rog sa iti faci un cont pe &cpanel.noxlcraft.fun!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Te rog sa iti faci un cont pe &c<domain>!'
 preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7Ups aparent nu poti sa intri cu numele asta! Intra cu &c%nickname%&7!'
 preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Nu sa putut incarca user data!'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Te rog sa reintri pe server!'
