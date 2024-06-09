@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.jakub.jpremium.proxy.api"},{"l":"com.jakub.jpremium.proxy.api.event.bungee"},{"l":"com.jakub.jpremium.proxy.api.event.velocity"},{"l":"com.jakub.jpremium.proxy.api.resolver"},{"l":"com.jakub.jpremium.proxy.api.user"}];updateSearchResults();
