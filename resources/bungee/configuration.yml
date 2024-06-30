@@ -10,7 +10,6 @@
 # JPremium currently supports SQLite, MySQL and MariaDB databases.
 # When JPremium cannot connect your database, issues are always produced by your database or the connection between your BungeeCord and your database!
 # If you have issues, please see this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#database-issues
-# If you want to use MariaDB, please see this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#bungeecord-and-mariadb
 storageType: SQLITE # SQLITE, MYSQL, MARIADB
 storageHost: ''
 storagePort: 3306
@@ -25,6 +24,7 @@ connectionPoolSize: 10
 connectionPoolIdle: 10
 connectionPoolTimeout: 5000
 connectionPoolLifetime: 1800000
+connectionKeepAliveTime: 5000
 
 # The mail server which is used to send mails.
 # Please enter data only if you want to use the passwords recovery system.
@@ -39,7 +39,7 @@ mailUseTLS: true
 # The access token which is used to verify connections on your Spigot servers whether connections come from your BungeeCord.
 # Please enter fully random unique value! Not: 'your-server-name-jpremium'!
 # The same token you have to enter on all your Spigot servers.
-accessToken: ''
+accessToken: '{{ACCESS_TOKEN}}'
 
 # The limbo server names in your BungeeCord network.
 # Not authorised players are redirected to the servers.
@@ -50,10 +50,10 @@ limboServerNames: [limbo]
 mainServerNames: [main]
 
 # What unique ids should JPremium assign for players.
-# There are three options and each option has different restrictions.
+# There are three options (REAL (recommended), OFFLINE, FIXED (deprecated)) and each option has different restrictions.
 # It is not recommended changing this option when some players are already registered.
 # For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#fixed-unique-ids
-uniqueIdsType: FIXED
+uniqueIdsType: REAL
 
 # If a player with a premium nickname disconnects on the login stage, should JPremium recognise the player as cracked.
 # This option doesn't affect when 'registerOnWebsite' is enabled.
@@ -82,11 +82,6 @@ delayTitlesAfterJoinTime: 1000
 # For more information, please read this wiki page: https://github.com/Jakubson/JPremiumCleared/wiki#bedrock-support
 floodgateSupport: false
 
-# Should JPremium manage user objects in such a way to support a multi-proxy network.
-# Enable it only when you have more than one BungeeCord and you installed JPremium on all BungeeCord!
-# If you have only one BungeeCord, do NOT enable it!
-multiProxySupport: false
-
 # Should JPremium verify captcha codes which are entered by cracked players.
 # If you set disable it, please also set 'captchaMapSlot' to '-1' in your JPremium configuration files on all your Spigot servers.
 verifyCaptchaCode: true
@@ -94,6 +89,12 @@ verifyCaptchaCode: true
 # Should JPremium require to confirm a password in the register, change password and create password commands?
 # If you enable it, please do not forget to change the usage messages in the message file.
 confirmPassword: false
+
+# Should JPremium require to execute /confirm command when a player executes a risky command (/unregister, /premium, /cracked).
+riskyCommandsConfirmation: true
+
+# Should JPremium use https://api.minecraftservices.com instead of https://api.mojang.com
+useMinecraftServicesApi: false
 
 # !!! THIS FEATURE IS DEPRECATED DUE TO ITS UNRELIABILITY !!!
 # !!! YOU USE IT AT YOUR OW RISK !!!
@@ -114,7 +115,7 @@ maximumLoginTriesBeforeDisconnection: 3
 
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
-maximumUserProfilesPerAddress: 5
+maximumUserProfilesPerAddress: 0
 
 # The maximum time (in seconds) which cracked players have for login or register.
 maximumAuthorisationTime: 90
@@ -137,13 +138,16 @@ automaticUnregisterTime: 0
 # All the algorithms are salted.
 passwordHashingAlgorithm: SHA256
 
+# Should JPremium re-hash a player's password during authentication when it uses a different algorithm than defined in 'passwordHashingAlgorithm'.
+rehashPasswordWhenUsingDifferentAlgorithm: true
+
 # The safe password pattern (in regular expression). Cracked player passwords have to match to it.
 safePasswordPattern: '[\S]{6,25}'
 
-# The hostnames which players can use to connect with your BungeeCord server.
-# If you want to disable it, please set the value to '[]'.
-# For example: 'acceptedHostnames: [mc.example.com]'.
-acceptedHostnames: []
+# The username pattern which players can have.
+# The prefix is not applied to bedrock players.
+# It is very important not to add the Floodgate prefix to the pattern!
+allowedUsernamePattern: '[a-zA-Z0-9_]{2,16}'
 
 # The commands which not logged cracked players can execute.
 logoutUserCommands: [login, register, requestpasswordrecovery, confirmpasswordrecovery, l]
