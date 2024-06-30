@@ -14,15 +14,12 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.16.0'
-
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname to &a%nickname%&7!'
-preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7Please join to the server via &amc.example.com&7!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7You are already online!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Please register your account on &amc.example.com&7!'
-preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7This server does not support change premium nickname, so please come back to your old nickname: &a%nickname%&7!'
+preLoginErrorUniqueIdCollision: '&8[&c&l»&8] &7Could not create a user for you due to UUID collision!'
 preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Could not load your user profile!'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Your user profile was not loaded on the pre-login stage!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Your premium account has been verified! Please join to the server again!'
@@ -143,6 +140,7 @@ unregisterErrorUserNotLogged: '&8[&c&l»&8] &7You are not logged!'
 unregisterErrorUsage: '&8[&c&l»&8] &7Usage: /unregister <password>'
 unregisterErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7You need to disable a second factor authorization!'
+unregisterConfirmation: '&8[&e&l»&8] &7This operation will unregister your account on the server! If you are sure that you want to proceed, please execute /confirm command!'
 unregisterSuccessUnregistered: '&8[&a&l»&8] &7You have been unregistered!'
 
 changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7You are not registered!'
@@ -178,6 +176,7 @@ premiumErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 premiumErrorDatabaseDown: '&8[&c&l»&8] &7The database is not responding!'
 premiumErrorUserNotPremium: '&8[&c&l»&8] &7You do not have a premium account!'
 premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7The premium player with such an premium id already exits! Please contact with the staff to solve the issue!'
+premiumConfirmation: '&8[&e&l»&8] &7This operation will make your account premium on the server! If you do not have an official Minecraft launcher, you will not able to join the server! If you are sure that you want to proceed, please execute /confirm command!'
 premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7You are a premium player now!'
 
 crackedErrorFeatureDisabled: '&8[&c&l»&8] &7This server does not support change an account type!'
@@ -186,6 +185,7 @@ crackedErrorUserNotPremium: '&8[&c&l»&8] &7You are not a premium player!'
 crackedErrorUserHasNotPassword: '&8[&c&l»&8] &7You do not have a password!'
 crackedErrorUsage: '&8[&c&l»&8] &7Usage: /cracked <password>'
 crackedErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
+crackedConfirmation: '&8[&e&l»&8] &7This operation will make your account cracked on the server! If you are sure that you want to proceed, please execute /confirm command!'
 crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7You are a cracked player now!'
 
 startSessionErrorUserBedrock: '&8[&c&l»&8] &7You are a bedrock player!'
@@ -258,6 +258,8 @@ deactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Usage: /deactivatesecondfactor
 deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7A wrong code!'
 deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7A second factor has been deactivated!'
+
+confirmNotWaiting: '&8[&c&l»&8] &7You do not have any operations to confirm!'
 
 forceLoginErrorUsage: '&8[&c&l»&8] &7Usage: /forcelogin <nickname>'
 forceLoginErrorUserNotExist: '&8[&c&l»&8] &7Such a user is not exist!'
@@ -407,6 +409,12 @@ forceViewUserProfileSuccessProfile: |-
   &f  &a&l» &7First seen &a&l» &7%first_seen%
   &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
   &f
+
+forceViewUserProfilesErrorUsage: '&8[&c&l»&8] &7Usage: /forceviewuserprofiles <address>'
+forceViewUserProfilesErrorUsersNotExist: '&8[&c&l»&8] &7There is no users with that address!'
+forceViewUserProfilesLoadingProfiles: '&8[&e&l»&8] &7Searching users...'
+forceViewUserProfilesSuccessHeader: '&8[&a#&8] &7Nickname &a&l» &7Last seen'
+forceViewUserProfilesSuccessProfile: '&8[&a%ordinal%&8] &7%nickname% &a&l» &7%last_seen%' # All placeholders from 'forceViewUserProfileSuccessProfile' can be used.
 
 forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7Usage: /forcemergepremiumuserprofile <current-nickname> <previous-nickname>'
 forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Such a current user is not exist!'
