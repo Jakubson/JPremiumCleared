@@ -12,21 +12,17 @@
 
 #+------------------------------------------------------------------------------------------------------+#
 #|                                                                                                      |#
-#|                              你可以在此处找到其他语言的翻译                                             |#
+#|                                    你可以在此处找到其他语言的翻译:                                      |#
 #|                https://github.com/Jakubson/JPremiumCleared/tree/master/resources/bungee              |#
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-
-version: 'CLEARED-Bungee-1.18.1'
-
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7请使用另一个玩家名!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7请把您的玩家名改为 &a%nickname%&7!'
-preLoginErrorNotAcceptedHostname: '&8[&c&l»&8] &7请通过 &ayour.minecraft.server &7进入服务器!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7您已经在线了!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Bugjump的验证服务器未回应,也许熟了?'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7请在 &ayour.regiester.domain&7 注册您的账号!'
-preLoginErrorChangedPremiumNickname: '&8[&c&l»&8] &7这个服务器并不支持正版改名后进入!, 所以麻烦您改回您的旧名: &a%nickname%&7!'
+preLoginErrorUniqueIdCollision: '&8[&c&l»&8] &7由于 UUID 冲突, 无法为您创建账号!'
 preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7无法加载您的玩家资料捏?'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7您的玩家资料似乎卡在第一阶段加载了?'
 preLoginPremiumVerification: '&8[&a&l»&8] &7您的正版身份已认证! 请重新进入服务器!'
@@ -147,6 +143,7 @@ unregisterErrorUserNotLogged: '&8[&c&l»&8] &7你还没有登录!'
 unregisterErrorUsage: '&8[&c&l»&8] &7用法: /unregister <密码>'
 unregisterErrorWrongPassword: '&8[&c&l»&8] &7一个错误的密码!'
 unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7你需要禁用2FA验证!'
+unregisterConfirmation: '&8[&e&l»&8] &7此操作将会注销你在服务器上的账号! 如果您确定要继续, 请执行/confirm 命令!'
 unregisterSuccessUnregistered: '&8[&a&l»&8] &7你已经成功注销!'
 
 changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7你还没有注册!'
@@ -170,7 +167,7 @@ createPasswordErrorPasswordContainsNickname: '&8[&c&l»&8] &7密码不能包括�
 createPasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7密码似乎太安全捏?qwq'
 createPasswordSuccessPasswordCreated: '&8[&a&l»&8] &7您的密码已创建!'
 
-premiumErrorFeatureDisabled: '&8[&c&l»&8] &7服务器不支持这个账户捏?'
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7服务器不支持这个账号捏?'
 premiumErrorUserBedrock: '&8[&c&l»&8] &7您已经是基岩版玩家了诶!'
 premiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7您已经是正版玩家了!'
 premiumErrorUserNotRegistered: '&8[&c&l»&8] &7您没有注册!'
@@ -182,14 +179,16 @@ premiumErrorServersDown: '&8[&c&l»&8] &7Bugjump服务器未回应，他们熟�
 premiumErrorDatabaseDown: '&8[&c&l»&8] &7数据库已宕机.....TAT'
 premiumErrorUserNotPremium: '&8[&c&l»&8] &7您不是正版玩家捏!'
 premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7该正版玩家ID已存在!也许可以联系管理看看捏?'
+premiumConfirmation: '&8[&e&l»&8] &7此操作将会将您的账号在服务器上切换为正版账号! 如果您没有正版账号, 您将无法加入服务器! 如果您确定要继续, 请执行 /confirm 命令!'
 premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7您现在已经是一个正版玩家了!'
 
-crackedErrorFeatureDisabled: '&8[&c&l»&8] &7这个服务器不支持切换账户登录方式(离线->正版/正版->离线)!'
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7这个服务器不支持切换账号登录方式(离线->正版/正版->离线)!'
 crackedErrorUserBedrock: '&8[&c&l»&8] &7您是基岩版玩家捏!'
 crackedErrorUserNotPremium: '&8[&c&l»&8] &7您不是正版玩家捏!'
 crackedErrorUserHasNotPassword: '&8[&c&l»&8] &7您还没有一个密码捏!'
 crackedErrorUsage: '&8[&c&l»&8] &7用法: /cracked <密码>'
 crackedErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
+crackedConfirmation: '&8[&e&l»&8] &7此操作将会将您的账号在服务器上切换为离线账号!如果您确定要继续, 请执行 /confirm 命令!'
 crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7您现在已经是一个离线版玩家了!'
 
 startSessionErrorUserBedrock: '&8[&c&l»&8] &7您已经是基岩版玩家了诶!'
@@ -262,6 +261,8 @@ deactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7用法: /deactivatesecondfacto
 deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7错误的密码!'
 deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7错误的 2FA 验证码!'
 deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &72FA 已被禁用!'
+
+confirmNotWaiting: '&8[&c&l»&8] &7您没有任何需要确认的操作!'
 
 forceLoginErrorUsage: '&8[&c&l»&8] &7用法: /forcelogin <玩家名>'
 forceLoginErrorUserNotExist: '&8[&c&l»&8] &7玩家不存在!'
@@ -411,6 +412,12 @@ forceViewUserProfileSuccessProfile: |-
   &f  &a&l» &7最初上线于 &a&l» &7%first_seen%
   &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
   &f
+
+forceViewUserProfilesErrorUsage: '&8[&c&l»&8] &7用法: /forceviewuserprofiles <IP地址>'
+forceViewUserProfilesErrorUsersNotExist: '&8[&c&l»&8] &7没有使用该IP地址的用户!'
+forceViewUserProfilesLoadingProfiles: '&8[&e&l»&8] &7正在搜索用户...'
+forceViewUserProfilesSuccessHeader: '&8[&a#&8] &7玩家名 &a&l» &7最后上线时间'
+forceViewUserProfilesSuccessProfile: '&8[&a%ordinal%&8] &7%nickname% &a&l» &7%last_seen%' # 可以使用来自 'forceViewUserProfileSuccessProfile' 的所有占位符.
 
 forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7用法: /forcemergepremiumuserprofile <当前的玩家名> <先前的玩家名>'
 forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7当前玩家不存在捏!'
