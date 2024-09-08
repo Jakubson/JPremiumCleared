@@ -24,7 +24,7 @@ connectionPoolSize: 10
 connectionPoolIdle: 10
 connectionPoolTimeout: 5000
 connectionPoolLifetime: 1800000
-connectionKeepAliveTime: 5000
+connectionKeepAliveTime: 0
 
 # The mail server which is used to send mails.
 # Please enter data only if you want to use the passwords recovery system.
@@ -43,10 +43,12 @@ accessToken: '{{ACCESS_TOKEN}}'
 
 # The limbo server names in your BungeeCord network.
 # Not authorised players are redirected to the servers.
+# If empty, JPremium will not redirect not authorised players.
 limboServerNames: [limbo]
 
 # The main server names in your BungeeCord network.
 # Authorised players are redirected to the servers.
+# If empty, JPremium will not redirect authorised players.
 mainServerNames: [main]
 
 # What unique ids should JPremium assign for players.
@@ -66,10 +68,11 @@ registerOnWebsite: false
 # When it is enabled, cracked players with premium nickname cannot join to your server unless you enable the 'secondLoginCracked' option.
 registerPremiumUsers: true
 
-# Should JPremium redirect a player to the other server when the player is kicked from the current server.
-# When the player is logged, JPremium redirects the player to the one of the main servers.
-# When the player is not logged, JPremium redirects the player to the one of the limo servers.
-disconnectRedirection: true
+# Since Minecraft 1.19.1, premium players send their online UUID in the handshake. Non-premium player don't sent it or send offline one.
+# Using that data, JPremium can distinguish (on the first join) premium players and non-premium players who only use premium nicknames (they won't get 'Invalid session', etc.).
+# In other words: When a non-premium player uses a premium username which isn't taken on the server, they will be able to join without 'Invalid session' message and real premium players will be automatically registered.
+# This feature is in beta and works only on Velocity and for players who use Minecraft 1.19.1 or above! If a player use old version, then fallback to other method detection like 'secondLoginCracked'.
+detectPremiumUniqueIdsInHandshake: false
 
 # Should JPremium redirect a player to their last server where they were before quit.
 lastServerRedirection: false
@@ -111,7 +114,11 @@ serverName: Your server name
 
 # The maximum attempts of login tries before a cracked player will be disconnected.
 # Set to 0 to disable.
-maximumLoginTriesBeforeDisconnection: 3
+maximumLoginTriesBeforeDisconnection: 5
+
+# The ban duration of a player's address after reaching 'maximumLoginTriesBeforeDisconnection' (in minutes).
+# Minimum value is 1. To disable, set 'maximumLoginTriesBeforeDisconnection' to 0.
+addressBanDuration: 10
 
 # The maximum quantity of user profiles which cracked players can register using the same IP addresses.
 # When 'registerPremiumUsers' option is enabled, the limit is not apply for premium players.
@@ -128,6 +135,7 @@ manuallySessionTime: 720
 automaticSessionTime: 10
 
 # The delay time (in minutes) between recovering a password by a player.
+# Minimum value is 1.
 recoveringPasswordDelay: 60
 
 # The absent time (is days) after which cracked players are automatically unregistered.
