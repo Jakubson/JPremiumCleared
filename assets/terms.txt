@@ -1,6 +1,0 @@
-1. The buyer can use the product only on their own server.
-2. The buyer cannot decompile or edit the source code of the product without written author agreement.
-3. The buyer cannot distribute or share the product or the source code of the product without written author agreement.
-4. The author does not guarantee the product is not lacking errors and is not liable for damages caused by using the product.
-6. The author does not guarantee future updates or repairing all issues.
-6. The plugin collects anonymous metrics data which are processed by bstats.org.
