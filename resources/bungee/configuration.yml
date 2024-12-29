@@ -68,7 +68,7 @@ registerOnWebsite: false
 # When it is enabled, cracked players with premium nickname cannot join to your server unless you enable the 'secondLoginCracked' option.
 registerPremiumUsers: true
 
-# This frature works only on Velocity! Since Minecraft 1.19.1, premium players send their online UUID in the handshake. Non-premium player don't sent it or send offline one.
+# Since Minecraft 1.19.1, premium players send their online UUID in the handshake. Non-premium player don't sent it or send offline one.
 # Using that data, JPremium can distinguish (on the first join) premium players and non-premium players who only use premium nicknames (they won't get 'Invalid session', etc.).
 # In other words: When a non-premium player uses a premium username which isn't taken on the server, they will be able to join without 'Invalid session' message and real premium players will be automatically registered.
 # This feature is in beta and works only on Velocity and for players who use Minecraft 1.19.1 or above! If a player use old version, then fallback to other method detection like 'secondLoginCracked'.
