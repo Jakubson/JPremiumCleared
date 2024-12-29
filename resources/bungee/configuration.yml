@@ -68,7 +68,7 @@ registerOnWebsite: false
 # When it is enabled, cracked players with premium nickname cannot join to your server unless you enable the 'secondLoginCracked' option.
 registerPremiumUsers: true
 
-# Since Minecraft 1.19.1, premium players send their online UUID in the handshake. Non-premium player don't sent it or send offline one.
+# This frature works only on Velocity! Since Minecraft 1.19.1, premium players send their online UUID in the handshake. Non-premium player don't sent it or send offline one.
 # Using that data, JPremium can distinguish (on the first join) premium players and non-premium players who only use premium nicknames (they won't get 'Invalid session', etc.).
 # In other words: When a non-premium player uses a premium username which isn't taken on the server, they will be able to join without 'Invalid session' message and real premium players will be automatically registered.
 # This feature is in beta and works only on Velocity and for players who use Minecraft 1.19.1 or above! If a player use old version, then fallback to other method detection like 'secondLoginCracked'.
@@ -96,14 +96,15 @@ confirmPassword: false
 # Should JPremium require to execute /confirm command when a player executes a risky command (/unregister, /premium, /cracked).
 riskyCommandsConfirmation: true
 
-# Should JPremium use https://api.minecraftservices.com instead of https://api.mojang.com
-useMinecraftServicesApi: false
-
 # !!! THIS FEATURE IS DEPRECATED DUE TO ITS UNRELIABILITY !!!
 # !!! YOU USE IT AT YOUR OW RISK !!!
 # Should JPremium use an external API server when the API server cannot process requests to verify players nicknames.
 # The external API sometimes may return wrong responses!
+# The legacy resolver needs to be activated to use the backup server.
 useBackupServer: false
+
+# Should JPremium use the old resolver which uses only api.mojang.com?
+useLegacyResolver: false
 
 # The email subject which is sent when a player requests password recovery.
 passwordRecoverySubject: The password recovery
@@ -156,6 +157,11 @@ safePasswordPattern: '[\S]{6,25}'
 # The prefix is not applied to bedrock players.
 # It is very important not to add the Floodgate prefix to the pattern!
 allowedUsernamePattern: '[a-zA-Z0-9_]{2,16}'
+
+# List of account UUIDs which cannot be managed by staff commands.
+# These accounts can be only managed by themselves or from the console.
+# UUIDs have to be in the full format (with dashes) like: 5ea61e81-30c1-4c2e-84c8-776010fb95c0.
+protectedAccounts: []
 
 # The commands which not logged cracked players can execute.
 logoutUserCommands: [login, register, requestpasswordrecovery, confirmpasswordrecovery, l]
