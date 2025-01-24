@@ -24,6 +24,7 @@ preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Could not load your user profil
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Your user profile was not loaded on the pre-login stage!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Your premium account has been verified! Please join to the server again!'
 
+# Disconnection redirection feature works only on BungeeCord!
 disconnectRedirectionTitle: ''
 disconnectRedirectionSubTitle: ''
 disconnectRedirectionFadeIn: 0
@@ -32,6 +33,7 @@ disconnectRedirectionFadeOut: 0
 disconnectRedirectionChat: '&8[&c&l»&8] &7You have been disconnected from the server and you have been automatically redirected to the other server! The disconnect reason is ''%reason%&7''!'
 
 lastServerRedirection: '&8[&a&l»&8] &7You have been redirected to the server you were last time!'
+lastServerRedirectionError: '&8[&c&l»&8] &7An error occurred during connecting you to the last server you were last time!'
 
 joinSessionPremiumTitle: '&a&lHi %nickname%'
 joinSessionPremiumSubTitle: '&aA premium session!'
@@ -81,8 +83,8 @@ loginErrorWrongPassword: '&8[&c&l»&8] &7A wrong password!'
 loginErrorWrongCode: '&8[&c&l»&8] &7A wrong code!'
 loginErrorTimeElapsed: '&8[&c&l»&8] &7An authorisation time elapsed!'
 loginBossBarTimerTitle: '&6[&e&l»&6] &eRemain time to authorization is &6%time%&es &6[&e&l«&6]'
-loginBossBarTimerColor: 2
-loginBossBarTimerDivision: 2
+loginBossBarTimerColor: YELLOW # PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+loginBossBarTimerDivision: NOTCHED_6 # PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
 loginActionBarTimer: ''
 loginReminderEmail: '&6[&e&l»&6] &7You still do not have an email address assigned to your account. Please assign it now using /changemailaddress <password> <email-address>!'
 loginReminderSecondFactor: '&6[&e&l»&6] &7You still do not have second factor enabled on your account. Please enable it now using /requestsecondfactor!'
@@ -111,8 +113,8 @@ registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7A wrong captcha code!'
 registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7You have too many accounts!'
 registerErrorTimeElapsed: '&8[&c&l»&8] &7An authorisation time elapsed!'
 registerBossBarTimerTitle: '&6[&e&l»&6] &eRemain time to authorization is &6%time%&es &6[&e&l«&6]'
-registerBossBarTimerColor: 2
-registerBossBarTimerDivision: 2
+registerBossBarTimerColor: YELLOW # PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+registerBossBarTimerDivision: NOTCHED_6 # PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
 registerActionBarTimer: ''
 registerSuccessRegisteredTitle: '&a&lHi %nickname%'
 registerSuccessRegisteredSubTitle: '&aRegistered'
