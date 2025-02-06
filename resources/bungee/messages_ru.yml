@@ -15,390 +15,409 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
  
-version: 'CLEARED-Bungee-1.11.4'
- 
-preLoginErrorInvalidNickname: '&cПожалуйста, используйте другой ник!'
-preLoginErrorInvalidNicknameCases: '&fПожалуйста, измените свой ник на &6%nickname%&f!'
-preLoginErrorNotAcceptedHostname: '&fПожалуйста, подключитесь к серверу используя ip &6IP&f!'
-preLoginErrorAlreadyOnline: '&cВы уже в сети!'
-preLoginErrorServersDown: '&cСервера Mojang не отвечают!'
-preLoginErrorRegisterAtWebsite: '&fПожалуйста, зарегистрируйте свой аккаунт на сайте &6SITE&f!'
-preLoginErrorChangedPremiumNickname: '&fЭтот сервер не поддерживает изменение премиум-ников, поэтому вернитесь к своему старому нику: &6%nickname%&f!'
-preLoginErrorUserCannotBeLoaded: '&cНе удалось загрузить ваш профиль игрока!'
-preLoginErrorUserNotLoaded: '&cВаш профиль игрока не был загружен на этапе перед входом в систему!'
-preLoginPremiumVerification: '&fВаша лицензия &6подтверждена&f! Пожалуйста, &6присоединитесь &fк серверу снова!'
- 
-disconnectRedirectionTitle: ''
-disconnectRedirectionSubTitle: ''
-disconnectRedirectionFadeIn: 0
-disconnectRedirectionStay: 0
-disconnectRedirectionFadeOut: 0
-disconnectRedirectionChat: '&fВы были &6отключены &fот сервера и были автоматически перенаправлены на другой сервер! Причина отключения ''&6%reason%&f''!'
- 
-joinSessionPremiumTitle: '&fЗдравствуйте, &6%nickname%&f!'
-joinSessionPremiumSubTitle: '&fВы используете &6Лицензию&f!'
+preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Пожалуйста, используйте другой никнейм!'
+preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Пожалуйста, измените ваш никнейм на &a%nickname%&7!'
+preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7Вы уже в сети!'
+preLoginErrorServersDown: '&8[&c&l»&8] &7Серверы Mojang не отвечают!'
+preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Пожалуйста, зарегистрируйте свой аккаунт на &amc.example.com&7!'
+preLoginErrorUniqueIdCollision: '&8[&c&l»&8] &7Не удалось создать пользователя из-за конфликта UUID!'
+preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Не удалось загрузить ваш профиль!'
+preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Ваш профиль не был загружен на этапе предварительного входа!'
+preLoginPremiumVerification: '&8[&a&l»&8] &7Ваш премиум-аккаунт был подтвержден! Пожалуйста, войдите на сервер снова!'
+
+lastServerRedirection: '&8[&a&l»&8] &7Вы были перенаправлены на сервер, на котором были в последний раз!'
+lastServerRedirectionError: '&8[&c&l»&8] &7Произошла ошибка при подключении к последнему серверу!'
+
+joinSessionPremiumTitle: '&a&lПривет, %nickname%'
+joinSessionPremiumSubTitle: '&aПремиум-сессия!'
 joinSessionPremiumFadeIn: 30
 joinSessionPremiumStay: 100
 joinSessionPremiumFadeOut: 30
 joinSessionPremiumChat: ''
-joinSessionCrackedTitle: '&fЗдравствуйте, &6%nickname%&f!'
-joinSessionCrackedSubTitle: '&fВы используете &6Пиратку&f!'
+joinSessionCrackedTitle: '&a&lПривет, %nickname%'
+joinSessionCrackedSubTitle: '&aПиратская сессия!'
 joinSessionCrackedFadeIn: 30
 joinSessionCrackedStay: 100
 joinSessionCrackedFadeOut: 30
 joinSessionCrackedChat: ''
-joinSessionBedrockTitle: '&fЗдравствуйте, &6%nickname%&f!'
-joinSessionBedrockSubTitle: '&fВы используете &6БедРок&f!'
+joinSessionBedrockTitle: '&a&lПривет, %nickname%'
+joinSessionBedrockSubTitle: '&aСессия Bedrock!'
 joinSessionBedrockFadeIn: 30
 joinSessionBedrockStay: 100
 joinSessionBedrockFadeOut: 30
 joinSessionBedrockChat: ''
-joinRequireLoginTitle: '&fИспользуйте'
-joinRequireLoginSubTitle: '&6/login [Пароль]'
+joinRequireLoginTitle: '&e&lВам нужно использовать'
+joinRequireLoginSubTitle: '&6/login <пароль>'
 joinRequireLoginFadeIn: 30
 joinRequireLoginStay: 1200
 joinRequireLoginFadeOut: 30
 joinRequireLoginChat: ''
-joinRequireSecurityLoginTitle: '&fИспользуйте'
-joinRequireSecurityLoginSubTitle: '&6/login [Пароль] [Код]'
+joinRequireSecurityLoginTitle: '&e&lВам нужно использовать'
+joinRequireSecurityLoginSubTitle: '&6/login <пароль> <код>'
 joinRequireSecurityLoginFadeIn: 30
 joinRequireSecurityLoginStay: 1200
 joinRequireSecurityLoginFadeOut: 30
 joinRequireSecurityLoginChat: ''
-joinRequireRegisterTitle: '&fИспользуйте'
-joinRequireRegisterSubTitle: '&6/register [Пароль] [Пароль]'
+joinRequireRegisterTitle: '&e&lВам нужно использовать'
+joinRequireRegisterSubTitle: '&6/register <пароль> <пароль>'
 joinRequireRegisterFadeIn: 30
 joinRequireRegisterStay: 1200
 joinRequireRegisterFadeOut: 30
-joinRequireRegisterChat: '' # You can use '%captcha_code%' placeholder to show a captcha code.
- 
-loginErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-loginErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-loginErrorUserNotRegistered: '&cВы не зарегистрированы!'
-loginErrorUserAlreadyLogged: '&cВы уже вошли!'
-loginErrorUsage: '&fИспользуйте: &6/login [Пароль]'
-loginErrorWrongPassword: '&cНеверный пароль!'
-loginErrorWrongCode: '&cНеправильный код!'
-loginErrorTimeElapsed: '&cВремя авторизации истекло!'
-loginBossBarTimerTitle: '&fОставшееся время авторизации &6%time% сек.'
-loginBossBarTimerColor: 2
-loginBossBarTimerDivision: 2
+joinRequireRegisterChat: '' # Вы можете использовать '%captcha_code%' для отображения кода капчи.
+
+loginErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+loginErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+loginErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+loginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Вы уже вошли в систему!'
+loginErrorUsage: '&8[&c&l»&8] &7Использование: /login <пароль>'
+loginErrorSecurityUsage: '&8[&c&l»&8] &7Использование: /login <пароль> <код>'
+loginErrorAddressBanned: '&8[&c&l»&8] &7Ваш адрес был заблокирован на 10 минут из-за превышения попыток входа!'
+loginErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+loginErrorWrongCode: '&8[&c&l»&8] &7Неверный код!'
+loginErrorTimeElapsed: '&8[&c&l»&8] &7Время авторизации истекло!'
+loginBossBarTimerTitle: '&6[&e&l»&6] &eОсталось времени на авторизацию: &6%time%&e сек &6[&e&l«&6]'
+loginBossBarTimerColor: YELLOW
+loginBossBarTimerDivision: NOTCHED_6
 loginActionBarTimer: ''
-loginSuccessLoggedTitle: '&fЗдравствуйте, &6%nickname%&f!'
-loginSuccessLoggedSubTitle: '&fВы &6авторизировались&f!'
+loginReminderEmail: '&6[&e&l»&6] &7У вас до сих пор нет email-адреса, привязанного к вашему аккаунту. Пожалуйста, привяжите его с помощью /changemailaddress <пароль> <email-адрес>!'
+loginReminderSecondFactor: '&6[&e&l»&6] &7У вас до сих пор не включена двухфакторная аутентификация. Пожалуйста, включите её с помощью /requestsecondfactor!'
+loginSuccessLoggedTitle: '&a&lПривет, %nickname%'
+loginSuccessLoggedSubTitle: '&aВход выполнен'
 loginSuccessLoggedFadeIn: 30
 loginSuccessLoggedStay: 100
 loginSuccessLoggedFadeOut: 30
 loginSuccessLoggedChat: |-
   &f
-  &fЕсли вы не хотите входить в систему в следующий раз, напишите:
+  &8[&a&l»&8] &7Если вы не хотите входить в следующий раз, используйте:
   &f
-  &f  &7» &6/premium [Пароль] &f- если у вас лицензия.
-  &f  &7» &6/startsession &f- если у вас пиратка.
+  &f  &a&l» &7/premium <пароль> - если у вас &aпремиум&7 лаунчер.
+  &f  &a&l» &7/startsession - если у вас &cпиратский&7 лаунчер.
   &f
- 
-registerErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-registerErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-registerErrorUserAlreadyRegistered: '&cВы уже зарегистрированы!'
-registerErrorUsage: '&fИспользуйте: &6/register [Пароль] [Капча]'
-registerErrorDifferentPasswords: '&cПароли не совпадают!'
-registerErrorUnsafePassword: '&cПароль должен состоять не менее чем из 6 символов!'
-registerErrorPasswordContainsNickname: '&cНовый пароль не может содержать ваш ник!'
-registerErrorPasswordTooWeak: '&cВаш пароль слишком слабый!'
-registerErrorWrongCaptchaCode: '&cНеправильная капча!'
-registerErrorUserHasTooManyAccounts: '&cУ вас слишком много аккаунтов!'
-registerErrorTimeElapsed: '&cВремя авторизации истекло!'
-registerBossBarTimerTitle: '&fОставшееся время авторизации &6%time% сек.'
-registerBossBarTimerColor: 2
-registerBossBarTimerDivision: 2
+
+registerErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+registerErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+registerErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Вы уже зарегистрированы!'
+registerErrorUsage: '&8[&c&l»&8] &7Использование: /register <пароль> <пароль>'
+registerErrorDifferentPasswords: '&8[&c&l»&8] &7Пароли не совпадают!'
+registerErrorUnsafePassword: '&8[&c&l»&8] &7Пароль должен содержать не менее 6 символов!'
+registerErrorPasswordContainsNickname: '&8[&c&l»&8] &7Пароль не может содержать ваш никнейм!'
+registerErrorPasswordTooWeak: '&8[&c&l»&8] &7Пароль слишком слабый!'
+registerErrorWrongCaptchaCode: '&8[&c&l»&8] &7Неверный код капчи!'
+registerErrorUserHasTooManyAccounts: '&8[&c&l»&8] &7У вас слишком много аккаунтов!'
+registerErrorTimeElapsed: '&8[&c&l»&8] &7Время авторизации истекло!'
+registerBossBarTimerTitle: '&6[&e&l»&6] &eОсталось времени на авторизацию: &6%time%&e сек &6[&e&l«&6]'
+registerBossBarTimerColor: YELLOW
+registerBossBarTimerDivision: NOTCHED_6
 registerActionBarTimer: ''
-registerSuccessRegisteredTitle: '&fЗдравствуй, &6%nickname%&f!'
-registerSuccessRegisteredSubTitle: '&fВы &6зарегистрировались&f!'
+registerSuccessRegisteredTitle: '&a&lПривет, %nickname%'
+registerSuccessRegisteredSubTitle: '&aРегистрация завершена'
 registerSuccessRegisteredFadeIn: 30
 registerSuccessRegisteredStay: 100
 registerSuccessRegisteredFadeOut: 30
-registerSuccessRegisteredChat: |
+registerSuccessRegisteredChat: |-
   &f
-  &fДобро пожаловать на &6Universium&f. Полезные команды:
+  &8[&a&l»&8] &7Добро пожаловать на Minecraft Server Network! Вот полезные команды:
   &f
-  &f  &7» &6/unregister [Пароль]
-  &f  &7» &6/changepassword [Текущий_Пароль] [Новый_Пароль]
-  &f  &7» &6/createpassword [Пароль]
-  &f  &7» &6/premium [Пароль]
-  &f  &7» &6/cracked [Пароль]
-  &f  &7» &6/startsession [Время]
-  &f  &7» &6/destroysession
-  &f  &7» &6/changeemailaddress [Пароль] [EMail]
-  &f  &7» &6/recoverypassword [EMail]
+  &f  &a&l» &7/unregister <пароль>
+  &f  &a&l» &7/changepassword <текущий-пароль> <новый-пароль>
+  &f  &a&l» &7/createpassword <пароль>
+  &f  &a&l» &7/premium <пароль>
+  &f  &a&l» &7/cracked <пароль>
+  &f  &a&l» &7/startsession
+  &f  &a&l» &7/destroysession
+  &f  &a&l» &7/changeemailaddress <пароль> <email-адрес>
+  &f  &a&l» &7/recoverypassword <email-адрес>
   &f
- 
-unregisterErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-unregisterErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-unregisterErrorUserNotRegistered: '&cВы не зарегистрированы!'
-unregisterErrorUserNotLogged: '&cВы не авторизованы!'
-unregisterErrorUsage: '&fИспользуйте: &6/unregister [Пароль]'
-unregisterErrorWrongPassword: '&cНеверный пароль!'
-unregisterErrorSecondFactorActivated: '&cВам необходимо отключить 2FA авторизацию!'
-unregisterSuccessUnregistered: '&cВы были не зарегистрированы!'
- 
-changePasswordErrorUserNotRegistered: '&cВы не зарегистрированы!'
-changePasswordErrorUserNotLogged: '&cВы не авторизованы!'
-changePasswordErrorUserHasNotPassword: '&cУ вас нет пароля!'
-changePasswordErrorUsage: '&fИспользуйте: &6/changepassword [Текущий_Пароль] [Новый_Пароль]'
-changePasswordErrorDifferentNewPasswords: '&cПароли не совпадают!'
-changePasswordErrorUnsafeNewPassword: '&cНовый пароль должен содержать не менее 6 символов!'
-changePasswordErrorNewPasswordContainsNickname: '&cНовый пароль не может содержать ваш ник!'
-changePasswordErrorPasswordTooWeak: '&cПароль слишком слабый!'
-changePasswordErrorWrongCurrentPassword: '&cНеверный текущий пароль!'
-changePasswordSuccessPasswordChanged: '&fВаш пароль был &6изменен&f!'
- 
-createPasswordErrorUserNotRegistered: '&cВы не зарегистрированы!'
-createPasswordErrorUserNotLogged: '&cВы не авторизованы!'
-createPasswordErrorUserAlreadyHasPassword: '&cУ вас уже есть пароль!'
-createPasswordErrorUsage: '&fИспользуйте: &6/createpassword [Пароль]'
-createPasswordErrorDifferentPasswords: '&cПароли не совпадают!'
-createPasswordErrorUnsafePassword: '&cНовый пароль должен содержать не менее 6 символов!'
-createPasswordErrorPasswordContainsNickname: '&cНовый пароль не может содержать ваш ник!'
-createPasswordErrorPasswordTooWeak: '&cПароль слишком слабый!'
-createPasswordSuccessPasswordCreated: '&fВы &6создали &fпароль!'
- 
-premiumErrorFeatureDisabled: '&cСервер не поддерживает изменение типа учётной записи!'
-premiumErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-premiumErrorUserAlreadyPremium: '&cВы уже премиум игрок!'
-premiumErrorUserNotRegistered: '&cВы не зарегистрированы!'
-premiumErrorUserNotLogged: '&cВы не авторизованы!'
-premiumErrorUsage: '&fИспользуйте: &6/premium [Пароль]'
-premiumErrorWrongPassword: '&cНеверный пароль!'
-premiumErrorSecondFactorActivated: '&cВам необходимо отключить 2FA авторизацию!'
-premiumErrorServersDown: '&cСервера Mojang не отвечают!'
-premiumErrorDatabaseDown: '&cБаза данных не отвечает!'
-premiumErrorUserNotPremium: '&cУ вас не Лицензия!'
-premiumErrorUserAlreadyExists: '&cЛицензия с таким id уже существует! Пожалуйста, свяжитесь с администрацией, чтобы решить проблему!'
-premiumSuccessPremiumTurnedOn: '&fТеперь у вас &6Лицензия&f! Вам больше &6не понадобиться &fвводить пароль.'
- 
-crackedErrorFeatureDisabled: '&cСервер не поддерживает изменение типа учётной записи!'
-crackedErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-crackedErrorUserNotPremium: '&cУ вас не Лицензия!'
-crackedErrorUserHasNotPassword: '&cУ вас нет пароля!'
-crackedErrorUsage: '&fИспользуйте: &6/cracked [Пароль]'
-crackedErrorWrongPassword: '&cНеверный пароль!'
-crackedSuccessCrackedTurnedOn: '&fТеперь у вас &6Пиратка&f! Вам &6понадобиться &fвводить пароль.'
- 
-startSessionErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-startSessionErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-startSessionErrorUserNotRegistered: '&cВы не зарегистрированы!'
-startSessionErrorUserNotLogged: '&cВы не авторизованы!'
-startSessionErrorUserHasAlreadySession: '&cУ вас уже есть сессия!'
-startSessionErrorUsage: '&fИспользуйте: &6/startsession'
-startSessionSuccessSessionStarted: '&fВаша &6сессия &fначалась!'
- 
-destroySessionErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-destroySessionErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-destroySessionErrorUserNotRegistered: '&cВы не зарегистрированы!'
-destroySessionErrorUserNotLogged: '&cВы не авторизованы!'
-destroySessionErrorUserHasNotSession: '&cУ вас нет сеанса!'
-destroySessionErrorUsage: '&fИспользуйте: &6/destroysession'
-destroySessionSuccessSessionDestroyed: '&fВаша сессия была &6завершена&f!'
- 
-changeEmailAddressErrorUserNotRegistered: '&cВы не зарегистрированы!'
-changeEmailAddressErrorUserNotLogged: '&cВы не авторизованы!'
-changeEmailAddressErrorUserHasNotPassword: '&cУ вас нет пароля!'
-changeEmailAddressErrorUsage: '&fИспользуйте: &6/changeemailaddress [Пароль] [EMail]'
-changeEmailAddressErrorWrongPassword: '&cНеверный пароль!'
-changeEmailAddressErrorWrongEmailAddress: '&cНеверный адрес электронной почты!'
-changeEmailAddressSuccessEmailAddressChanged: '&fВаш адрес электронной почты был &6изменен&f!'
- 
-requestPasswordRecoveryErrorUserNotRegistered: '&cВы не зарегистрированы!'
-requestPasswordRecoveryErrorUserHasNotPassword: '&cУ вас нет пароля!'
-requestPasswordRecoveryErrorUserHasNotEmailAddress: '&cУ вас нет адреса электронной почты!'
-requestPasswordRecoveryErrorUsage: '&fИспользуйте: &6/requestpasswordrecovery [EMail]'
-requestPasswordRecoveryErrorWrongEmailAddress: '&cНеверный адрес электронной почты!'
-requestPasswordRecoveryErrorRecoveringDelay: '&cВы можете восстанавливать пароль каждый 1 час!'
-requestPasswordRecoverySuccessRequestedPasswordRecovery: '&fВаш запрос на восстановление пароля &6отправлен&f!'
- 
-confirmPasswordRecoveryErrorUserNotRegistered: '&cВы не зарегистрированы!'
-confirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&cУ вас нет кода восстановления!'
-confirmPasswordRecoveryErrorUsage: '&fИспользуйте: &6/confirmpasswordrecovery [Код_Восстановления] [Новый_Пароль]'
-confirmPasswordRecoveryErrorDifferentNewPasswords: '&cПароли не совпадают!'
-confirmPasswordRecoveryErrorUnsafeNewPassword: '&cНовый пароль должен содержать не менее 6 символов!'
-confirmPasswordRecoveryErrorNewPasswordContainsNickname: '&cНовый пароль не может содержать ваш ник!'
-confirmPasswordRecoveryErrorPasswordTooWeak: '&cВаш пароль слишком слабый!'
-confirmPasswordRecoveryErrorWrongRecoveryCode: '&cНеправильный код восстановления!'
-confirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&fВаш запрос на восстановление пароля &6подтвержден&f!'
- 
-requestSecondFactorErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-requestSecondFactorErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-requestSecondFactorErrorUserNotRegistered: '&cВы не зарегистрированы!'
-requestSecondFactorErrorUserNotLogged: '&cВы не авторизованы!'
-requestSecondFactorErrorUserHasAlreadySecondFactor: '&cУ вас уже есть 2FA авторизацию!'
-requestSecondFactorErrorUsage: '&fИспользуйте: &6/requestsecondfactor'
-requestSecondFactorSuccessSecondFactorRequested: '&fПерейдите на этот веб-сайт &6[щелкните на это сообщение] &fи отсканируйте QR-код с помощью своего приложения! Затем выполните команду: &6/activatesecondfactor [Пароль] [Код]'
- 
-activateSecondFactorErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-activateSecondFactorErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-activateSecondFactorErrorUserNotRegistered: '&cВы не зарегистрированы!'
-activateSecondFactorErrorUserNotLogged: '&cВы не авторизованы!'
-activateSecondFactorErrorUserHasAlreadySecondFactor: '&cУ вас уже есть 2FA авторизация!'
-activateSecondFactorErrorUserNotRequestedSecondFactor: '&cВы не запрашивали 2FA авторизация!'
-activateSecondFactorErrorUsage: '&fИспользуйте: &6/activatesecondfactor [Пароль] [Код]'
-activateSecondFactorErrorWrongPassword: '&cНеверный пароль!'
-activateSecondFactorErrorWrongCode: '&cНеправильный код!'
-activateSecondFactorSuccessSecondFactorActivated: '&f2FA авторизация &6активирована&f!'
- 
-deactivateSecondFactorErrorUserBedrock: '&cУ вас БедРок аккаунт!'
-deactivateSecondFactorErrorUserPremium: '&cУ вас Лицензионный аккаунт!'
-deactivateSecondFactorErrorUserNotRegistered: '&cВы не зарегистрированы!'
-deactivateSecondFactorErrorUserNotLogged: '&cВы не авторизованы!'
-deactivateSecondFactorErrorUserHasNotSecondFactor: '&cУ вас нет 2FA авторизации!'
-deactivateSecondFactorErrorUsage: '&fИспользуйте: &6/deactivatesecondfactor [Пароль] [Код]'
-deactivateSecondFactorErrorWrongPassword: '&cНеверный пароль!'
-deactivateSecondFactorErrorWrongCode: '&cНеправильный код!'
-deactivateSecondFactorSuccessSecondFactorDeactivated: '&f2FA авторизация &6деактивирована&f!'
- 
-forceLoginErrorUsage: '&fИспользуйте: &6/forcelogin [Игрок]'
-forceLoginErrorUserNotExist: '&cИгрок не найден!'
-forceLoginErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceLoginErrorUserPremium: '&cУ игрока Лицензионный аккаунт!'
-forceLoginErrorUserNotOnline: '&cИгрок не в сети!'
-forceLoginErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceLoginErrorUserAlreadyLogged: '&cИгрок уже авторизирован!'
-forceLoginSuccessLogged: '&fИгрок &6авторизирован&f!'
- 
-forceRegisterErrorUsage: '&fИспользуйте: &6/forceregister [Игрок] [Пароль]'
-forceRegisterErrorUserNotExist: '&cИгрок не найден!'
-forceRegisterErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceRegisterErrorUserPremium: '&cУ игрока Лицензионный аккаунт!'
-forceRegisterErrorUserAlreadyRegistered: '&cИгрок уже зарегистрирован!'
-forceRegisterSuccessRegistered: '&fИгрок &6зарегистрирован&f!'
- 
-forceUnregisterErrorUsage: '&fИспользуйте: &6/forceunregister [Игрок]'
-forceUnregisterErrorUserNotExist: '&cИгрок не найден!'
-forceUnregisterErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceUnregisterErrorUserPremium: '&cУ игрока Лицензионный аккаунт!'
-forceUnregisterErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceUnregisterSuccessUnregistered: '&fРегистрация игрока &6удалена&f!'
- 
-forceChangePasswordErrorUsage: '&fИспользуйте: &6/forcechangepassword [Игрок] [Пароль]'
-forceChangePasswordErrorUserNotExist: '&cИгрок не найден!'
-forceChangePasswordErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceChangePasswordErrorUserHasNotPassword: '&cУ игрока нет пароля!'
-forceChangePasswordSuccessPasswordChanged: '&fПароль игрока &6изменен&f!'
- 
-forceCreatePasswordErrorUsage: '&fИспользуйте: &6/forcecreatepassword [Игрок] [Пароль]'
-forceCreatePasswordErrorUserNotExist: '&cИгрок не найден!'
-forceCreatePasswordErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceCreatePasswordErrorUserAlreadyHasPassword: '&cУ игрока уже есть пароль!'
-forceCreatePasswordSuccessPasswordCreated: '&fПароль игрока &6создан&f!'
- 
-forcePremiumErrorFeatureDisabled: '&cСервер не поддерживает изменение типа учётной записи!'
-forcePremiumErrorUsage: '&fИспользуйте: &6/forcepremium [Игрок]'
-forcePremiumErrorUserNotExist: '&cИгрок не найден!'
-forcePremiumErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forcePremiumErrorUserAlreadyPremium: '&cУ игрока уже активирована Лицензия!'
-forcePremiumErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forcePremiumErrorSecondFactorActivated: '&cИгроку необходимо отключить 2FA авторизацию!'
-forcePremiumErrorServersDown: '&cСервера Mojang не отвечают!'
-forcePremiumErrorDatabaseDown: '&cБаза данных не отвечает!'
-forcePremiumErrorUserNotPremium: '&cУ игрока не Лицензия!'
-forcePremiumErrorUserAlreadyExists: '&cЛицензия с таким id уже существует!'
-forcePremiumSuccessPremiumTurnedOn: '&fТеперь у игрока &6Лицензия&f!'
- 
-forceCrackedErrorFeatureDisabled: '&cСервер не поддерживает изменение типа учётной записи!'
-forceCrackedErrorUsage: '&fИспользуйте: &6/forcecracked [Игрок]'
-forceCrackedErrorUserNotExist: '&cИгрок не найден!'
-forceCrackedErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceCrackedUserAlreadyCracked: '&cУ игрока уже Пиратка!'
-forceCrackedUserHasNotPassword: '&cУ игрока нет пароля!'
-forceCrackedSuccessCrackedTurnedOn: '&fТеперь у игрока &6Пиратка&f!'
- 
-forceStartSessionErrorUsage: '&fИспользуйте: &6/forcestartsession [Игрок]'
-forceStartSessionErrorUserNotExist: '&cИгрок не найден!'
-forceStartSessionErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceStartSessionErrorUserPremium:  '&cУ игрока Лицензионный аккаунт!'
-forceStartSessionErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceStartSessionErrorUserNotLogged: '&cИгрок не авторизован!'
-forceStartSessionErrorUserAlreadyHasSession: '&cУ игрока уже есть сеанс!'
-forceStartSessionErrorWrongTime: '&cНеправильное время сеанса!'
-forceStartSessionSuccessSessionStarted: '&fСессия игрока &6началась&f!'
- 
-forceDestroySessionErrorUsage: '&fИспользуйте: &6/forcedestroysession [Игрок]'
-forceDestroySessionErrorUserNotExist: '&cИгрок не найден!'
-forceDestroySessionErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceDestroySessionErrorUserPremium:  '&cУ игрока Лицензионный аккаунт!'
-forceDestroySessionErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceDestroySessionErrorUserHasNotSession: '&cУ игрока нет сеанса!'
-forceDestroySessionSuccessSessionDestroyed: '&fCессия игрока была &6завершена&f'
- 
-forceChangeEmailAddressErrorUsage: '&fИспользуйте: &6/forcechangemail [Игрок] [EMail]'
-forceChangeEmailAddressErrorUserNotExist: '&Игрок не найден!'
-forceChangeEmailAddressErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceChangeEmailAddressErrorUserHasNotPassword: '&cУ игрока нет пароля!'
-forceChangeEmailAddressErrorWrongEmailAddress: '&cНеверный адрес электронной почты!'
-forceChangeEmailAddressSuccessEmailAddressChanged: '&fАдрес электронный почты игрока &6изменен&f!'
- 
-forceRecoveryPasswordErrorUsage: '&fИспользуйте: &6/forcerecoverypassword [Игрок]'
-forceRecoveryPasswordErrorUserNotExist: '&cИгрок не найден!'
-forceRecoveryPasswordErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceRecoveryPasswordErrorUserHasNotPassword: '&cУ игрока нет пароля!'
-forceRecoveryPasswordErrorUserHasNotEmailAddress: '&cУ игрока нет адреса электронной почты!'
-forceRecoveryPasswordSuccessPasswordRecovered: '&fПароль игрока &6восстановлен&f!'
- 
-forceRequestPasswordRecoveryErrorUsage: '&fИспользуйте: &6/forcerequestpasswordrecovery [Игрок]'
-forceRequestPasswordRecoveryErrorUserNotExist: '&cИгрок не найден!'
-forceRequestPasswordRecoveryErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceRequestPasswordRecoveryErrorUserHasNotPassword: '&cУ игрока нет пароля!'
-forceRequestPasswordRecoveryErrorUserHasNotEmailAddress: '&cУ игрока нет адреса электронной почты!'
-forceRequestPasswordRecoverySuccessRequestedPasswordRecovery: '&fЗапрос на восстановление пароля игрока &6отправлен&f!'
- 
-forceConfirmPasswordRecoveryErrorUsage: '&fИспользуйте: &6/forcerconfirmpasswordrecovery [Игрок] [Новый_Пароль]'
-forceConfirmPasswordRecoveryErrorUserNotExist: '&cИгрок не найден!'
-forceConfirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&cУ игрока нет кода восстановления!'
-forceConfirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&fЗапрос на восстановление пароля игрока &6подтвержден&f!'
- 
-forceRequestSecondFactorErrorUsage: '&fИспользуйте: &6/forcerequestsecondfactor [Игрок]'
-forceRequestSecondFactorErrorUserNotExist: '&cИгрок не найден!'
-forceRequestSecondFactorErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceRequestSecondFactorErrorUserPremium: '&cУ игрока Лицензионный аккаунт!'
-forceRequestSecondFactorErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceRequestSecondFactorErrorUserHasAlreadySecondFactor: '&cУ игрока уже есть 2FA авторизация!'
-forceRequestSecondFactorSuccessSecondFactorRequested: '&fЗапрос на 2FA авторизацию &6отправлен&f!'
- 
-forceActivateSecondFactorErrorUsage: '&fИспользуйте: &6/forceactivatesecondfactor [Игрок]'
-forceActivateSecondFactorErrorUserNotExist: '&cИгрок не найден!'
-forceActivateSecondFactorErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceActivateSecondFactorErrorUserPremium: '&cУ игрока Лицензионный аккаунт!'
-forceActivateSecondFactorErrorUserNotRegistered: '&cИгрок не зарегистрирован!'
-forceActivateSecondFactorErrorUserHasAlreadySecondFactor: '&cУ игрока уже есть 2FA авторизация!'
-forceActivateSecondFactorErrorUserNotRequestedSecondFactor: '&cИгрок не запрашивал 2FA авторизацию!'
-forceActivateSecondFactorSuccessSecondFactorActivated: '&fЗапрос 2FA авторизации игрока &6активирован&f!'
- 
-forceDeactivateSecondFactorErrorUsage: '&fИспользуйте: &6/forcedeactivatesecondfactor [Игрок]'
-forceDeactivateSecondFactorErrorUserNotExist: '&cИгрок не найден!'
-forceDeactivateSecondFactorErrorUserBedrock: '&cУ игрока БедРок аккаунт!'
-forceDeactivateSecondFactorErrorUserPremium: '&cУ игрока Лицензионный аккаунт!'
-forceDeactivateSecondFactorErrorUserNotRegistered: '&The user is not registered!'
-forceDeactivateSecondFactorErrorUserHasNotSecondFactor: '&cУ игрока нет 2FA авторизации!'
-forceDeactivateSecondFactorSuccessSecondFactorDeactivated: '&fЗапрос 2FA авторизации игрока &6отключен&f!'
- 
-forcePurgeUserProfileErrorUsage: '&fИспользуйте: &6/forcepurgeuserprofile [Игрок]'
-forcePurgeUserProfileErrorUserNotExist: '&cИгрок не найден!'
-forcePurgeUserProfileSuccessUserProfilePurged: '&fИгрок &6удален&f!'
-forcePurgeUserProfileSuccessKickedMessage: '&cВаш аккаунт был удалён!'
- 
-forceViewUserProfileErrorUsage: '&fИспользуйте: &6/forceviewuserprofile [Игрок]'
-forceViewUserProfileErrorUserNotExist: '&cИгрок не найден!'
-forceViewUserProfileSuccessNoData: '&c[Нет_Данных]'
+
+unregisterErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+unregisterErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+unregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+unregisterErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+unregisterErrorUsage: '&8[&c&l»&8] &7Использование: /unregister <пароль>'
+unregisterErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+unregisterErrorSecondFactorActivated: '&8[&c&l»&8] &7Вам нужно отключить двухфакторную аутентификацию!'
+unregisterConfirmation: '&8[&e&l»&8] &7Эта операция удалит ваш аккаунт с сервера! Если вы уверены, что хотите продолжить, выполните команду /confirm!'
+unregisterSuccessUnregistered: '&8[&a&l»&8] &7Вы удалили регистрацию с сервера!'
+
+changePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+changePasswordErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+changePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7У вас нет пароля!'
+changePasswordErrorUsage: '&8[&c&l»&8] &7Использование: /changepassword <текущий-пароль> <новый-пароль>'
+changePasswordErrorDifferentNewPasswords: '&8[&c&l»&8] &7Новые пароли не совпадают!'
+changePasswordErrorUnsafeNewPassword: '&8[&c&l»&8] &7Новый пароль должен содержать не менее 6 символов!'
+changePasswordErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Новый пароль не может содержать ваш никнейм!'
+changePasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Пароль слишком слабый!'
+changePasswordErrorWrongCurrentPassword: '&8[&c&l»&8] &7Неверный текущий пароль!'
+changePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Ваш пароль был изменен!'
+
+createPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+createPasswordErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+createPasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7У вас уже есть пароль!'
+createPasswordErrorUsage: '&8[&c&l»&8] &7Использование: /createpassword <пароль>'
+createPasswordErrorDifferentPasswords: '&8[&c&l»&8] &7Пароли не совпадают!'
+createPasswordErrorUnsafePassword: '&8[&c&l»&8] &7Пароль должен содержать не менее 6 символов!'
+createPasswordErrorPasswordContainsNickname: '&8[&c&l»&8] &7Пароль не может содержать ваш никнейм!'
+createPasswordErrorPasswordTooWeak: '&8[&c&l»&8] &7Пароль слишком слабый!'
+createPasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Ваш пароль был создан!'
+
+premiumErrorFeatureDisabled: '&8[&c&l»&8] &7Сервер не поддерживает изменение типа аккаунта!'
+premiumErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+premiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Вы уже премиум-игрок!'
+premiumErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+premiumErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+premiumErrorUsage: '&8[&c&l»&8] &7Использование: /premium <пароль>'
+premiumErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+premiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Вам нужно отключить двухфакторную аутентификацию!'
+premiumErrorServersDown: '&8[&c&l»&8] &7Серверы Mojang не отвечают!'
+premiumErrorDatabaseDown: '&8[&c&l»&8] &7База данных не отвечает!'
+premiumErrorUserNotPremium: '&8[&c&l»&8] &7У вас нет премиум-аккаунта!'
+premiumErrorUserAlreadyExists: '&8[&c&l»&8] &7Премиум-игрок с таким ID уже существует! Пожалуйста, свяжитесь с администрацией для решения проблемы!'
+premiumConfirmation: '&8[&e&l»&8] &7Эта операция сделает ваш аккаунт премиум на сервере! Если у вас нет официальной лицензии Minecraft, вы не сможете войти на сервер! Если вы уверены, что хотите продолжить, выполните команду /confirm!'
+premiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Теперь вы премиум-игрок!'
+
+crackedErrorFeatureDisabled: '&8[&c&l»&8] &7Этот сервер не поддерживает изменение типа аккаунта!'
+crackedErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+crackedErrorUserNotPremium: '&8[&c&l»&8] &7Вы не премиум-игрок!'
+crackedErrorUserHasNotPassword: '&8[&c&l»&8] &7У вас нет пароля!'
+crackedErrorUsage: '&8[&c&l»&8] &7Использование: /cracked <пароль>'
+crackedErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+crackedConfirmation: '&8[&e&l»&8] &7Эта операция сделает ваш аккаунт пиратским на сервере! Если вы уверены, что хотите продолжить, выполните команду /confirm!'
+crackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Теперь вы пиратский игрок!'
+
+startSessionErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+startSessionErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+startSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+startSessionErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+startSessionErrorUserHasAlreadySession: '&8[&c&l»&8] &7У вас уже есть сессия!'
+startSessionErrorUsage: '&8[&c&l»&8] &7Использование: /startsession'
+startSessionSuccessSessionStarted: '&8[&a&l»&8] &7Ваша сессия началась!'
+
+destroySessionErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+destroySessionErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+destroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+destroySessionErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+destroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7У вас нет сессии!'
+destroySessionErrorUsage: '&8[&c&l»&8] &7Использование: /destroysession'
+destroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Ваша сессия была завершена!'
+
+changeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+changeEmailAddressErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+changeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7У вас нет пароля!'
+changeEmailAddressErrorUsage: '&8[&c&l»&8] &7Использование: /changeemailaddress <пароль> <email-адрес>'
+changeEmailAddressErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+changeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Неверный email-адрес!'
+changeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Ваш email-адрес был изменен!'
+
+requestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+requestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7У вас нет пароля!'
+requestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7У вас нет email-адреса!'
+requestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Использование: /requestpasswordrecovery <email-адрес>'
+requestPasswordRecoveryErrorWrongEmailAddress: '&8[&c&l»&8] &7Неверный email-адрес!'
+requestPasswordRecoveryErrorRecoveringDelay: '&8[&c&l»&8] &7Вы можете восстанавливать пароль только раз в 1 час!'
+requestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Ваш запрос на восстановление пароля был отправлен!'
+
+confirmPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+confirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7У вас нет кода восстановления!'
+confirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Использование: /confirmpasswordrecovery <код-восстановления> <новый-пароль>'
+confirmPasswordRecoveryErrorDifferentNewPasswords: '&8[&c&l»&8] &7Новые пароли не совпадают!'
+confirmPasswordRecoveryErrorUnsafeNewPassword: '&8[&c&l»&8] &7Новый пароль должен содержать не менее 6 символов!'
+confirmPasswordRecoveryErrorNewPasswordContainsNickname: '&8[&c&l»&8] &7Пароль не может содержать ваш никнейм!'
+confirmPasswordRecoveryErrorPasswordTooWeak: '&8[&c&l»&8] &7Пароль слишком слабый!'
+confirmPasswordRecoveryErrorWrongRecoveryCode: '&8[&c&l»&8] &7Неверный код восстановления!'
+confirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Ваш запрос на восстановление пароля был подтвержден!'
+
+requestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+requestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+requestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+requestSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+requestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7У вас уже есть двухфакторная аутентификация!'
+requestSecondFactorErrorUsage: '&8[&c&l»&8] &7Использование: /requestsecondfactor'
+requestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Пожалуйста, перейдите на сайт &o[нажмите на это сообщение] &7и отсканируйте QR-код с помощью вашего приложения! Затем выполните команду /activatesecondfactor <пароль> <код>!'
+
+activateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+activateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+activateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+activateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+activateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7У вас уже есть двухфакторная аутентификация!'
+activateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Вы не запрашивали двухфакторную аутентификацию!'
+activateSecondFactorErrorUsage: '&8[&c&l»&8] &7Использование: /activatesecondfactor <пароль> <код>'
+activateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+activateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Неверный код!'
+activateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7Двухфакторная аутентификация активирована!'
+
+deactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Вы игрок Bedrock!'
+deactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Вы премиум-игрок!'
+deactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Вы не зарегистрированы!'
+deactivateSecondFactorErrorUserNotLogged: '&8[&c&l»&8] &7Вы не вошли в систему!'
+deactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7У вас нет двухфакторной аутентификации!'
+deactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Использование: /deactivatesecondfactor <пароль> <код>'
+deactivateSecondFactorErrorWrongPassword: '&8[&c&l»&8] &7Неверный пароль!'
+deactivateSecondFactorErrorWrongCode: '&8[&c&l»&8] &7Неверный код!'
+deactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7Двухфакторная аутентификация отключена!'
+
+confirmNotWaiting: '&8[&c&l»&8] &7У вас нет операций для подтверждения!'
+forceForbiddenProtectedAccount: '&8[&c&l»&8] &7Вы не можете выполнить команду администратора для этого игрока!'
+
+forceLoginErrorUsage: '&8[&c&l»&8] &7Использование: /forcelogin <никнейм|uuid>'
+forceLoginErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceLoginErrorUserBedrock: '&8[&c&l»&8] &7Этот пользователь - игрок Bedrock!'
+forceLoginErrorUserPremium: '&8[&c&l»&8] &7Этот пользователь - премиум-игрок!'
+forceLoginErrorUserNotOnline: '&8[&c&l»&8] &7Этот пользователь не в сети!'
+forceLoginErrorUserNotRegistered: '&8[&c&l»&8] &7Этот пользователь не зарегистрирован!'
+forceLoginErrorUserAlreadyLogged: '&8[&c&l»&8] &7Этот пользователь уже вошел в систему!'
+forceLoginSuccessLogged: '&8[&a&l»&8] &7Пользователь был авторизован!'
+
+forceRegisterErrorUsage: '&8[&c&l»&8] &7Использование: /forceregister <никнейм|uuid> <пароль>'
+forceRegisterErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceRegisterErrorUserBedrock: '&8[&c&l»&8] &7Этот пользователь - игрок Bedrock!'
+forceRegisterErrorUserPremium: '&8[&c&l»&8] &7Этот пользователь - премиум-игрок!'
+forceRegisterErrorUserAlreadyRegistered: '&8[&c&l»&8] &7Этот пользователь уже зарегистрирован!'
+forceRegisterSuccessRegistered: '&8[&a&l»&8] &7Пользователь был зарегистрирован!'
+
+forceUnregisterErrorUsage: '&8[&c&l»&8] &7Использование: /forceunregister <никнейм|uuid>'
+forceUnregisterErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceUnregisterErrorUserBedrock: '&8[&c&l»&8] &7Этот пользователь - игрок Bedrock!'
+forceUnregisterErrorUserPremium: '&8[&c&l»&8] &7Этот пользователь - премиум-игрок!'
+forceUnregisterErrorUserNotRegistered: '&8[&c&l»&8] &7Этот пользователь не зарегистрирован!'
+forceUnregisterSuccessUnregistered: '&8[&a&l»&8] &7Пользователь был удален!'
+
+forceChangePasswordErrorUsage: '&8[&c&l»&8] &7Использование: /forcechangepassword <никнейм|uuid> <пароль>'
+forceChangePasswordErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceChangePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Этот пользователь не зарегистрирован!'
+forceChangePasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7У этого пользователя нет пароля!'
+forceChangePasswordSuccessPasswordChanged: '&8[&a&l»&8] &7Пароль пользователя был изменен!'
+
+forceCreatePasswordErrorUsage: '&8[&c&l»&8] &7Использование: /forcecreatepassword <никнейм|uuid> <пароль>'
+forceCreatePasswordErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceCreatePasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Этот пользователь не зарегистрирован!'
+forceCreatePasswordErrorUserAlreadyHasPassword: '&8[&c&l»&8] &7У этого пользователя уже есть пароль!'
+forceCreatePasswordSuccessPasswordCreated: '&8[&a&l»&8] &7Пароль пользователя был создан!'
+
+forcePremiumErrorFeatureDisabled: '&8[&c&l»&8] &7Этот сервер не поддерживает изменение типа аккаунта!'
+forcePremiumErrorUsage: '&8[&c&l»&8] &7Использование: /forcepremium <никнейм|uuid>'
+forcePremiumErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forcePremiumErrorUserBedrock: '&8[&c&l»&8] &7Этот пользователь - игрок Bedrock!'
+forcePremiumErrorUserAlreadyPremium: '&8[&c&l»&8] &7Этот пользователь уже премиум-игрок!'
+forcePremiumErrorUserNotRegistered: '&8[&c&l»&8] &7Этот пользователь не зарегистрирован!'
+forcePremiumErrorSecondFactorActivated: '&8[&c&l»&8] &7Этому пользователю нужно отключить двухфакторную аутентификацию!'
+forcePremiumErrorServersDown: '&8[&c&l»&8] &7Серверы Mojang не отвечают!'
+forcePremiumErrorDatabaseDown: '&8[&c&l»&8] &7База данных не отвечает!'
+forcePremiumErrorUserNotPremium: '&8[&c&l»&8] &7У этого пользователя нет премиум-аккаунта!'
+forcePremiumErrorUserAlreadyExists: '&8[&c&l»&8] &7Премиум-игрок с таким ID уже существует!'
+forcePremiumSuccessPremiumTurnedOn: '&8[&a&l»&8] &7Теперь этот пользователь - премиум-игрок!'
+
+forceCrackedErrorFeatureDisabled: '&8[&c&l»&8] &7Этот сервер не поддерживает изменение типа аккаунта!'
+forceCrackedErrorUsage: '&8[&c&l»&8] &7Использование: /forcecracked <никнейм|uuid>'
+forceCrackedErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceCrackedErrorUserBedrock: '&8[&c&l»&8] &7Этот пользователь - игрок Bedrock!'
+forceCrackedUserAlreadyCracked: '&8[&c&l»&8] &7Этот пользователь уже пиратский игрок!'
+forceCrackedUserHasNotPassword: '&8[&c&l»&8] &7У этого пользователя нет пароля!'
+forceCrackedSuccessCrackedTurnedOn: '&8[&a&l»&8] &7Теперь этот пользователь - пиратский игрок!'
+
+forceStartSessionErrorUsage: '&8[&c&l»&8] &7Использование: /forcestartsession <никнейм|uuid>'
+forceStartSessionErrorUserNotExist: '&8[&c&l»&8] &7Такой пользователь не существует!'
+forceStartSessionErrorUserBedrock: '&8[&c&l»&8] &7Этот пользователь - игрок Bedrock!'
+forceStartSessionErrorUserPremium: '&8[&c&l»&8] &7Этот пользователь - премиум-игрок!'
+forceStartSessionErrorUserNotRegistered: '&8[&c&l»&8] &7Этот пользователь не зарегистрирован!'
+forceStartSessionErrorUserNotLogged: '&8[&c&l»&8] &7Этот пользователь не вошел в систему!'
+forceStartSessionErrorUserAlreadyHasSession: '&8[&c&l»&8] &7У этого пользователя уже есть сессия!'
+forceStartSessionErrorWrongTime: '&8[&c&l»&8] &7Неверное время сессии!'
+forceStartSessionSuccessSessionStarted: '&8[&a&l»&8] &7Сессия пользователя началась!'
+
+forceDestroySessionErrorUsage: '&8[&c&l»&8] &7Использование: /forcedestroysession <ник|uuid>'
+forceDestroySessionErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceDestroySessionErrorUserBedrock: '&8[&c&l»&8] &7Пользователь играет на Bedrock версии!'
+forceDestroySessionErrorUserPremium:  '&8[&c&l»&8] &7Пользователь является премиум-игроком!'
+forceDestroySessionErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceDestroySessionErrorUserHasNotSession: '&8[&c&l»&8] &7У пользователя нет активной сессии!'
+forceDestroySessionSuccessSessionDestroyed: '&8[&a&l»&8] &7Сессия пользователя была завершена!'
+
+forceChangeEmailAddressErrorUsage: '&8[&c&l»&8] &7Использование: /forcechangemail <ник|uuid> <email>'
+forceChangeEmailAddressErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceChangeEmailAddressErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceChangeEmailAddressErrorUserHasNotPassword: '&8[&c&l»&8] &7У пользователя нет пароля!'
+forceChangeEmailAddressErrorWrongEmailAddress: '&8[&c&l»&8] &7Некорректный адрес электронной почты!'
+forceChangeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7Адрес электронной почты пользователя изменен!'
+
+forceRecoveryPasswordErrorUsage: '&8[&c&l»&8] &7Использование: /forcerecoverypassword <ник|uuid>'
+forceRecoveryPasswordErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceRecoveryPasswordErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceRecoveryPasswordErrorUserHasNotPassword: '&8[&c&l»&8] &7У пользователя нет пароля!'
+forceRecoveryPasswordErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7У пользователя нет адреса электронной почты!'
+forceRecoveryPasswordSuccessPasswordRecovered: '&8[&a&l»&8] &7Пароль пользователя был успешно восстановлен!'
+
+forceRequestPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Использование: /forcerequestpasswordrecovery <ник|uuid>'
+forceRequestPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceRequestPasswordRecoveryErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceRequestPasswordRecoveryErrorUserHasNotPassword: '&8[&c&l»&8] &7У пользователя нет пароля!'
+forceRequestPasswordRecoveryErrorUserHasNotEmailAddress: '&8[&c&l»&8] &7У пользователя нет адреса электронной почты!'
+forceRequestPasswordRecoverySuccessRequestedPasswordRecovery: '&8[&a&l»&8] &7Запрос на восстановление пароля отправлен!'
+
+forceConfirmPasswordRecoveryErrorUsage: '&8[&c&l»&8] &7Использование: /forcerconfirmpasswordrecovery <ник|uuid> <новый-пароль>'
+forceConfirmPasswordRecoveryErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceConfirmPasswordRecoveryErrorUserHasNotRecoveryCode: '&8[&c&l»&8] &7У пользователя нет кода восстановления!'
+forceConfirmPasswordRecoverySuccessConfirmedPasswordRecovery: '&8[&a&l»&8] &7Восстановление пароля подтверждено!'
+
+forceRequestSecondFactorErrorUsage: '&8[&c&l»&8] &7Использование: /forcerequestsecondfactor <ник|uuid>'
+forceRequestSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceRequestSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Пользователь играет на Bedrock версии!'
+forceRequestSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Пользователь является премиум-игроком!'
+forceRequestSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceRequestSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7У пользователя уже активирован второй фактор!'
+forceRequestSecondFactorSuccessSecondFactorRequested: '&8[&a&l»&8] &7Запрос на активацию второго фактора отправлен!'
+
+forceActivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Использование: /forceactivatesecondfactor <ник|uuid>'
+forceActivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceActivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Пользователь играет на Bedrock версии!'
+forceActivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Пользователь является премиум-игроком!'
+forceActivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceActivateSecondFactorErrorUserHasAlreadySecondFactor: '&8[&c&l»&8] &7У пользователя уже активирован второй фактор!'
+forceActivateSecondFactorErrorUserNotRequestedSecondFactor: '&8[&c&l»&8] &7Пользователь не запрашивал второй фактор!'
+forceActivateSecondFactorSuccessSecondFactorActivated: '&8[&a&l»&8] &7Второй фактор успешно активирован!'
+
+forceDeactivateSecondFactorErrorUsage: '&8[&c&l»&8] &7Использование: /forcedeactivatesecondfactor <ник|uuid>'
+forceDeactivateSecondFactorErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceDeactivateSecondFactorErrorUserBedrock: '&8[&c&l»&8] &7Пользователь играет на Bedrock версии!'
+forceDeactivateSecondFactorErrorUserPremium: '&8[&c&l»&8] &7Пользователь является премиум-игроком!'
+forceDeactivateSecondFactorErrorUserNotRegistered: '&8[&c&l»&8] &7Пользователь не зарегистрирован!'
+forceDeactivateSecondFactorErrorUserHasNotSecondFactor: '&8[&c&l»&8] &7У пользователя не активирован второй фактор!'
+forceDeactivateSecondFactorSuccessSecondFactorDeactivated: '&8[&a&l»&8] &7Второй фактор был отключен!'
+
+forcePurgeUserProfileErrorUsage: '&8[&c&l»&8] &7Использование: /forcepurgeuserprofile <ник|uuid>'
+forcePurgeUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7Профиль пользователя был удален!'
+forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Ваш профиль был удален!'
+
+forceViewUserProfileErrorUsage: '&8[&c&l»&8] &7Использование: /forceviewuserprofile <nickname|uuid>'
+forceViewUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Такого пользователя не существует!'
+forceViewUserProfileSuccessNoData: '&c[нет данных]'
 forceViewUserProfileSuccessProfile: |-
   &f
-  &8══════════════════════════════
-  &f  &7» &fНикнейм &7» &6%nickname%
-  &f  &7» &fУникальный UUID &7» &6%unique_id%
-  &f  &7» &fПремиум UUID &7» &6%premium_id%
-  &f  &7» &fEmail адрес &7» &6%email_address%
-  &f  &7» &fСессия истекает &7» &6%session_expires%
-  &f  &7» &fПоследний адрес &7» &6%last_address%
-  &f  &7» &fБыл в сети &7» &6%last_seen%
-  &f  &7» &fПервый адрес &7» &6%first_address%
-  &f  &7» &fПервый раз зашёл &7» &6%first_seen%
-  &8══════════════════════════════
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
+  &f  &a&l» &7Никнейм &a&l» &7%nickname%
+  &f  &a&l» &7Уникальный ID &a&l» &7%unique_id%
+  &f  &a&l» &7Премиум ID &a&l» &7%premium_id%
+  &f  &a&l» &7Email-адрес &a&l» &7%email_address%
+  &f  &a&l» &7Сессия истекает &a&l» &7%session_expires%
+  &f  &a&l» &7Последний сервер &a&l» &7%last_server%
+  &f  &a&l» &7Последний IP-адрес &a&l» &7%last_address%
+  &f  &a&l» &7Последний вход &a&l» &7%last_seen%
+  &f  &a&l» &7Первый IP-адрес &a&l» &7%first_address%
+  &f  &a&l» &7Первый вход &a&l» &7%first_seen%
+  &8[&a&l»&8] ══════════════════════════════ [&a&l«&8]
   &f
+
+forceViewUserProfilesErrorUsage: '&8[&c&l»&8] &7Использование: /forceviewuserprofiles <address>'
+forceViewUserProfilesErrorUsersNotExist: '&8[&c&l»&8] &7Нет пользователей с таким адресом!'
+forceViewUserProfilesLoadingProfiles: '&8[&e&l»&8] &7Поиск пользователей...'
+forceViewUserProfilesSuccessHeader: '&8[&a#&8] &7Никнейм &a&l» &7Последний вход'
+forceViewUserProfilesSuccessProfile: '&8[&a%ordinal%&8] &7%nickname% &a&l» &7%last_seen%' # Все плейсхолдеры из 'forceViewUserProfileSuccessProfile' могут быть использованы.
+
+forceMergePremiumUserProfileErrorUsage: '&8[&c&l»&8] &7Использование: /forcemergepremiumuserprofile <текущий-никнейм> <предыдущий-никнейм>'
+forceMergePremiumUserProfileErrorUserNotExist: '&8[&c&l»&8] &7Такого текущего пользователя не существует!'
+forceMergePremiumUserProfileErrorUserNotPremium: '&8[&c&l»&8] &7Текущий пользователь не является премиум-игроком!'
+forceMergePremiumUserProfileErrorMergedWithUserNotExist: '&8[&c&l»&8] &7Такого предыдущего пользователя не существует!'
+forceMergePremiumUserProfileErrorMergedWithUserBedrock: '&8[&c&l»&8] &7Предыдущий пользователь является игроком Bedrock!'
+forceMergePremiumUserProfileErrorMergedWithUserPremium: '&8[&c&l»&8] &7Предыдущий пользователь является премиум-игроком!'
+forceMergePremiumUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7Вы были объединены!'
+forceMergePremiumUserProfileSuccessMerged: '&8[&a&l»&8] &7Пользователь был объединён!'
