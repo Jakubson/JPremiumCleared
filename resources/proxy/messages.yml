@@ -14,12 +14,20 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|         The MiniMessage format is supported by starting a message with < on Velocity only!           |#
+#|                        https://docs.advntr.dev/minimessage/format.html                               |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
 preLoginErrorInvalidNickname: '&8[&c&l»&8] &7Please use a different nickname!'
 preLoginErrorInvalidNicknameCases: '&8[&c&l»&8] &7Please change your nickname to &a%nickname%&7!'
 preLoginErrorAlreadyOnline: '&8[&c&l»&8] &7You are already online!'
 preLoginErrorServersDown: '&8[&c&l»&8] &7Mojang servers are not responding!'
 preLoginErrorRegisterAtWebsite: '&8[&c&l»&8] &7Please register your account on &amc.example.com&7!'
 preLoginErrorUniqueIdCollision: '&8[&c&l»&8] &7Could not create a user for you due to UUID collision!'
+preLoginErrorBedrockUser: '&8[&c&l»&8] &7This nickname is reserved by a Bedrock player and can be only accessible though Floodgate!'
 preLoginErrorUserCannotBeLoaded: '&8[&c&l»&8] &7Could not load your user profile!'
 preLoginErrorUserNotLoaded: '&8[&c&l»&8] &7Your user profile was not loaded on the pre-login stage!'
 preLoginPremiumVerification: '&8[&a&l»&8] &7Your premium account has been verified! Please join to the server again!'
