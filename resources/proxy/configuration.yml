@@ -71,7 +71,7 @@ registerPremiumUsers: true
 # Since Minecraft 1.19.1, premium players send their online UUID in the handshake. Non-premium player don't sent it or send offline one.
 # Using that data, JPremium can distinguish (on the first join) premium players and non-premium players who only use premium nicknames (they won't get 'Invalid session', etc.).
 # In other words: When a non-premium player uses a premium username which isn't taken on the server, they will be able to join without 'Invalid session' message and real premium players will be automatically registered.
-# This feature is in beta and works only on Velocity and for players who use Minecraft 1.19.1 or above! If a player use old version, then fallback to other method detection like 'secondLoginCracked'.
+# This feature is in beta and works only for players who use Minecraft 1.19.1 or above! If a player use old version, then fallback to other method detection like 'secondLoginCracked'.
 detectPremiumUniqueIdsInHandshake: false
 
 # Should JPremium redirect a player to the other server when the player is kicked from the current server.
@@ -101,16 +101,6 @@ confirmPassword: false
 
 # Should JPremium require to execute /confirm command when a player executes a risky command (/unregister, /premium, /cracked).
 riskyCommandsConfirmation: true
-
-# !!! THIS FEATURE IS DEPRECATED DUE TO ITS UNRELIABILITY !!!
-# !!! YOU USE IT AT YOUR OW RISK !!!
-# Should JPremium use an external API server when the API server cannot process requests to verify players nicknames.
-# The external API sometimes may return wrong responses!
-# The legacy resolver needs to be activated to use the backup server.
-useBackupServer: false
-
-# Should JPremium use the old resolver which uses only api.mojang.com?
-useLegacyResolver: false
 
 # The email subject which is sent when a player requests password recovery.
 passwordRecoverySubject: The password recovery
